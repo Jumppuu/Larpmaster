@@ -37,7 +37,7 @@
             button1.Name = "button1";
             button1.Size = new Size(811, 162);
             button1.TabIndex = 0;
-            button1.Text = "Hieno button";
+            button1.Text = "Tosi Hieno button (Git testausta)";
             button1.UseVisualStyleBackColor = true;
             // 
             // Form1
