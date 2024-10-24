@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Larpmaster", "Larpmaster.csproj", "{051EF755-8083-48C6-9A6B-129B1B334A3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{051EF755-8083-48C6-9A6B-129B1B334A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051EF755-8083-48C6-9A6B-129B1B334A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051EF755-8083-48C6-9A6B-129B1B334A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051EF755-8083-48C6-9A6B-129B1B334A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44598621-E8B1-400D-B0F8-050254FE817E}
+	EndGlobalSection
+EndGlobal
