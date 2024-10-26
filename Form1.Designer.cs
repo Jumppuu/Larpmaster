@@ -1,6 +1,6 @@
 ﻿namespace Larpmaster
 {
-    partial class Form1
+    partial class mainMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,31 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             SuspendLayout();
             // 
-            // button1
-            // 
-            button1.Location = new Point(262, 176);
-            button1.Name = "button1";
-            button1.Size = new Size(811, 162);
-            button1.TabIndex = 0;
-            button1.Text = "Tosi Hieno button (Git testausta)";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // mainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1438, 785);
-            Controls.Add(button1);
-            Name = "Form1";
+            BackgroundImage = Resource1.Larpmasterbackground;
+            ClientSize = new Size(1162, 727);
+            Name = "mainMenu";
             Text = "Form1";
+            Load += mainMenu_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button button1;
     }
 }

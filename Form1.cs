@@ -1,10 +1,15 @@
 namespace Larpmaster
 {
-    public partial class Form1 : Form
+    public partial class mainMenu : Form
     {
-        public Form1()
+        public mainMenu()
         {
             InitializeComponent();
+        }
+
+        private void mainMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
