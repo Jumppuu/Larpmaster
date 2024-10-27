@@ -7,4 +7,14 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Larpmasterbackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Larpmasterbackground.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>
