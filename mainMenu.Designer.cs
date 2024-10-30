@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainMenu));
             copyRightLbl = new Label();
             titleLbl = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // copyRightLbl
@@ -51,11 +52,20 @@
             titleLbl.BackColor = Color.Transparent;
             titleLbl.Font = new Font("Old English Text MT", 104.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titleLbl.ForeColor = Color.Sienna;
-            titleLbl.Location = new Point(227, 45);
+            titleLbl.Location = new Point(226, 46);
             titleLbl.Name = "titleLbl";
             titleLbl.Size = new Size(735, 165);
             titleLbl.TabIndex = 1;
             titleLbl.Text = "Larpmaster";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(483, 344);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 2;
+            button1.Text = "Testi lassille";
+            button1.UseVisualStyleBackColor = true;
             // 
             // mainMenu
             // 
@@ -63,6 +73,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1162, 727);
+            Controls.Add(button1);
             Controls.Add(titleLbl);
             Controls.Add(copyRightLbl);
             Name = "mainMenu";
@@ -76,5 +87,6 @@
 
         private Label copyRightLbl;
         private Label titleLbl;
+        private Button button1;
     }
 }
