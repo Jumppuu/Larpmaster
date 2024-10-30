@@ -64,7 +64,7 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
-            button1.Text = "Testi lassille";
+            button1.Text = "Toimii";
             button1.UseVisualStyleBackColor = true;
             // 
             // mainMenu
