@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainMenu));
             copyRightLbl = new Label();
             titleLbl = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            newCharBtn = new Button();
+            charInfoBtn = new Button();
+            loadCharBtn = new Button();
+            saveCharBtn = new Button();
+            gameMasterBtn = new Button();
             SuspendLayout();
             // 
             // copyRightLbl
@@ -61,52 +62,79 @@
             titleLbl.TabIndex = 1;
             titleLbl.Text = "Larpmaster";
             // 
-            // button1
+            // newCharBtn
             // 
-            button1.Location = new Point(127, 282);
-            button1.Name = "button1";
-            button1.Size = new Size(110, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Uusi Hahmo";
-            button1.UseVisualStyleBackColor = true;
+            newCharBtn.BackColor = Color.Transparent;
+            newCharBtn.FlatAppearance.BorderColor = Color.SaddleBrown;
+            newCharBtn.FlatStyle = FlatStyle.Popup;
+            newCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            newCharBtn.Location = new Point(130, 316);
+            newCharBtn.Name = "newCharBtn";
+            newCharBtn.Size = new Size(124, 48);
+            newCharBtn.TabIndex = 2;
+            newCharBtn.Text = "Uusi Hahmo";
+            newCharBtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // charInfoBtn
             // 
-            button2.Location = new Point(127, 340);
-            button2.Name = "button2";
-            button2.Size = new Size(110, 23);
-            button2.TabIndex = 3;
-            button2.Text = "Hahmon Tiedot";
-            button2.UseVisualStyleBackColor = true;
+            charInfoBtn.BackColor = Color.Transparent;
+            charInfoBtn.FlatStyle = FlatStyle.Popup;
+            charInfoBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            charInfoBtn.Location = new Point(130, 398);
+            charInfoBtn.Name = "charInfoBtn";
+            charInfoBtn.Size = new Size(124, 48);
+            charInfoBtn.TabIndex = 3;
+            charInfoBtn.Text = "Hahmon Tiedot";
+            charInfoBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // loadCharBtn
             // 
-            button3.Location = new Point(327, 282);
-            button3.Name = "button3";
-            button3.Size = new Size(102, 23);
-            button3.TabIndex = 4;
-            button3.Text = "Lataa Hahmo";
-            button3.UseVisualStyleBackColor = true;
+            loadCharBtn.BackColor = Color.Transparent;
+            loadCharBtn.FlatStyle = FlatStyle.Popup;
+            loadCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loadCharBtn.Location = new Point(291, 316);
+            loadCharBtn.Name = "loadCharBtn";
+            loadCharBtn.Size = new Size(121, 48);
+            loadCharBtn.TabIndex = 4;
+            loadCharBtn.Text = "Lataa Hahmo";
+            loadCharBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // saveCharBtn
             // 
-            button4.Location = new Point(327, 340);
-            button4.Name = "button4";
-            button4.Size = new Size(102, 23);
-            button4.TabIndex = 5;
-            button4.Text = "Lataa Hahmo";
-            button4.UseVisualStyleBackColor = true;
+            saveCharBtn.BackColor = Color.Transparent;
+            saveCharBtn.FlatStyle = FlatStyle.Popup;
+            saveCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saveCharBtn.Location = new Point(291, 398);
+            saveCharBtn.Name = "saveCharBtn";
+            saveCharBtn.Size = new Size(121, 48);
+            saveCharBtn.TabIndex = 5;
+            saveCharBtn.Text = "Tallenna Hahmo";
+            saveCharBtn.UseVisualStyleBackColor = false;
+            // 
+            // gameMasterBtn
+            // 
+            gameMasterBtn.BackColor = Color.Transparent;
+            gameMasterBtn.FlatStyle = FlatStyle.Popup;
+            gameMasterBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            gameMasterBtn.Location = new Point(1002, 614);
+            gameMasterBtn.Name = "gameMasterBtn";
+            gameMasterBtn.Size = new Size(127, 48);
+            gameMasterBtn.TabIndex = 6;
+            gameMasterBtn.Text = "Pelinjohto";
+            gameMasterBtn.UseVisualStyleBackColor = false;
             // 
             // mainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1162, 727);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(gameMasterBtn);
+            Controls.Add(saveCharBtn);
+            Controls.Add(loadCharBtn);
+            Controls.Add(charInfoBtn);
+            Controls.Add(newCharBtn);
             Controls.Add(titleLbl);
             Controls.Add(copyRightLbl);
             Name = "mainMenu";
@@ -120,9 +148,10 @@
 
         private Label copyRightLbl;
         private Label titleLbl;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button newCharBtn;
+        private Button charInfoBtn;
+        private Button loadCharBtn;
+        private Button saveCharBtn;
+        private Button gameMasterBtn;
     }
 }
