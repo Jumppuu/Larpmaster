@@ -21,5 +21,11 @@ namespace Larpmaster
             // Assuming you have a button named specialButton
             gameMasterBtn.Visible = isgameMaster;
         }
+
+        private void SetBackgroundImage()
+        {
+            this.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            this.BackgroundImageLayout = ImageLayout.Stretch; // Adjust as needed
+        }
     }
 }

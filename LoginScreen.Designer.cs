@@ -34,22 +34,29 @@
             // 
             // playerBtn
             // 
-            playerBtn.Location = new Point(214, 236);
+            playerBtn.BackColor = Color.Transparent;
+            playerBtn.FlatStyle = FlatStyle.Popup;
+            playerBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            playerBtn.Location = new Point(190, 198);
             playerBtn.Name = "playerBtn";
-            playerBtn.Size = new Size(104, 23);
+            playerBtn.Size = new Size(142, 56);
             playerBtn.TabIndex = 0;
             playerBtn.Text = "Player";
-            playerBtn.UseVisualStyleBackColor = true;
+            playerBtn.UseVisualStyleBackColor = false;
             playerBtn.Click += playerBtn_Click;
             // 
             // gameMasterBtn
             // 
-            gameMasterBtn.Location = new Point(399, 236);
+            gameMasterBtn.BackColor = Color.Transparent;
+            gameMasterBtn.FlatStyle = FlatStyle.Popup;
+            gameMasterBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            gameMasterBtn.ForeColor = SystemColors.ControlText;
+            gameMasterBtn.Location = new Point(448, 198);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(111, 23);
+            gameMasterBtn.Size = new Size(142, 56);
             gameMasterBtn.TabIndex = 1;
             gameMasterBtn.Text = "Gamemaster";
-            gameMasterBtn.UseVisualStyleBackColor = true;
+            gameMasterBtn.UseVisualStyleBackColor = false;
             gameMasterBtn.Click += gameMasterBtn_Click;
             // 
             // LoginScreen

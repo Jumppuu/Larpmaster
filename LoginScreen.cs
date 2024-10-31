@@ -32,5 +32,11 @@ namespace Larpmaster
             mainMenu mainMenuForm = new mainMenu(true); // Gamemaster role
             mainMenuForm.Show(); // Show the main menu
         }
+
+        private void SetBackgroundImage()
+        {
+            this.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            this.BackgroundImageLayout = ImageLayout.Stretch; // Adjust as needed
+        }
     }
 }

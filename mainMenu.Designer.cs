@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainMenu));
             copyRightLbl = new Label();
             titleLbl = new Label();
             newCharBtn = new Button();
@@ -127,8 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
+            BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(1162, 727);
             Controls.Add(gameMasterBtn);
             Controls.Add(saveCharBtn);
