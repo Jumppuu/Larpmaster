@@ -17,8 +17,6 @@ namespace Larpmaster
             InitializeComponent();
         }
 
-
-
         private void playerBtn_Click(object sender, EventArgs e)
         {
             this.Hide(); // Hide the login form
@@ -31,12 +29,19 @@ namespace Larpmaster
             this.Hide(); // Hide the login form
             mainMenu mainMenuForm = new mainMenu(true); // Gamemaster role
             mainMenuForm.Show(); // Show the main menu
+
         }
 
-        private void SetBackgroundImage()
+        private void OpenMainMenu(bool isGameMaster)
         {
-            this.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            this.BackgroundImageLayout = ImageLayout.Stretch; // Adjust as needed
+            this.Hide(); // Hide the LoginScreen
+
+            mainMenu mainMenu = new mainMenu(isGameMaster);
+            mainMenu.Show();
+
+            // Close the LoginScreen after the MainMenu is shown
+            mainMenu.FormClosed += (s, args) => this.Close();
         }
+
     }
 }

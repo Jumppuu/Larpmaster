@@ -18,14 +18,8 @@ namespace Larpmaster
 
         private void UpdateUI(bool isgameMaster)
         {
-            // Assuming you have a button named specialButton
+            // Shows the gameMaster button if the user is a gameMaster
             gameMasterBtn.Visible = isgameMaster;
-        }
-
-        private void SetBackgroundImage()
-        {
-            this.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            this.BackgroundImageLayout = ImageLayout.Stretch; // Adjust as needed
         }
     }
 }
