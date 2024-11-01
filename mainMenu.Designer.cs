@@ -35,6 +35,7 @@
             loadCharBtn = new Button();
             saveCharBtn = new Button();
             gameMasterBtn = new Button();
+            LoadCharFileDialog = new OpenFileDialog();
             SuspendLayout();
             // 
             // copyRightLbl
@@ -97,6 +98,7 @@
             loadCharBtn.TabIndex = 4;
             loadCharBtn.Text = "Lataa Hahmo";
             loadCharBtn.UseVisualStyleBackColor = false;
+            loadCharBtn.Click += loadCharBtn_Click;
             // 
             // saveCharBtn
             // 
@@ -121,6 +123,10 @@
             gameMasterBtn.TabIndex = 6;
             gameMasterBtn.Text = "Pelinjohto";
             gameMasterBtn.UseVisualStyleBackColor = false;
+            // 
+            // LoadCharFileDialog
+            // 
+            LoadCharFileDialog.FileName = "openFileDialog1";
             // 
             // mainMenu
             // 
@@ -151,5 +157,6 @@
         private Button loadCharBtn;
         private Button saveCharBtn;
         private Button gameMasterBtn;
+        private OpenFileDialog LoadCharFileDialog;
     }
 }

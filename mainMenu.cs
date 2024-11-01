@@ -21,5 +21,13 @@ namespace Larpmaster
             // Shows the gameMaster button if the user is a gameMaster
             gameMasterBtn.Visible = isgameMaster;
         }
+
+        private void loadCharBtn_Click(object sender, EventArgs e)
+        {
+            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show(LoadCharFileDialog.FileName);
+            }
+        }
     }
 }
