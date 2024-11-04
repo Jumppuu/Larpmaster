@@ -22,10 +22,10 @@ namespace Larpmaster
             gameMasterBtn.Visible = isgameMaster;
         }
 
-        private void loadCharBtn_Click(object sender, EventArgs e)
+        private void loadCharBtn_Click(object sender, EventArgs e) // Event handler method when user clicks "lataa hahmo" -button.
         {
-            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK)
-            {
+            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK) // Opens browse file dialog. If user has chosen a file and clicked "OK" (instead of closing dialog window or clicked cancel)
+            {                                                       // Message box containing the chosen file's filepath is shown.
                 MessageBox.Show(LoadCharFileDialog.FileName);
             }
         }
