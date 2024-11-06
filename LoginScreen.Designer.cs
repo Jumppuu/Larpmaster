@@ -37,9 +37,10 @@
             playerBtn.BackColor = Color.Transparent;
             playerBtn.FlatStyle = FlatStyle.Popup;
             playerBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            playerBtn.Location = new Point(190, 198);
+            playerBtn.Location = new Point(217, 264);
+            playerBtn.Margin = new Padding(3, 4, 3, 4);
             playerBtn.Name = "playerBtn";
-            playerBtn.Size = new Size(142, 56);
+            playerBtn.Size = new Size(162, 75);
             playerBtn.TabIndex = 0;
             playerBtn.Text = "Player";
             playerBtn.UseVisualStyleBackColor = false;
@@ -51,9 +52,10 @@
             gameMasterBtn.FlatStyle = FlatStyle.Popup;
             gameMasterBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             gameMasterBtn.ForeColor = SystemColors.ControlText;
-            gameMasterBtn.Location = new Point(448, 198);
+            gameMasterBtn.Location = new Point(512, 264);
+            gameMasterBtn.Margin = new Padding(3, 4, 3, 4);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(142, 56);
+            gameMasterBtn.Size = new Size(171, 75);
             gameMasterBtn.TabIndex = 1;
             gameMasterBtn.Text = "Gamemaster";
             gameMasterBtn.UseVisualStyleBackColor = false;
@@ -61,12 +63,13 @@
             // 
             // LoginScreen
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(945, 605);
             Controls.Add(gameMasterBtn);
             Controls.Add(playerBtn);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "LoginScreen";
             Text = "LoginScreen";
             ResumeLayout(false);
