@@ -45,6 +45,7 @@
             deleteCharBtn = new Button();
             editSpellListBtn = new Button();
             loadCharBtn = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // editCharBtn
@@ -261,6 +262,18 @@
             loadCharBtn.UseVisualStyleBackColor = false;
             loadCharBtn.Click += loadCharBtn_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(775, 363);
+            button1.Name = "button1";
+            button1.Size = new Size(170, 39);
+            button1.TabIndex = 17;
+            button1.Text = "Tallenna hahmo";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Pelinjohto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -268,6 +281,7 @@
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1205, 702);
+            Controls.Add(button1);
             Controls.Add(loadCharBtn);
             Controls.Add(editSpellListBtn);
             Controls.Add(deleteCharBtn);
@@ -311,5 +325,6 @@
         private Button deleteCharBtn;
         private Button editSpellListBtn;
         private Button loadCharBtn;
+        private Button button1;
     }
 }
