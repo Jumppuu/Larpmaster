@@ -29,5 +29,12 @@ namespace Larpmaster
                 MessageBox.Show(LoadCharFileDialog.FileName);
             }
         }
+
+        private void gameMasterBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Hide the main menu
+            Pelinjohto adminPanelForm = new Pelinjohto(true); // Gamemaster role
+            adminPanelForm.Show(); // Show the admin panel
+        }
     }
 }
