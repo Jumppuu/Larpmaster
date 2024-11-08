@@ -36,6 +36,7 @@
             saveCharBtn = new Button();
             gameMasterBtn = new Button();
             LoadCharFileDialog = new OpenFileDialog();
+            changeUserBtn = new Button();
             SuspendLayout();
             // 
             // copyRightLbl
@@ -70,7 +71,7 @@
             newCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             newCharBtn.Location = new Point(130, 316);
             newCharBtn.Name = "newCharBtn";
-            newCharBtn.Size = new Size(124, 48);
+            newCharBtn.Size = new Size(121, 48);
             newCharBtn.TabIndex = 2;
             newCharBtn.Text = "Uusi Hahmo";
             newCharBtn.UseVisualStyleBackColor = true;
@@ -82,7 +83,7 @@
             charInfoBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             charInfoBtn.Location = new Point(130, 398);
             charInfoBtn.Name = "charInfoBtn";
-            charInfoBtn.Size = new Size(124, 48);
+            charInfoBtn.Size = new Size(121, 48);
             charInfoBtn.TabIndex = 3;
             charInfoBtn.Text = "Hahmon Tiedot";
             charInfoBtn.UseVisualStyleBackColor = false;
@@ -129,12 +130,26 @@
             // 
             LoadCharFileDialog.FileName = "openFileDialog1";
             // 
+            // changeUserBtn
+            // 
+            changeUserBtn.BackColor = Color.Transparent;
+            changeUserBtn.FlatStyle = FlatStyle.Popup;
+            changeUserBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            changeUserBtn.Location = new Point(43, 46);
+            changeUserBtn.Name = "changeUserBtn";
+            changeUserBtn.Size = new Size(121, 48);
+            changeUserBtn.TabIndex = 7;
+            changeUserBtn.Text = "Vaihda käyttäjää";
+            changeUserBtn.UseVisualStyleBackColor = false;
+            changeUserBtn.Click += changeUserBtn_Click;
+            // 
             // mainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(1162, 727);
+            Controls.Add(changeUserBtn);
             Controls.Add(gameMasterBtn);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
@@ -160,5 +175,6 @@
         private Button saveCharBtn;
         private Button gameMasterBtn;
         private OpenFileDialog LoadCharFileDialog;
+        private Button changeUserBtn;
     }
 }
