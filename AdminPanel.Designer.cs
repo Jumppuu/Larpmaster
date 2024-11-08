@@ -40,6 +40,11 @@
             newCharBtn = new Button();
             testLevelBtn = new Button();
             charDetailsBtn = new Button();
+            moveToForgottenBtn = new Button();
+            moveToDeadBtn = new Button();
+            deleteCharBtn = new Button();
+            editSpellListBtn = new Button();
+            loadCharBtn = new Button();
             SuspendLayout();
             // 
             // editCharBtn
@@ -137,7 +142,7 @@
             // 
             deleteCultBtn.BackColor = Color.Transparent;
             deleteCultBtn.FlatStyle = FlatStyle.Popup;
-            deleteCultBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            deleteCultBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold);
             deleteCultBtn.Location = new Point(633, 184);
             deleteCultBtn.Margin = new Padding(3, 2, 3, 2);
             deleteCultBtn.Name = "deleteCultBtn";
@@ -175,7 +180,7 @@
             // 
             testLevelBtn.BackColor = Color.Transparent;
             testLevelBtn.FlatStyle = FlatStyle.Popup;
-            testLevelBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            testLevelBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold);
             testLevelBtn.Location = new Point(633, 248);
             testLevelBtn.Name = "testLevelBtn";
             testLevelBtn.Size = new Size(137, 39);
@@ -190,10 +195,71 @@
             charDetailsBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             charDetailsBtn.Location = new Point(88, 627);
             charDetailsBtn.Name = "charDetailsBtn";
-            charDetailsBtn.Size = new Size(137, 39);
+            charDetailsBtn.Size = new Size(170, 39);
             charDetailsBtn.TabIndex = 11;
             charDetailsBtn.Text = "Hahmon tiedot";
             charDetailsBtn.UseVisualStyleBackColor = false;
+            // 
+            // moveToForgottenBtn
+            // 
+            moveToForgottenBtn.BackColor = Color.Transparent;
+            moveToForgottenBtn.FlatStyle = FlatStyle.Popup;
+            moveToForgottenBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold);
+            moveToForgottenBtn.Location = new Point(962, 363);
+            moveToForgottenBtn.Name = "moveToForgottenBtn";
+            moveToForgottenBtn.Size = new Size(170, 39);
+            moveToForgottenBtn.TabIndex = 12;
+            moveToForgottenBtn.Text = "Siirrä unohdettuihin";
+            moveToForgottenBtn.UseVisualStyleBackColor = false;
+            // 
+            // moveToDeadBtn
+            // 
+            moveToDeadBtn.BackColor = Color.Transparent;
+            moveToDeadBtn.FlatStyle = FlatStyle.Popup;
+            moveToDeadBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            moveToDeadBtn.Location = new Point(962, 307);
+            moveToDeadBtn.Name = "moveToDeadBtn";
+            moveToDeadBtn.Size = new Size(170, 39);
+            moveToDeadBtn.TabIndex = 13;
+            moveToDeadBtn.Text = "Siirrä kuolleisiin";
+            moveToDeadBtn.UseVisualStyleBackColor = false;
+            // 
+            // deleteCharBtn
+            // 
+            deleteCharBtn.BackColor = Color.Transparent;
+            deleteCharBtn.FlatStyle = FlatStyle.Popup;
+            deleteCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            deleteCharBtn.Location = new Point(962, 422);
+            deleteCharBtn.Name = "deleteCharBtn";
+            deleteCharBtn.Size = new Size(170, 39);
+            deleteCharBtn.TabIndex = 14;
+            deleteCharBtn.Text = "Tuhoa Hahmo";
+            deleteCharBtn.UseVisualStyleBackColor = false;
+            // 
+            // editSpellListBtn
+            // 
+            editSpellListBtn.BackColor = Color.Transparent;
+            editSpellListBtn.FlatStyle = FlatStyle.Popup;
+            editSpellListBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            editSpellListBtn.Location = new Point(88, 569);
+            editSpellListBtn.Name = "editSpellListBtn";
+            editSpellListBtn.Size = new Size(170, 39);
+            editSpellListBtn.TabIndex = 15;
+            editSpellListBtn.Text = "Editoi loitsulistaa";
+            editSpellListBtn.UseVisualStyleBackColor = false;
+            // 
+            // loadCharBtn
+            // 
+            loadCharBtn.BackColor = Color.Transparent;
+            loadCharBtn.FlatStyle = FlatStyle.Popup;
+            loadCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loadCharBtn.Location = new Point(775, 307);
+            loadCharBtn.Name = "loadCharBtn";
+            loadCharBtn.Size = new Size(170, 39);
+            loadCharBtn.TabIndex = 16;
+            loadCharBtn.Text = "Lataa hahmo";
+            loadCharBtn.UseVisualStyleBackColor = false;
+            loadCharBtn.Click += loadCharBtn_Click;
             // 
             // Pelinjohto
             // 
@@ -202,6 +268,11 @@
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1205, 702);
+            Controls.Add(loadCharBtn);
+            Controls.Add(editSpellListBtn);
+            Controls.Add(deleteCharBtn);
+            Controls.Add(moveToDeadBtn);
+            Controls.Add(moveToForgottenBtn);
             Controls.Add(charDetailsBtn);
             Controls.Add(testLevelBtn);
             Controls.Add(newCharBtn);
@@ -234,5 +305,10 @@
         private Button newCharBtn;
         private Button testLevelBtn;
         private Button charDetailsBtn;
+        private Button moveToForgottenBtn;
+        private Button moveToDeadBtn;
+        private Button deleteCharBtn;
+        private Button editSpellListBtn;
+        private Button loadCharBtn;
     }
 }

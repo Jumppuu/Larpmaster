@@ -12,9 +12,12 @@ namespace Larpmaster
 {
     public partial class Pelinjohto : Form
     {
+        private OpenFileDialog LoadCharFileDialog; // Needed to make loadcharacter file dialog work
+
         public Pelinjohto(bool isGameMaster)
         {
             InitializeComponent();
+            LoadCharFileDialog = new OpenFileDialog();
             // Additional initialization code here
         }
 
@@ -28,6 +31,16 @@ namespace Larpmaster
             this.Hide(); // Hide admin panel
             mainMenu mainMenuForm = new mainMenu(true); // Back to player mode
             mainMenuForm.Show(); // Show the main menu
+        }
+
+        private void loadCharBtn_Click(object sender, EventArgs e)
+        {
+            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK) // Opens browse file dialog. If user has chosen a file and clicked "OK" (instead of closing dialog window or clicked cancel)
+            {                                                       // Message box containing the chosen file's filepath is shown.
+                {
+                    MessageBox.Show(LoadCharFileDialog.FileName);
+                }
+            }
         }
     }
 }
