@@ -287,7 +287,8 @@
             Controls.Add(editCharBtn);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Pelinjohto";
-            Text = "AdminPanel";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Pelinjohto Paneeli";
             ResumeLayout(false);
         }
 

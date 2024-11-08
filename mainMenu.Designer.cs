@@ -143,6 +143,7 @@
             Controls.Add(titleLbl);
             Controls.Add(copyRightLbl);
             Name = "mainMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Larpmaster v 0.1";
             Load += mainMenu_Load;
             ResumeLayout(false);
