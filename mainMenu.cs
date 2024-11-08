@@ -9,6 +9,8 @@ namespace Larpmaster
             InitializeComponent();
             UpdateUI(isgameMaster);
 
+            // Subscribe to the FormClosed event
+            this.FormClosed += new FormClosedEventHandler(MainMenu_FormClosed);
         }
 
         private void mainMenu_Load(object sender, EventArgs e)
@@ -20,6 +22,12 @@ namespace Larpmaster
         {
             // Shows the gameMaster button if the user is a gameMaster
             gameMasterBtn.Visible = isgameMaster;
+        }
+
+        // Handle the FormClosed event to exit the application
+        private void MainMenu_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void loadCharBtn_Click(object sender, EventArgs e) // Event handler method when user clicks "lataa hahmo" -button.
@@ -36,5 +44,7 @@ namespace Larpmaster
             Pelinjohto adminPanelForm = new Pelinjohto(true); // Gamemaster role
             adminPanelForm.Show(); // Show the admin panel
         }
+
     }
+
 }

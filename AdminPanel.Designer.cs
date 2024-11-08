@@ -45,7 +45,8 @@
             deleteCharBtn = new Button();
             editSpellListBtn = new Button();
             loadCharBtn = new Button();
-            button1 = new Button();
+            saveCharBtn = new Button();
+            characterDetailsBox = new RichTextBox();
             SuspendLayout();
             // 
             // editCharBtn
@@ -194,7 +195,7 @@
             charDetailsBtn.BackColor = Color.Transparent;
             charDetailsBtn.FlatStyle = FlatStyle.Popup;
             charDetailsBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            charDetailsBtn.Location = new Point(88, 627);
+            charDetailsBtn.Location = new Point(624, 630);
             charDetailsBtn.Name = "charDetailsBtn";
             charDetailsBtn.Size = new Size(170, 39);
             charDetailsBtn.TabIndex = 11;
@@ -242,7 +243,7 @@
             editSpellListBtn.BackColor = Color.Transparent;
             editSpellListBtn.FlatStyle = FlatStyle.Popup;
             editSpellListBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            editSpellListBtn.Location = new Point(88, 569);
+            editSpellListBtn.Location = new Point(831, 630);
             editSpellListBtn.Name = "editSpellListBtn";
             editSpellListBtn.Size = new Size(170, 39);
             editSpellListBtn.TabIndex = 15;
@@ -262,17 +263,28 @@
             loadCharBtn.UseVisualStyleBackColor = false;
             loadCharBtn.Click += loadCharBtn_Click;
             // 
-            // button1
+            // saveCharBtn
             // 
-            button1.BackColor = Color.Transparent;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(775, 363);
-            button1.Name = "button1";
-            button1.Size = new Size(170, 39);
-            button1.TabIndex = 17;
-            button1.Text = "Tallenna hahmo";
-            button1.UseVisualStyleBackColor = false;
+            saveCharBtn.BackColor = Color.Transparent;
+            saveCharBtn.FlatStyle = FlatStyle.Popup;
+            saveCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saveCharBtn.Location = new Point(775, 363);
+            saveCharBtn.Name = "saveCharBtn";
+            saveCharBtn.Size = new Size(170, 39);
+            saveCharBtn.TabIndex = 17;
+            saveCharBtn.Text = "Tallenna hahmo";
+            saveCharBtn.UseVisualStyleBackColor = false;
+            // 
+            // characterDetailsBox
+            // 
+            characterDetailsBox.BackColor = SystemColors.Info;
+            characterDetailsBox.BorderStyle = BorderStyle.None;
+            characterDetailsBox.Location = new Point(12, 248);
+            characterDetailsBox.Name = "characterDetailsBox";
+            characterDetailsBox.Size = new Size(577, 421);
+            characterDetailsBox.TabIndex = 18;
+            characterDetailsBox.Text = "";
+            characterDetailsBox.Visible = false;
             // 
             // Pelinjohto
             // 
@@ -281,7 +293,8 @@
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1205, 702);
-            Controls.Add(button1);
+            Controls.Add(characterDetailsBox);
+            Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
             Controls.Add(editSpellListBtn);
             Controls.Add(deleteCharBtn);
@@ -325,6 +338,7 @@
         private Button deleteCharBtn;
         private Button editSpellListBtn;
         private Button loadCharBtn;
-        private Button button1;
+        private Button saveCharBtn;
+        private RichTextBox characterDetailsBox;
     }
 }
