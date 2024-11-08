@@ -19,9 +19,8 @@ namespace Larpmaster
         {
             InitializeComponent();
             LoadCharFileDialog = new OpenFileDialog();
-            LoadCharFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"; // Filter to show only text files
             // Additional initialization code here
-            // Subscribe to the FormClosed event
+            
             this.FormClosed += new FormClosedEventHandler(Pelinjohto_FormClosed);
         }
 
