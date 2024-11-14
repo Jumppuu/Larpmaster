@@ -126,10 +126,11 @@
             gameMasterBtn.Location = new Point(1431, 1023);
             gameMasterBtn.Margin = new Padding(4, 5, 4, 5);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(181, 80);
+
             gameMasterBtn.TabIndex = 6;
             gameMasterBtn.Text = "Pelinjohto";
             gameMasterBtn.UseVisualStyleBackColor = false;
+            gameMasterBtn.Click += gameMasterBtn_Click;
             // 
             // LoadCharFileDialog
             // 
@@ -150,6 +151,7 @@
             Controls.Add(copyRightLbl);
             Margin = new Padding(4, 5, 4, 5);
             Name = "mainMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Larpmaster v 0.1";
             Load += mainMenu_Load;
             ResumeLayout(false);
