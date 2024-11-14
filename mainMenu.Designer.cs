@@ -36,6 +36,7 @@
             saveCharBtn = new Button();
             gameMasterBtn = new Button();
             LoadCharFileDialog = new OpenFileDialog();
+            changeUserBtn = new Button();
             SuspendLayout();
             // 
             // copyRightLbl
@@ -73,7 +74,7 @@
             newCharBtn.Location = new Point(186, 527);
             newCharBtn.Margin = new Padding(4, 5, 4, 5);
             newCharBtn.Name = "newCharBtn";
-            newCharBtn.Size = new Size(177, 80);
+            newCharBtn.Size = new Size(124, 48);
             newCharBtn.TabIndex = 2;
             newCharBtn.Text = "Uusi Hahmo";
             newCharBtn.UseVisualStyleBackColor = true;
@@ -86,7 +87,7 @@
             charInfoBtn.Location = new Point(186, 663);
             charInfoBtn.Margin = new Padding(4, 5, 4, 5);
             charInfoBtn.Name = "charInfoBtn";
-            charInfoBtn.Size = new Size(177, 80);
+            charInfoBtn.Size = new Size(124, 48);
             charInfoBtn.TabIndex = 3;
             charInfoBtn.Text = "Hahmon Tiedot";
             charInfoBtn.UseVisualStyleBackColor = false;
@@ -126,21 +127,35 @@
             gameMasterBtn.Location = new Point(1431, 1023);
             gameMasterBtn.Margin = new Padding(4, 5, 4, 5);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(181, 80);
+            gameMasterBtn.Size = new Size(127, 48);
             gameMasterBtn.TabIndex = 6;
             gameMasterBtn.Text = "Pelinjohto";
             gameMasterBtn.UseVisualStyleBackColor = false;
+            gameMasterBtn.Click += gameMasterBtn_Click;
             // 
             // LoadCharFileDialog
             // 
             LoadCharFileDialog.FileName = "openFileDialog1";
+            // 
+            // changeUserBtn
+            // 
+            changeUserBtn.BackColor = Color.Transparent;
+            changeUserBtn.FlatStyle = FlatStyle.Popup;
+            changeUserBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            changeUserBtn.Location = new Point(43, 46);
+            changeUserBtn.Name = "changeUserBtn";
+            changeUserBtn.Size = new Size(121, 48);
+            changeUserBtn.TabIndex = 7;
+            changeUserBtn.Text = "Vaihda käyttäjää";
+            changeUserBtn.UseVisualStyleBackColor = false;
+            changeUserBtn.Click += changeUserBtn_Click;
             // 
             // mainMenu
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(1660, 1050);
+            ClientSize = new Size(1162, 727);
             Controls.Add(gameMasterBtn);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
@@ -150,6 +165,7 @@
             Controls.Add(copyRightLbl);
             Margin = new Padding(4, 5, 4, 5);
             Name = "mainMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Larpmaster v 0.1";
             Load += mainMenu_Load;
             ResumeLayout(false);
@@ -166,5 +182,6 @@
         private Button saveCharBtn;
         private Button gameMasterBtn;
         private OpenFileDialog LoadCharFileDialog;
+        private Button changeUserBtn;
     }
 }
