@@ -29,5 +29,13 @@ namespace Larpmaster
                 MessageBox.Show(LoadCharFileDialog.FileName);
             }
         }
+
+        private void newCharBtn_Click(object sender, EventArgs e)
+        {
+                NewCharacter newchar = new NewCharacter();
+
+                newchar.ShowDialog();
+        }
+
     }
 }

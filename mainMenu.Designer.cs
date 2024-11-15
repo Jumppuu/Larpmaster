@@ -77,6 +77,7 @@
             newCharBtn.TabIndex = 2;
             newCharBtn.Text = "Uusi Hahmo";
             newCharBtn.UseVisualStyleBackColor = true;
+            newCharBtn.Click += newCharBtn_Click;
             // 
             // charInfoBtn
             // 
