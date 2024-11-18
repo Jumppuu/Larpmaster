@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            ChooseRaceLabel = new Label();
             RaceBtn_Human = new Button();
             RaceBtn_Elf = new Button();
             RaceBtn_HalfElf = new Button();
             SuspendLayout();
             // 
-            // label1
+            // ChooseRaceLabel
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Location = new Point(47, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(104, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Valitse rotu:";
+            ChooseRaceLabel.AutoSize = true;
+            ChooseRaceLabel.BackColor = Color.Transparent;
+            ChooseRaceLabel.Location = new Point(47, 38);
+            ChooseRaceLabel.Name = "ChooseRaceLabel";
+            ChooseRaceLabel.Size = new Size(104, 25);
+            ChooseRaceLabel.TabIndex = 1;
+            ChooseRaceLabel.Text = "Valitse rotu:";
             // 
             // RaceBtn_Human
             // 
@@ -54,7 +54,7 @@
             RaceBtn_Human.TabIndex = 2;
             RaceBtn_Human.Text = "Ihminen";
             RaceBtn_Human.UseVisualStyleBackColor = false;
-            RaceBtn_Human.Click += Button1_Click;
+            RaceBtn_Human.Click += RaceBtn_Human_Click;
             // 
             // RaceBtn_Elf
             // 
@@ -65,6 +65,7 @@
             RaceBtn_Elf.TabIndex = 3;
             RaceBtn_Elf.Text = "Haltija";
             RaceBtn_Elf.UseVisualStyleBackColor = true;
+            RaceBtn_Elf.Click += RaceBtn_Elf_Click;
             // 
             // RaceBtn_HalfElf
             // 
@@ -75,7 +76,7 @@
             RaceBtn_HalfElf.TabIndex = 4;
             RaceBtn_HalfElf.Text = "Puolihaltija";
             RaceBtn_HalfElf.UseVisualStyleBackColor = true;
-            RaceBtn_HalfElf.Click += Button3_Click;
+            RaceBtn_HalfElf.Click += RaceBtn_HalfElf_Click;
             // 
             // NewCharacter
             // 
@@ -86,7 +87,7 @@
             Controls.Add(RaceBtn_HalfElf);
             Controls.Add(RaceBtn_Elf);
             Controls.Add(RaceBtn_Human);
-            Controls.Add(label1);
+            Controls.Add(ChooseRaceLabel);
             Name = "NewCharacter";
             Text = "Uusi hahmo";
             WindowState = FormWindowState.Maximized;
@@ -97,7 +98,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label ChooseRaceLabel;
         private Button RaceBtn_Human;
         private Button RaceBtn_Elf;
         private Button RaceBtn_HalfElf;

@@ -48,11 +48,15 @@ namespace Larpmaster
 
         private void newCharBtn_Click(object sender, EventArgs e)
         {
-                NewCharacter newchar = new NewCharacter();
+            NewCharacter newchar = new NewCharacter();
 
-                newchar.ShowDialog();
+            newchar.ShowDialog();
         }
 
+        private void titleLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

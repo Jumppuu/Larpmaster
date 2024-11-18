@@ -63,6 +63,7 @@
             titleLbl.Size = new Size(1102, 248);
             titleLbl.TabIndex = 1;
             titleLbl.Text = "Larpmaster";
+            titleLbl.Click += titleLbl_Click;
             // 
             // newCharBtn
             // 
@@ -124,10 +125,10 @@
             gameMasterBtn.BackColor = Color.Transparent;
             gameMasterBtn.FlatStyle = FlatStyle.Popup;
             gameMasterBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            gameMasterBtn.Location = new Point(1431, 1023);
+            gameMasterBtn.Location = new Point(1216, 885);
             gameMasterBtn.Margin = new Padding(4, 5, 4, 5);
             gameMasterBtn.Name = "gameMasterBtn";
-
+            gameMasterBtn.Size = new Size(75, 23);
             gameMasterBtn.TabIndex = 6;
             gameMasterBtn.Text = "Pelinjohto";
             gameMasterBtn.UseVisualStyleBackColor = false;
