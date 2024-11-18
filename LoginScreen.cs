@@ -15,6 +15,9 @@ namespace Larpmaster
         public LoginScreen()
         {
             InitializeComponent();
+
+            // Subscribe to the FormClosed event
+            this.FormClosed += new FormClosedEventHandler(LoginScreen_FormClosed);
         }
 
         private void playerBtn_Click(object sender, EventArgs e)
@@ -29,7 +32,6 @@ namespace Larpmaster
             this.Hide(); // Hide the login form
             mainMenu mainMenuForm = new mainMenu(true); // Gamemaster role
             mainMenuForm.Show(); // Show the main menu
-
         }
 
         private void OpenMainMenu(bool isGameMaster)
@@ -43,5 +45,10 @@ namespace Larpmaster
             mainMenu.FormClosed += (s, args) => this.Close();
         }
 
+        // Handle the FormClosed event to exit the application
+        private void LoginScreen_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

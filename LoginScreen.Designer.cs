@@ -53,7 +53,7 @@
             gameMasterBtn.ForeColor = SystemColors.ControlText;
             gameMasterBtn.Location = new Point(448, 198);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(142, 56);
+            gameMasterBtn.Size = new Size(150, 56);
             gameMasterBtn.TabIndex = 1;
             gameMasterBtn.Text = "Gamemaster";
             gameMasterBtn.UseVisualStyleBackColor = false;
@@ -64,11 +64,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(827, 454);
             Controls.Add(gameMasterBtn);
             Controls.Add(playerBtn);
             Name = "LoginScreen";
-            Text = "LoginScreen";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Login Screen";
             ResumeLayout(false);
         }
 
