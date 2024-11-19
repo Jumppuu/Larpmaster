@@ -127,7 +127,7 @@
             gameMasterBtn.Location = new Point(1431, 1023);
             gameMasterBtn.Margin = new Padding(4, 5, 4, 5);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(127, 48);
+
             gameMasterBtn.TabIndex = 6;
             gameMasterBtn.Text = "Pelinjohto";
             gameMasterBtn.UseVisualStyleBackColor = false;
