@@ -21,5 +21,10 @@ namespace Larpmaster
         {
 
         }
+
+        private void MaleButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

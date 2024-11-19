@@ -38,9 +38,10 @@
             // 
             ChooseRaceLabel.AutoSize = true;
             ChooseRaceLabel.BackColor = Color.Transparent;
-            ChooseRaceLabel.Location = new Point(47, 38);
+            ChooseRaceLabel.Location = new Point(33, 23);
+            ChooseRaceLabel.Margin = new Padding(2, 0, 2, 0);
             ChooseRaceLabel.Name = "ChooseRaceLabel";
-            ChooseRaceLabel.Size = new Size(104, 25);
+            ChooseRaceLabel.Size = new Size(68, 15);
             ChooseRaceLabel.TabIndex = 1;
             ChooseRaceLabel.Text = "Valitse rotu:";
             // 
@@ -48,9 +49,10 @@
             // 
             RaceBtn_Human.BackColor = Color.Transparent;
             RaceBtn_Human.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            RaceBtn_Human.Location = new Point(54, 96);
+            RaceBtn_Human.Location = new Point(38, 58);
+            RaceBtn_Human.Margin = new Padding(2);
             RaceBtn_Human.Name = "RaceBtn_Human";
-            RaceBtn_Human.Size = new Size(112, 34);
+            RaceBtn_Human.Size = new Size(78, 20);
             RaceBtn_Human.TabIndex = 2;
             RaceBtn_Human.Text = "Ihminen";
             RaceBtn_Human.UseVisualStyleBackColor = false;
@@ -59,9 +61,10 @@
             // RaceBtn_Elf
             // 
             RaceBtn_Elf.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            RaceBtn_Elf.Location = new Point(156, 96);
+            RaceBtn_Elf.Location = new Point(109, 58);
+            RaceBtn_Elf.Margin = new Padding(2);
             RaceBtn_Elf.Name = "RaceBtn_Elf";
-            RaceBtn_Elf.Size = new Size(112, 34);
+            RaceBtn_Elf.Size = new Size(78, 20);
             RaceBtn_Elf.TabIndex = 3;
             RaceBtn_Elf.Text = "Haltija";
             RaceBtn_Elf.UseVisualStyleBackColor = true;
@@ -70,9 +73,10 @@
             // RaceBtn_HalfElf
             // 
             RaceBtn_HalfElf.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            RaceBtn_HalfElf.Location = new Point(257, 96);
+            RaceBtn_HalfElf.Location = new Point(180, 58);
+            RaceBtn_HalfElf.Margin = new Padding(2);
             RaceBtn_HalfElf.Name = "RaceBtn_HalfElf";
-            RaceBtn_HalfElf.Size = new Size(112, 34);
+            RaceBtn_HalfElf.Size = new Size(78, 20);
             RaceBtn_HalfElf.TabIndex = 4;
             RaceBtn_HalfElf.Text = "Puolihaltija";
             RaceBtn_HalfElf.UseVisualStyleBackColor = true;
@@ -80,17 +84,18 @@
             // 
             // NewCharacter
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
             Controls.Add(RaceBtn_HalfElf);
             Controls.Add(RaceBtn_Elf);
             Controls.Add(RaceBtn_Human);
             Controls.Add(ChooseRaceLabel);
+            Margin = new Padding(2);
             Name = "NewCharacter";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Uusi hahmo";
-            WindowState = FormWindowState.Maximized;
             Load += NewCharacter_Load;
             ResumeLayout(false);
             PerformLayout();

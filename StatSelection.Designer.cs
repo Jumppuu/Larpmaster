@@ -32,11 +32,13 @@
             // 
             // StatSelection
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
+            Margin = new Padding(2);
             Name = "StatSelection";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "StatSelection";
             ResumeLayout(false);
         }
