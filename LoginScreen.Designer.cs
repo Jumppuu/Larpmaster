@@ -61,8 +61,8 @@
             // 
             // LoginScreen
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(827, 454);
             Controls.Add(gameMasterBtn);
