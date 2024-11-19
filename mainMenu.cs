@@ -45,11 +45,17 @@ namespace Larpmaster
             adminPanelForm.Show(); // Show the admin panel
         }
 
-        private void changeUserBtn_Click(object sender, EventArgs e)
+
+        private void newCharBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginScreen loginScreen = new LoginScreen();
-            loginScreen.Show();
+            NewCharacter newchar = new NewCharacter();
+
+            newchar.ShowDialog();
+        }
+
+        private void titleLbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
