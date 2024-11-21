@@ -19,7 +19,8 @@ namespace Larpmaster
         private void InitializeDragAndDrop()
         {
             // List of controls to enable drag-and-drop
-            var dragDropControls = new List<Control> { StatValue1, StatValue2, StatValue3, StatValue4, StatValue5, StatValue6, StatValue7, StatValue8, StatValue_Int };
+            var dragDropControls = new List<Control> { StatValue1, StatValue2, StatValue3, StatValue4, StatValue5, StatValue6, StatValue7, StatValue8, StatValue_Int, StatValue_Wis, 
+                                                      StatValue_Str, StatValue_Dex, StatValue_Con, StatValue_Agi, StatValue_Cha };
 
             foreach (var control in dragDropControls)
             {
@@ -33,9 +34,13 @@ namespace Larpmaster
         private void Control_MouseDown(object sender, MouseEventArgs e)
         {
             var control = sender as Control;
-            if (control != null)
+            if (control != null && !string.IsNullOrWhiteSpace(control.Text))
             {
-                DoDragDrop(control.Text, DragDropEffects.Copy);
+                var data = new DataObject();
+                data.SetData(DataFormats.Text, control.Text);
+                data.SetData("sourceControl", control);
+
+                DoDragDrop(data, DragDropEffects.Move);
             }
         }
 
@@ -43,7 +48,7 @@ namespace Larpmaster
         {
             if (e.Data.GetDataPresent(DataFormats.Text))
             {
-                e.Effect = DragDropEffects.Copy;
+                e.Effect = DragDropEffects.Move;
             }
             else
             {
@@ -53,10 +58,32 @@ namespace Larpmaster
 
         private void Control_DragDrop(object sender, DragEventArgs e)
         {
-            var control = sender as Control;
-            if (control != null)
+            var targetControl = sender as Control;
+            if (targetControl != null)
             {
-                control.Text = (string)e.Data.GetData(DataFormats.Text);
+                string draggedText = (string)e.Data.GetData(DataFormats.Text);
+
+                if (e.Data.GetDataPresent("sourceControl"))
+                {
+                    var sourceControl = e.Data.GetData("sourceControl") as Control;
+                    if (sourceControl != null)
+                    {
+
+                        // Empty target control
+                        if (string.IsNullOrWhiteSpace(targetControl.Text))
+                        {
+                            targetControl.Text = draggedText;
+                            sourceControl.Text = string.Empty;
+                        }
+                        else
+                        {
+                            string targetText = targetControl.Text;
+                            targetControl.Text = draggedText;
+                            sourceControl.Text = targetText;
+                        }
+                    }
+
+                }
             }
         }
 
@@ -74,7 +101,7 @@ namespace Larpmaster
         {
             var stats = new List<int>();
 
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 8; i++)
             {
                 int stat = RollStat();
                 stats.Add(stat);
@@ -85,7 +112,7 @@ namespace Larpmaster
             {
                 // Optionally re-roll all stats
                 stats.Clear();
-                for (int i = 0; i < 9; i++)
+                for (int i = 0; i < 8; i++)
                 {
                     int stat = RollStat();
                     stats.Add(stat);
@@ -95,13 +122,7 @@ namespace Larpmaster
             // Check if any value is over 150
             if (stats.Any(s => s > 150))
             {
-                // Do not discard the lowest value
                 // Optionally re-roll all stats
-            }
-            else
-            {
-                // Discard the lowest value
-                stats.Remove(stats.Min());
             }
 
             // Display the stats
@@ -159,6 +180,12 @@ namespace Larpmaster
             StatValue6.Text = stats[5].ToString();
             StatValue7.Text = stats[6].ToString();
             StatValue8.Text = stats[7].ToString();
+        }
+
+
+        private void StatValue_Str_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

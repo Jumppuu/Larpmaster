@@ -55,13 +55,14 @@
             FemaleButton.TabIndex = 1;
             FemaleButton.Text = "Nainen";
             FemaleButton.UseVisualStyleBackColor = true;
+            FemaleButton.Click += FemaleButton_Click;
             // 
             // SexSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(560, 270);
+            ClientSize = new Size(562, 278);
             Controls.Add(FemaleButton);
             Controls.Add(MaleButton);
             Margin = new Padding(2);
