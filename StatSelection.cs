@@ -16,5 +16,33 @@ namespace Larpmaster
         {
             InitializeComponent();
         }
+
+        
+        
+
+        private void StatValue1_MouseDown(object sender, MouseEventArgs e)
+        {
+            DoDragDrop(StatValue1.Text, DragDropEffects.Copy);
+        }
+
+        private void StatValue1_DragDrop(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void StatValue1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StatValue_Int_DragDrop(object sender, DragEventArgs e)
+        {
+            StatValue_Int.Text = (string)e.Data.GetData(DataFormats.Text);
+        }
     }
 }

@@ -24,7 +24,9 @@ namespace Larpmaster
 
         private void MaleButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            StatSelection CharStats = new StatSelection();
+            CharStats.Show();
         }
     }
 }
