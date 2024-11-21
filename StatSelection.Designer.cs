@@ -50,8 +50,6 @@
             StatValue1.TabIndex = 1;
             StatValue1.Text = "100";
             StatValue1.TextChanged += StatValue1_TextChanged;
-            StatValue1.DragDrop += StatValue1_DragDrop;
-            StatValue1.MouseDown += StatValue1_MouseDown;
             // 
             // StatValue2
             // 
@@ -120,7 +118,6 @@
             StatValue_Int.Size = new Size(150, 31);
             StatValue_Int.TabIndex = 10;
             StatValue_Int.TextChanged += textBox1_TextChanged;
-            StatValue_Int.DragDrop += StatValue_Int_DragDrop;
             // 
             // StatLabel_Int
             // 
