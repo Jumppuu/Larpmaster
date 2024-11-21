@@ -28,5 +28,12 @@ namespace Larpmaster
             StatSelection CharStats = new StatSelection();
             CharStats.Show();
         }
+
+        private void FemaleButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StatSelection CharStats = new StatSelection();
+            CharStats.Show();
+        }
     }
 }
