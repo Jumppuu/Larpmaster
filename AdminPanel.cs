@@ -20,7 +20,7 @@ namespace Larpmaster
             InitializeComponent();
             LoadCharFileDialog = new OpenFileDialog();
             // Additional initialization code here
-            
+
             this.FormClosed += new FormClosedEventHandler(Pelinjohto_FormClosed);
         }
 
@@ -38,7 +38,7 @@ namespace Larpmaster
 
         private void loadCharBtn_Click(object sender, EventArgs e)
         {
-            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK) 
+            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
@@ -56,6 +56,13 @@ namespace Larpmaster
         private void Pelinjohto_FormClosed(object? sender, FormClosedEventArgs e)
         {
             Application.Exit(); // Closes the application when the form is closed
+        }
+
+        private void newCharBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewCharacter newchar = new NewCharacter();
+            newchar.Show();
         }
     }
 }

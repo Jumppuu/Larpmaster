@@ -44,10 +44,9 @@
             copyRightLbl.BackColor = Color.Transparent;
             copyRightLbl.Font = new Font("Old English Text MT", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             copyRightLbl.ForeColor = Color.Sienna;
-            copyRightLbl.Location = new Point(1263, 1150);
-            copyRightLbl.Margin = new Padding(4, 0, 4, 0);
+            copyRightLbl.Location = new Point(692, 544);
             copyRightLbl.Name = "copyRightLbl";
-            copyRightLbl.Size = new Size(408, 44);
+            copyRightLbl.Size = new Size(266, 28);
             copyRightLbl.TabIndex = 0;
             copyRightLbl.Text = "© Rajakatse Fantasia ry";
             // 
@@ -57,24 +56,23 @@
             titleLbl.BackColor = Color.Transparent;
             titleLbl.Font = new Font("Old English Text MT", 104.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titleLbl.ForeColor = Color.Sienna;
-            titleLbl.Location = new Point(323, 77);
-            titleLbl.Margin = new Padding(4, 0, 4, 0);
+            titleLbl.Location = new Point(130, 47);
             titleLbl.Name = "titleLbl";
-            titleLbl.Size = new Size(1102, 248);
+            titleLbl.Size = new Size(735, 165);
             titleLbl.TabIndex = 1;
             titleLbl.Text = "Larpmaster";
             titleLbl.Click += titleLbl_Click;
             // 
             // newCharBtn
             // 
+            newCharBtn.AutoSize = true;
             newCharBtn.BackColor = Color.Transparent;
             newCharBtn.FlatAppearance.BorderColor = Color.SaddleBrown;
             newCharBtn.FlatStyle = FlatStyle.Popup;
             newCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            newCharBtn.Location = new Point(186, 527);
-            newCharBtn.Margin = new Padding(4, 5, 4, 5);
+            newCharBtn.Location = new Point(130, 316);
             newCharBtn.Name = "newCharBtn";
-            newCharBtn.Size = new Size(177, 80);
+            newCharBtn.Size = new Size(129, 48);
             newCharBtn.TabIndex = 2;
             newCharBtn.Text = "Uusi Hahmo";
             newCharBtn.UseVisualStyleBackColor = true;
@@ -82,13 +80,13 @@
             // 
             // charInfoBtn
             // 
+            charInfoBtn.AutoSize = true;
             charInfoBtn.BackColor = Color.Transparent;
             charInfoBtn.FlatStyle = FlatStyle.Popup;
             charInfoBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            charInfoBtn.Location = new Point(186, 663);
-            charInfoBtn.Margin = new Padding(4, 5, 4, 5);
+            charInfoBtn.Location = new Point(130, 398);
             charInfoBtn.Name = "charInfoBtn";
-            charInfoBtn.Size = new Size(177, 80);
+            charInfoBtn.Size = new Size(166, 48);
             charInfoBtn.TabIndex = 3;
             charInfoBtn.Text = "Hahmon Tiedot";
             charInfoBtn.UseVisualStyleBackColor = false;
@@ -98,10 +96,9 @@
             loadCharBtn.BackColor = Color.Transparent;
             loadCharBtn.FlatStyle = FlatStyle.Popup;
             loadCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            loadCharBtn.Location = new Point(416, 527);
-            loadCharBtn.Margin = new Padding(4, 5, 4, 5);
+            loadCharBtn.Location = new Point(291, 316);
             loadCharBtn.Name = "loadCharBtn";
-            loadCharBtn.Size = new Size(173, 80);
+            loadCharBtn.Size = new Size(121, 48);
             loadCharBtn.TabIndex = 4;
             loadCharBtn.Text = "Lataa Hahmo";
             loadCharBtn.UseVisualStyleBackColor = false;
@@ -109,26 +106,26 @@
             // 
             // saveCharBtn
             // 
+            saveCharBtn.AutoSize = true;
             saveCharBtn.BackColor = Color.Transparent;
             saveCharBtn.FlatStyle = FlatStyle.Popup;
             saveCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            saveCharBtn.Location = new Point(416, 663);
-            saveCharBtn.Margin = new Padding(4, 5, 4, 5);
+            saveCharBtn.Location = new Point(318, 398);
             saveCharBtn.Name = "saveCharBtn";
-            saveCharBtn.Size = new Size(173, 80);
+            saveCharBtn.Size = new Size(181, 48);
             saveCharBtn.TabIndex = 5;
             saveCharBtn.Text = "Tallenna Hahmo";
             saveCharBtn.UseVisualStyleBackColor = false;
             // 
             // gameMasterBtn
             // 
+            gameMasterBtn.AutoSize = true;
             gameMasterBtn.BackColor = Color.Transparent;
             gameMasterBtn.FlatStyle = FlatStyle.Popup;
             gameMasterBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            gameMasterBtn.Location = new Point(1216, 885);
-            gameMasterBtn.Margin = new Padding(4, 5, 4, 5);
+            gameMasterBtn.Location = new Point(825, 486);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(75, 23);
+            gameMasterBtn.Size = new Size(133, 46);
             gameMasterBtn.TabIndex = 6;
             gameMasterBtn.Text = "Pelinjohto";
             gameMasterBtn.UseVisualStyleBackColor = false;
@@ -140,10 +137,12 @@
             // 
             // mainMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(1660, 1050);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(970, 590);
             Controls.Add(gameMasterBtn);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
@@ -151,7 +150,7 @@
             Controls.Add(newCharBtn);
             Controls.Add(titleLbl);
             Controls.Add(copyRightLbl);
-            Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
             Name = "mainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Larpmaster v 0.1";

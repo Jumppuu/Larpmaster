@@ -74,7 +74,7 @@ namespace Larpmaster
         {
             var stats = new List<int>();
 
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 8; i++)
             {
                 int stat = RollStat();
                 stats.Add(stat);
@@ -85,7 +85,7 @@ namespace Larpmaster
             {
                 // Optionally re-roll all stats
                 stats.Clear();
-                for (int i = 0; i < 9; i++)
+                for (int i = 0; i < 8; i++)
                 {
                     int stat = RollStat();
                     stats.Add(stat);
@@ -95,13 +95,7 @@ namespace Larpmaster
             // Check if any value is over 150
             if (stats.Any(s => s > 150))
             {
-                // Do not discard the lowest value
                 // Optionally re-roll all stats
-            }
-            else
-            {
-                // Discard the lowest value
-                stats.Remove(stats.Min());
             }
 
             // Display the stats
@@ -150,7 +144,7 @@ namespace Larpmaster
 
         private void DisplayStats(List<int> stats)
         {
-            // Assuming you have TextBox controls named StatValue1, StatValue2, etc.
+
             StatValue1.Text = stats[0].ToString();
             StatValue2.Text = stats[1].ToString();
             StatValue3.Text = stats[2].ToString();
@@ -159,6 +153,11 @@ namespace Larpmaster
             StatValue6.Text = stats[5].ToString();
             StatValue7.Text = stats[6].ToString();
             StatValue8.Text = stats[7].ToString();
+        }
+
+        private void StatSelection_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

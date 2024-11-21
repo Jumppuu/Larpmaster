@@ -177,6 +177,7 @@
             newCharBtn.TabIndex = 9;
             newCharBtn.Text = "Uusi hahmo";
             newCharBtn.UseVisualStyleBackColor = false;
+            newCharBtn.Click += newCharBtn_Click;
             // 
             // testLevelBtn
             // 
