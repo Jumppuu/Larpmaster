@@ -64,7 +64,6 @@
             StatValue1.ReadOnly = true;
             StatValue1.Size = new Size(35, 23);
             StatValue1.TabIndex = 1;
-            
             // 
             // StatValue2
             // 
@@ -150,7 +149,6 @@
             StatValue_Int.ReadOnly = true;
             StatValue_Int.Size = new Size(100, 23);
             StatValue_Int.TabIndex = 10;
-            
             // 
             // StatLabel_Int
             // 
@@ -298,7 +296,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(255, 224, 192);
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(1043, 475);
+            ClientSize = new Size(642, 475);
             Controls.Add(autoDistributeBtn);
             Controls.Add(reRollStatsBtn);
             Controls.Add(StatLabel_Cha);
