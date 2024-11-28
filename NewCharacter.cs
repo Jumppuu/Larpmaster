@@ -24,22 +24,23 @@ namespace Larpmaster
 
         private void RaceBtn_Human_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
-            SexSelection CharSex = new SexSelection();
-            CharSex.Show();
-            }
+            OpenStatSelection("Human");
+        }
 
         private void RaceBtn_Elf_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
-            SexSelection CharSex = new SexSelection();
-            CharSex.Show();
+            OpenStatSelection("Elf");
         }
 
         private void RaceBtn_HalfElf_Click(object sender, EventArgs e)
         {
+            OpenStatSelection("HalfElf");
+        }
+
+        private void OpenStatSelection(string race)
+        {
             this.Hide();
-            SexSelection CharSex = new SexSelection();
+            GenderSelection CharSex = new GenderSelection(race);
             CharSex.Show();
         }
 

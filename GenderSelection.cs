@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace Larpmaster
 {
-    public partial class SexSelection : Form
+    public partial class GenderSelection : Form
     {
-        public SexSelection()
+        private string selectedRace;
+
+        public GenderSelection(string race)
         {
             InitializeComponent();
+            selectedRace = race;
         }
 
         private void SexSelection_Load(object sender, EventArgs e)
@@ -25,15 +28,15 @@ namespace Larpmaster
         private void MaleButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            StatSelection CharStats = new StatSelection();
-            CharStats.Show();
+            var charStats = new StatSelection(selectedRace, "Male");
+            charStats.Show();
         }
 
         private void FemaleButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            StatSelection CharStats = new StatSelection();
-            CharStats.Show();
+            var charStats = new StatSelection(selectedRace, "Female");
+            charStats.Show();
         }
     }
 }

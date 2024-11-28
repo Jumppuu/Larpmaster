@@ -1,6 +1,6 @@
 ﻿namespace Larpmaster
 {
-    partial class SexSelection
+    partial class GenderSelection
     {
         /// <summary>
         /// Required designer variable.

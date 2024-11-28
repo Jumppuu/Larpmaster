@@ -53,6 +53,9 @@
             StatLabel_Cha = new Label();
             reRollStatsBtn = new Button();
             autoDistributeBtn = new Button();
+            raceLabel = new Label();
+            averageLifespanLabel = new Label();
+            minimumAgeLabel = new Label();
             SuspendLayout();
             // 
             // StatValue1
@@ -272,7 +275,7 @@
             // reRollStatsBtn
             // 
             reRollStatsBtn.BackColor = Color.Transparent;
-            reRollStatsBtn.Location = new Point(77, 287);
+            reRollStatsBtn.Location = new Point(555, 416);
             reRollStatsBtn.Name = "reRollStatsBtn";
             reRollStatsBtn.Size = new Size(75, 23);
             reRollStatsBtn.TabIndex = 26;
@@ -282,13 +285,40 @@
             // 
             // autoDistributeBtn
             // 
-            autoDistributeBtn.Location = new Point(77, 325);
+            autoDistributeBtn.Location = new Point(77, 279);
             autoDistributeBtn.Name = "autoDistributeBtn";
             autoDistributeBtn.Size = new Size(75, 23);
             autoDistributeBtn.TabIndex = 27;
             autoDistributeBtn.Text = "Auto";
             autoDistributeBtn.UseVisualStyleBackColor = true;
             autoDistributeBtn.Click += autoDistributeBtn_Click;
+            // 
+            // raceLabel
+            // 
+            raceLabel.AutoSize = true;
+            raceLabel.Location = new Point(84, 326);
+            raceLabel.Name = "raceLabel";
+            raceLabel.Size = new Size(32, 15);
+            raceLabel.TabIndex = 28;
+            raceLabel.Text = "Race";
+            // 
+            // averageLifespanLabel
+            // 
+            averageLifespanLabel.AutoSize = true;
+            averageLifespanLabel.Location = new Point(84, 341);
+            averageLifespanLabel.Name = "averageLifespanLabel";
+            averageLifespanLabel.Size = new Size(52, 15);
+            averageLifespanLabel.TabIndex = 29;
+            averageLifespanLabel.Text = "LifeSpan";
+            // 
+            // minimumAgeLabel
+            // 
+            minimumAgeLabel.AutoSize = true;
+            minimumAgeLabel.Location = new Point(84, 356);
+            minimumAgeLabel.Name = "minimumAgeLabel";
+            minimumAgeLabel.Size = new Size(84, 15);
+            minimumAgeLabel.TabIndex = 30;
+            minimumAgeLabel.Text = "Minimum Age";
             // 
             // StatSelection
             // 
@@ -297,6 +327,9 @@
             BackColor = Color.FromArgb(255, 224, 192);
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(642, 475);
+            Controls.Add(minimumAgeLabel);
+            Controls.Add(averageLifespanLabel);
+            Controls.Add(raceLabel);
             Controls.Add(autoDistributeBtn);
             Controls.Add(reRollStatsBtn);
             Controls.Add(StatLabel_Cha);
@@ -356,5 +389,8 @@
         private Label StatLabel_Cha;
         private Button reRollStatsBtn;
         private Button autoDistributeBtn;
+        private Label raceLabel;
+        private Label averageLifespanLabel;
+        private Label minimumAgeLabel;
     }
 }

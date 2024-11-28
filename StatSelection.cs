@@ -8,14 +8,38 @@ namespace Larpmaster
     public partial class StatSelection : Form
     {
         private Random random = new Random();
+        private Dictionary<string, (int averageLifespan, int minimumAge)> raceAgeData = new Dictionary<string, (int, int)>
+        {
+            { "Human", (50, 14) },
+            { "Elf", (430, 60) },
+            { "HalfElf", (90, 21) }
+        };
 
-        public StatSelection()
+        public StatSelection(string race, string gender)
         {
             InitializeComponent();
             InitializeDragAndDrop();
+            UpdateRaceAndAgeLabels(race);
             this.Load += (sender, e) => GenerateStats();
         }
 
+        private void UpdateRaceAndAgeLabels(string race)
+        {
+            // Update the race label
+            raceLabel.Text = $"Rodun {race}";
+
+            // Update the average lifespan and minimum age labels
+            if (raceAgeData.TryGetValue(race, out var ageData))
+            {
+                averageLifespanLabel.Text = $"Keskimääräinen elinikä: {ageData.averageLifespan} vuotta";
+                minimumAgeLabel.Text = $"Minimi ikä: {ageData.minimumAge} vuotta";
+            }
+            else
+            {
+                averageLifespanLabel.Text = "Keskimääräinen elinikä: Tuntematon";
+                minimumAgeLabel.Text = "Minimi ikä: Tuntematon";
+            }
+        }
 
         private void InitializeDragAndDrop()
         {
