@@ -32,6 +32,7 @@
             RaceBtn_Human = new Button();
             RaceBtn_Elf = new Button();
             RaceBtn_HalfElf = new Button();
+            RaceBtn_Peikko = new Button();
             SuspendLayout();
             // 
             // ChooseRaceLabel
@@ -82,12 +83,24 @@
             RaceBtn_HalfElf.UseVisualStyleBackColor = true;
             RaceBtn_HalfElf.Click += RaceBtn_HalfElf_Click;
             // 
+            // RaceBtn_Peikko
+            // 
+            RaceBtn_Peikko.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            RaceBtn_Peikko.Location = new Point(253, 58);
+            RaceBtn_Peikko.Name = "RaceBtn_Peikko";
+            RaceBtn_Peikko.Size = new Size(68, 20);
+            RaceBtn_Peikko.TabIndex = 5;
+            RaceBtn_Peikko.Text = "Peikko";
+            RaceBtn_Peikko.UseVisualStyleBackColor = true;
+            RaceBtn_Peikko.Click += RaceBtn_Peikko_Click;
+            // 
             // NewCharacter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(560, 270);
+            Controls.Add(RaceBtn_Peikko);
             Controls.Add(RaceBtn_HalfElf);
             Controls.Add(RaceBtn_Elf);
             Controls.Add(RaceBtn_Human);
@@ -107,5 +120,6 @@
         private Button RaceBtn_Human;
         private Button RaceBtn_Elf;
         private Button RaceBtn_HalfElf;
+        private Button RaceBtn_Peikko;
     }
 }

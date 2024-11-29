@@ -36,6 +36,10 @@ namespace Larpmaster
         {
             OpenStatSelection("HalfElf");
         }
+        private void RaceBtn_Peikko_Click(object sender, EventArgs e)
+        {
+            OpenStatSelection("Peikko");
+        }
 
         private void OpenStatSelection(string race)
         {
@@ -48,5 +52,7 @@ namespace Larpmaster
         {
 
         }
+
+        
     }
 }

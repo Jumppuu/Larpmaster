@@ -36,10 +36,10 @@
             // 
             MaleButton.BackColor = Color.PeachPuff;
             MaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            MaleButton.Location = new Point(45, 34);
+            MaleButton.Location = new Point(137, 95);
             MaleButton.Margin = new Padding(2);
             MaleButton.Name = "MaleButton";
-            MaleButton.Size = new Size(78, 20);
+            MaleButton.Size = new Size(111, 65);
             MaleButton.TabIndex = 0;
             MaleButton.Text = "Mies";
             MaleButton.UseVisualStyleBackColor = false;
@@ -48,16 +48,17 @@
             // FemaleButton
             // 
             FemaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            FemaleButton.Location = new Point(121, 34);
+            FemaleButton.Font = new Font("Engravers MT", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            FemaleButton.Location = new Point(332, 95);
             FemaleButton.Margin = new Padding(2);
             FemaleButton.Name = "FemaleButton";
-            FemaleButton.Size = new Size(78, 20);
+            FemaleButton.Size = new Size(111, 65);
             FemaleButton.TabIndex = 1;
             FemaleButton.Text = "Nainen";
             FemaleButton.UseVisualStyleBackColor = true;
             FemaleButton.Click += FemaleButton_Click;
             // 
-            // SexSelection
+            // GenderSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -66,7 +67,7 @@
             Controls.Add(FemaleButton);
             Controls.Add(MaleButton);
             Margin = new Padding(2);
-            Name = "SexSelection";
+            Name = "GenderSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Valitse sukupuoli:";
             Load += SexSelection_Load;
