@@ -546,6 +546,7 @@
             Name = "StatSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "StatSelection";
+            Load += StatSelection_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -53,6 +53,13 @@ namespace Larpmaster
 
         }
 
+<<<<<<< Updated upstream
         
+=======
+        private void BackButton_NewChar_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> Stashed changes
     }
 }

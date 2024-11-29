@@ -255,5 +255,7 @@ namespace Larpmaster
             StatValue_Cha.Text = stats[5].ToString();
             StatValue_Agi.Text = stats[6].ToString();
         }
+
+        
     }
 }

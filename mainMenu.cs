@@ -7,7 +7,7 @@ namespace Larpmaster
         public mainMenu(bool isgameMaster)
         {
             InitializeComponent();
-            UpdateUI(isgameMaster);
+            UpdateUI(isgameMaster); 
 
             // Subscribe to the FormClosed event
             this.FormClosed += new FormClosedEventHandler(MainMenu_FormClosed);

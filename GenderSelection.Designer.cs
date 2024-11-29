@@ -34,8 +34,9 @@
             // 
             // MaleButton
             // 
-            MaleButton.BackColor = Color.PeachPuff;
-            MaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            MaleButton.BackColor = Color.Transparent;
+            MaleButton.FlatStyle = FlatStyle.Popup;
+            MaleButton.Font = new Font("Engravers MT", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             MaleButton.Location = new Point(45, 34);
             MaleButton.Margin = new Padding(2);
             MaleButton.Name = "MaleButton";
@@ -47,14 +48,16 @@
             // 
             // FemaleButton
             // 
-            FemaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            FemaleButton.Location = new Point(121, 34);
+            FemaleButton.BackColor = Color.Transparent;
+            FemaleButton.FlatStyle = FlatStyle.Popup;
+            FemaleButton.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            FemaleButton.Location = new Point(141, 34);
             FemaleButton.Margin = new Padding(2);
             FemaleButton.Name = "FemaleButton";
-            FemaleButton.Size = new Size(78, 20);
+            FemaleButton.Size = new Size(87, 20);
             FemaleButton.TabIndex = 1;
             FemaleButton.Text = "Nainen";
-            FemaleButton.UseVisualStyleBackColor = true;
+            FemaleButton.UseVisualStyleBackColor = false;
             FemaleButton.Click += FemaleButton_Click;
             // 
             // GenderSelection
