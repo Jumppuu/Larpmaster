@@ -2,15 +2,14 @@
 {
     partial class NewCharacter
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private Label ChooseRaceLabel;
+        private Button RaceBtn_Human;
+        private Button RaceBtn_Elf;
+        private Button RaceBtn_HalfElf;
+        private Button RaceBtn_Peikko;
+        private Button BackButton_NewChar;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,23 +19,14 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             ChooseRaceLabel = new Label();
             RaceBtn_Human = new Button();
             RaceBtn_Elf = new Button();
             RaceBtn_HalfElf = new Button();
-<<<<<<< Updated upstream
             RaceBtn_Peikko = new Button();
-=======
             BackButton_NewChar = new Button();
->>>>>>> Stashed changes
             SuspendLayout();
             // 
             // ChooseRaceLabel
@@ -90,7 +80,6 @@
             RaceBtn_HalfElf.UseVisualStyleBackColor = false;
             RaceBtn_HalfElf.Click += RaceBtn_HalfElf_Click;
             // 
-<<<<<<< Updated upstream
             // RaceBtn_Peikko
             // 
             RaceBtn_Peikko.BackgroundImage = Properties.Resources.Larpmasterbackground;
@@ -101,7 +90,7 @@
             RaceBtn_Peikko.Text = "Peikko";
             RaceBtn_Peikko.UseVisualStyleBackColor = true;
             RaceBtn_Peikko.Click += RaceBtn_Peikko_Click;
-=======
+            // 
             // BackButton_NewChar
             // 
             BackButton_NewChar.BackColor = Color.Transparent;
@@ -113,20 +102,14 @@
             BackButton_NewChar.Text = "Takaisin";
             BackButton_NewChar.UseVisualStyleBackColor = false;
             BackButton_NewChar.Click += BackButton_NewChar_Click;
->>>>>>> Stashed changes
             // 
             // NewCharacter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-<<<<<<< Updated upstream
-            ClientSize = new Size(560, 270);
-            Controls.Add(RaceBtn_Peikko);
-=======
             ClientSize = new Size(660, 369);
             Controls.Add(BackButton_NewChar);
->>>>>>> Stashed changes
             Controls.Add(RaceBtn_HalfElf);
             Controls.Add(RaceBtn_Elf);
             Controls.Add(RaceBtn_Human);
@@ -139,17 +122,5 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
-
-        private Label ChooseRaceLabel;
-        private Button RaceBtn_Human;
-        private Button RaceBtn_Elf;
-        private Button RaceBtn_HalfElf;
-<<<<<<< Updated upstream
-        private Button RaceBtn_Peikko;
-=======
-        private Button BackButton_NewChar;
->>>>>>> Stashed changes
     }
 }

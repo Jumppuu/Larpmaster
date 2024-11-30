@@ -64,8 +64,8 @@
             strMultiplierLbl = new Label();
             dexMultiplierLbl = new Label();
             conMultiplierLbl = new Label();
-            agilityMultiplierLbl = new Label();
-            charismaMultiplierLbl = new Label();
+            agiMultiplierLbl = new Label();
+            chaMultiplierLbl = new Label();
             chaFinalLbl = new Label();
             agiFinalLbl = new Label();
             conFinalLbl = new Label();
@@ -409,23 +409,23 @@
             conMultiplierLbl.TabIndex = 38;
             conMultiplierLbl.Text = "Cons";
             // 
-            // agilityMultiplierLbl
+            // agiMultiplierLbl
             // 
-            agilityMultiplierLbl.AutoSize = true;
-            agilityMultiplierLbl.Location = new Point(392, 259);
-            agilityMultiplierLbl.Name = "agilityMultiplierLbl";
-            agilityMultiplierLbl.Size = new Size(41, 15);
-            agilityMultiplierLbl.TabIndex = 39;
-            agilityMultiplierLbl.Text = "Agility";
+            agiMultiplierLbl.AutoSize = true;
+            agiMultiplierLbl.Location = new Point(392, 259);
+            agiMultiplierLbl.Name = "agiMultiplierLbl";
+            agiMultiplierLbl.Size = new Size(41, 15);
+            agiMultiplierLbl.TabIndex = 39;
+            agiMultiplierLbl.Text = "Agility";
             // 
-            // charismaMultiplierLbl
+            // chaMultiplierLbl
             // 
-            charismaMultiplierLbl.AutoSize = true;
-            charismaMultiplierLbl.Location = new Point(392, 283);
-            charismaMultiplierLbl.Name = "charismaMultiplierLbl";
-            charismaMultiplierLbl.Size = new Size(57, 15);
-            charismaMultiplierLbl.TabIndex = 40;
-            charismaMultiplierLbl.Text = "Charisma";
+            chaMultiplierLbl.AutoSize = true;
+            chaMultiplierLbl.Location = new Point(392, 283);
+            chaMultiplierLbl.Name = "chaMultiplierLbl";
+            chaMultiplierLbl.Size = new Size(57, 15);
+            chaMultiplierLbl.TabIndex = 40;
+            chaMultiplierLbl.Text = "Charisma";
             // 
             // chaFinalLbl
             // 
@@ -504,8 +504,8 @@
             Controls.Add(strFinalLbl);
             Controls.Add(wisFinalLbl);
             Controls.Add(intFinalLbl);
-            Controls.Add(charismaMultiplierLbl);
-            Controls.Add(agilityMultiplierLbl);
+            Controls.Add(chaMultiplierLbl);
+            Controls.Add(agiMultiplierLbl);
             Controls.Add(conMultiplierLbl);
             Controls.Add(dexMultiplierLbl);
             Controls.Add(strMultiplierLbl);
@@ -546,7 +546,6 @@
             Name = "StatSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "StatSelection";
-            Load += StatSelection_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -588,8 +587,8 @@
         private Label strMultiplierLbl;
         private Label dexMultiplierLbl;
         private Label conMultiplierLbl;
-        private Label agilityMultiplierLbl;
-        private Label charismaMultiplierLbl;
+        private Label agiMultiplierLbl;
+        private Label chaMultiplierLbl;
         private Label chaFinalLbl;
         private Label agiFinalLbl;
         private Label conFinalLbl;

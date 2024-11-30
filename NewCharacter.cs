@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -44,8 +45,8 @@ namespace Larpmaster
         private void OpenStatSelection(string race)
         {
             this.Hide();
-            GenderSelection CharSex = new GenderSelection(race);
-            CharSex.Show();
+            var statSelection = new StatSelection(race, ""); // Pass the selected race
+            statSelection.Show();
         }
 
         private void NewCharacter_Load(object sender, EventArgs e)
@@ -53,13 +54,11 @@ namespace Larpmaster
 
         }
 
-<<<<<<< Updated upstream
-        
-=======
         private void BackButton_NewChar_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            mainMenu MainMenu = new mainMenu(false);
+            MainMenu.Show();
         }
->>>>>>> Stashed changes
     }
 }
