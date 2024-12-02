@@ -25,23 +25,29 @@ namespace Larpmaster
 
         private void RaceBtn_Human_Click(object sender, EventArgs e)
         {
-            OpenStatSelection("Human");
+            OpenGenderSelection("Human");
         }
 
         private void RaceBtn_Elf_Click(object sender, EventArgs e)
         {
-            OpenStatSelection("Elf");
+            OpenGenderSelection("Elf");
         }
 
         private void RaceBtn_HalfElf_Click(object sender, EventArgs e)
         {
-            OpenStatSelection("HalfElf");
+            OpenGenderSelection("HalfElf");
         }
         private void RaceBtn_Peikko_Click(object sender, EventArgs e)
         {
-            OpenStatSelection("Peikko");
+            OpenGenderSelection("Peikko");
         }
 
+        private void OpenGenderSelection(string race)
+        {
+            this.Hide();
+            var genderSelection = new GenderSelection(race);
+            genderSelection.Show();
+        }
         private void OpenStatSelection(string race)
         {
             this.Hide();
@@ -49,10 +55,6 @@ namespace Larpmaster
             statSelection.Show();
         }
 
-        private void NewCharacter_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void BackButton_NewChar_Click(object sender, EventArgs e)
         {

@@ -301,5 +301,14 @@ namespace Larpmaster
 
             UpdateFinalStats();
         }
+
+        private void BackButton_StatSelect_Click(object sender, EventArgs e)
+        {
+            string race = currentRace;
+            this.Close();
+            GenderSelection genderSelection = new GenderSelection(race);
+            genderSelection.Show();
+
+        }
     }
 }

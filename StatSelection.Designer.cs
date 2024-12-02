@@ -73,11 +73,12 @@
             strFinalLbl = new Label();
             wisFinalLbl = new Label();
             intFinalLbl = new Label();
+            BackButton_StatSelect = new Button();
             SuspendLayout();
             // 
             // StatValue1
             // 
-            StatValue1.BackColor = Color.FromArgb(255, 192, 128);
+            StatValue1.BackColor = SystemColors.Control;
             StatValue1.Location = new Point(42, 96);
             StatValue1.Margin = new Padding(2);
             StatValue1.Name = "StatValue1";
@@ -87,7 +88,7 @@
             // 
             // StatValue2
             // 
-            StatValue2.BackColor = Color.FromArgb(255, 255, 192);
+            StatValue2.BackColor = SystemColors.Control;
             StatValue2.Location = new Point(42, 122);
             StatValue2.Margin = new Padding(2);
             StatValue2.Name = "StatValue2";
@@ -292,6 +293,7 @@
             // reRollStatsBtn
             // 
             reRollStatsBtn.BackColor = Color.Transparent;
+            reRollStatsBtn.FlatStyle = FlatStyle.Popup;
             reRollStatsBtn.Location = new Point(555, 416);
             reRollStatsBtn.Name = "reRollStatsBtn";
             reRollStatsBtn.Size = new Size(75, 23);
@@ -302,12 +304,14 @@
             // 
             // autoDistributeBtn
             // 
+            autoDistributeBtn.BackColor = Color.Transparent;
+            autoDistributeBtn.FlatStyle = FlatStyle.Popup;
             autoDistributeBtn.Location = new Point(35, 327);
             autoDistributeBtn.Name = "autoDistributeBtn";
             autoDistributeBtn.Size = new Size(75, 23);
             autoDistributeBtn.TabIndex = 27;
             autoDistributeBtn.Text = "Auto";
-            autoDistributeBtn.UseVisualStyleBackColor = true;
+            autoDistributeBtn.UseVisualStyleBackColor = false;
             autoDistributeBtn.Click += autoDistributeBtn_Click;
             // 
             // raceLabel
@@ -490,6 +494,18 @@
             intFinalLbl.TabIndex = 41;
             intFinalLbl.Text = "Int";
             // 
+            // BackButton_StatSelect
+            // 
+            BackButton_StatSelect.BackColor = Color.Transparent;
+            BackButton_StatSelect.FlatStyle = FlatStyle.Popup;
+            BackButton_StatSelect.Location = new Point(290, 356);
+            BackButton_StatSelect.Name = "BackButton_StatSelect";
+            BackButton_StatSelect.Size = new Size(75, 23);
+            BackButton_StatSelect.TabIndex = 48;
+            BackButton_StatSelect.Text = "Takaisin";
+            BackButton_StatSelect.UseVisualStyleBackColor = false;
+            BackButton_StatSelect.Click += BackButton_StatSelect_Click;
+            // 
             // StatSelection
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -497,6 +513,7 @@
             BackColor = Color.FromArgb(255, 224, 192);
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(642, 475);
+            Controls.Add(BackButton_StatSelect);
             Controls.Add(chaFinalLbl);
             Controls.Add(agiFinalLbl);
             Controls.Add(conFinalLbl);
@@ -596,5 +613,6 @@
         private Label strFinalLbl;
         private Label wisFinalLbl;
         private Label intFinalLbl;
+        private Button BackButton_StatSelect;
     }
 }

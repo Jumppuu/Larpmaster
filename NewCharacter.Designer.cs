@@ -118,7 +118,6 @@
             Name = "NewCharacter";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Uusi hahmo";
-            Load += NewCharacter_Load;
             ResumeLayout(false);
             PerformLayout();
         }

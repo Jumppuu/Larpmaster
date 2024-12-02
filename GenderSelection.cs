@@ -20,11 +20,6 @@ namespace Larpmaster
             selectedRace = race;
         }
 
-        private void SexSelection_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void MaleButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -37,6 +32,13 @@ namespace Larpmaster
             this.Hide();
             var charStats = new StatSelection(selectedRace, "Female");
             charStats.Show();
+        }
+
+        private void BackButton_GenderSelect_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewCharacter newCharacter = new NewCharacter();
+            newCharacter.Show();
         }
     }
 }
