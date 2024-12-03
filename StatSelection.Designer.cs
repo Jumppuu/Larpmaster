@@ -294,7 +294,7 @@
             // 
             reRollStatsBtn.BackColor = Color.Transparent;
             reRollStatsBtn.FlatStyle = FlatStyle.Popup;
-            reRollStatsBtn.Location = new Point(555, 416);
+            reRollStatsBtn.Location = new Point(555, 427);
             reRollStatsBtn.Name = "reRollStatsBtn";
             reRollStatsBtn.Size = new Size(75, 23);
             reRollStatsBtn.TabIndex = 26;
@@ -498,7 +498,7 @@
             // 
             BackButton_StatSelect.BackColor = Color.Transparent;
             BackButton_StatSelect.FlatStyle = FlatStyle.Popup;
-            BackButton_StatSelect.Location = new Point(290, 356);
+            BackButton_StatSelect.Location = new Point(555, 16);
             BackButton_StatSelect.Name = "BackButton_StatSelect";
             BackButton_StatSelect.Size = new Size(75, 23);
             BackButton_StatSelect.TabIndex = 48;

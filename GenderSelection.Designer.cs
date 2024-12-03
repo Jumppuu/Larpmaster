@@ -66,7 +66,7 @@
             BackButton_GenderSelect.BackColor = Color.Transparent;
             BackButton_GenderSelect.FlatStyle = FlatStyle.Popup;
             BackButton_GenderSelect.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BackButton_GenderSelect.Location = new Point(251, 88);
+            BackButton_GenderSelect.Location = new Point(432, 31);
             BackButton_GenderSelect.Name = "BackButton_GenderSelect";
             BackButton_GenderSelect.Size = new Size(118, 23);
             BackButton_GenderSelect.TabIndex = 2;

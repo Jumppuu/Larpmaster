@@ -277,20 +277,28 @@ namespace Larpmaster
         // Event handler for auto distribute button click
         private void autoDistributeBtn_Click(object sender, EventArgs e)
         {
-            var stats = new List<int>
-            {
-                int.Parse(StatValue1.Text),
-                int.Parse(StatValue2.Text),
-                int.Parse(StatValue3.Text),
-                int.Parse(StatValue4.Text),
-                int.Parse(StatValue5.Text),
-                int.Parse(StatValue6.Text),
-                int.Parse(StatValue7.Text),
-                int.Parse(StatValue8.Text)
-            };
+            var stats = new List<int>();
+            var statValues = new[] { StatValue1.Text, StatValue2.Text, StatValue3.Text, StatValue4.Text, StatValue5.Text, StatValue6.Text, StatValue7.Text, StatValue8.Text };
 
+            foreach (var statValue in statValues)
+            {
+                if (int.TryParse(statValue, out int result))
+                {
+                    stats.Add(result);
+                }
+            }
+
+            // Ensure there are enough values to distribute
+            if (stats.Count < 8)
+            {
+                MessageBox.Show("Can't auto distribute if values are already manually added.");
+                return;
+            }
+
+            // Shuffle the stats list
             stats = stats.OrderBy(x => random.Next()).ToList();
 
+            // Distribute the stats to the stat controls
             StatValue_Str.Text = stats[0].ToString();
             StatValue_Dex.Text = stats[1].ToString();
             StatValue_Con.Text = stats[2].ToString();
@@ -301,6 +309,7 @@ namespace Larpmaster
 
             UpdateFinalStats();
         }
+
 
         private void BackButton_StatSelect_Click(object sender, EventArgs e)
         {
