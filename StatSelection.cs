@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -12,17 +13,17 @@ namespace Larpmaster
         // Dictionary to store race-specific age data
         private Dictionary<string, (int averageLifespan, int minimumAge)> raceAgeData = new Dictionary<string, (int, int)>
         {
-            { "Human", (50, 14) },
-            { "Elf", (430, 60) },
-            { "HalfElf", (90, 21) }
+            { "Ihminen", (50, 14) },
+            { "Haltija", (430, 60) },
+            { "Puolihaltija", (90, 21) }
         };
 
         // Dictionary to store race-specific stat multipliers
         private Dictionary<string, Dictionary<string, double>> raceStatMultipliers = new Dictionary<string, Dictionary<string, double>>
         {
-            { "Human", new Dictionary<string, double> { { "Str", 1.0 }, { "Dex", 1.0 }, { "Con", 1.0 }, { "Int", 1.0 }, { "Wis", 1.0 }, { "Cha", 1.0 }, { "Agi", 1.0 } } },
-            { "Elf", new Dictionary<string, double> { { "Str", 0.96 }, { "Dex", 1.02 }, { "Con", 0.74 }, { "Int", 1.02 }, { "Wis", 1.04 }, { "Cha", 1.05 }, { "Agi", 1.04 } } },
-            { "HalfElf", new Dictionary<string, double> { { "Str", 0.99 }, { "Dex", 1.01 }, { "Con", 0.91 }, { "Int", 1.01 }, { "Wis", 1.02 }, { "Cha", 0.99 }, { "Agi", 1.02 } } }
+            { "Ihminen", new Dictionary<string, double> { { "Str", 1.0 }, { "Dex", 1.0 }, { "Con", 1.0 }, { "Int", 1.0 }, { "Wis", 1.0 }, { "Cha", 1.0 }, { "Agi", 1.0 } } },
+            { "Haltija", new Dictionary<string, double> { { "Str", 0.96 }, { "Dex", 1.02 }, { "Con", 0.74 }, { "Int", 1.02 }, { "Wis", 1.04 }, { "Cha", 1.05 }, { "Agi", 1.04 } } },
+            { "Puolihaltija", new Dictionary<string, double> { { "Str", 0.99 }, { "Dex", 1.01 }, { "Con", 0.91 }, { "Int", 1.01 }, { "Wis", 1.02 }, { "Cha", 0.99 }, { "Agi", 1.02 } } }
         };
 
         private string currentRace;
@@ -33,19 +34,22 @@ namespace Larpmaster
             InitializeComponent();
             InitializeDragAndDrop();
             currentRace = race;
-            UpdateRaceAndAgeLabels(race);
+
             this.Load += (sender, e) => GenerateStats();
         }
-
         // Method to update race and age labels
+
         private void UpdateRaceAndAgeLabels(string race)
         {
+
             raceLabel.Text = $"Rodun {race}";
 
             if (raceAgeData.TryGetValue(race, out var ageData))
             {
                 averageLifespanLabel.Text = $"Keskimääräinen elinikä: {ageData.averageLifespan} vuotta";
                 minimumAgeLabel.Text = $"Minimi ikä: {ageData.minimumAge} vuotta";
+
+
             }
             else
             {
@@ -64,6 +68,8 @@ namespace Larpmaster
                 agiMultiplierLbl.Text = $"{multipliers["Agi"] * 100:F2}%";
             }
         }
+
+
 
         // Method to initialize drag-and-drop functionality
         private void InitializeDragAndDrop()
@@ -309,8 +315,7 @@ namespace Larpmaster
 
             UpdateFinalStats();
         }
-
-
+        // Method for the back-button in the initial Stat Selection screen
         private void BackButton_StatSelect_Click(object sender, EventArgs e)
         {
             string race = currentRace;
@@ -319,5 +324,36 @@ namespace Larpmaster
             genderSelection.Show();
 
         }
+
+        private void ConfirmButton_StatSelection_Click(object sender, EventArgs e)
+        {
+            string race = currentRace;
+            UpdateRaceAndAgeLabels(race);
+
+            raceLabel.Show();
+            averageLifespanLabel.Show();
+            minimumAgeLabel.Show();
+
+            AgeInput.Show();
+            AgeInputLabel.Show();
+            acceptAgeButton.Show();
+
+        }
+
+        private void acceptAgeButton_Click(object sender, EventArgs e)
+        {
+            string race = currentRace;
+            if (raceAgeData.TryGetValue(race, out var ageData))
+            {
+                if (int.Parse(AgeInput.Text) < (ageData.minimumAge))
+                {
+                    MessageBox.Show("Hahmosi on liian nuori!","Huomio!", MessageBoxButtons.OK);
+                }
+            }
+                {
+
+                }
+            }
+        }
     }
-}
+
