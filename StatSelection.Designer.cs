@@ -74,6 +74,10 @@
             wisFinalLbl = new Label();
             intFinalLbl = new Label();
             BackButton_StatSelect = new Button();
+            ConfirmButton_StatSelection = new Button();
+            AgeInput = new TextBox();
+            acceptAgeButton = new Button();
+            AgeInputLabel = new Label();
             SuspendLayout();
             // 
             // StatValue1
@@ -322,6 +326,7 @@
             raceLabel.Size = new Size(32, 15);
             raceLabel.TabIndex = 28;
             raceLabel.Text = "Race";
+            raceLabel.Visible = false;
             // 
             // averageLifespanLabel
             // 
@@ -331,6 +336,7 @@
             averageLifespanLabel.Size = new Size(52, 15);
             averageLifespanLabel.TabIndex = 29;
             averageLifespanLabel.Text = "LifeSpan";
+            averageLifespanLabel.Visible = false;
             // 
             // minimumAgeLabel
             // 
@@ -340,6 +346,7 @@
             minimumAgeLabel.Size = new Size(84, 15);
             minimumAgeLabel.TabIndex = 30;
             minimumAgeLabel.Text = "Minimum Age";
+            minimumAgeLabel.Visible = false;
             // 
             // originalStatLbl
             // 
@@ -506,6 +513,50 @@
             BackButton_StatSelect.UseVisualStyleBackColor = false;
             BackButton_StatSelect.Click += BackButton_StatSelect_Click;
             // 
+            // ConfirmButton_StatSelection
+            // 
+            ConfirmButton_StatSelection.BackColor = Color.Transparent;
+            ConfirmButton_StatSelection.FlatStyle = FlatStyle.Popup;
+            ConfirmButton_StatSelection.Location = new Point(474, 362);
+            ConfirmButton_StatSelection.Name = "ConfirmButton_StatSelection";
+            ConfirmButton_StatSelection.Size = new Size(75, 23);
+            ConfirmButton_StatSelection.TabIndex = 49;
+            ConfirmButton_StatSelection.Text = "OK";
+            ConfirmButton_StatSelection.UseVisualStyleBackColor = false;
+            ConfirmButton_StatSelection.Click += ConfirmButton_StatSelection_Click;
+            // 
+            // AgeInput
+            // 
+            AgeInput.Location = new Point(35, 440);
+            AgeInput.Name = "AgeInput";
+            AgeInput.Size = new Size(100, 23);
+            AgeInput.TabIndex = 50;
+            AgeInput.Visible = false;
+            // 
+            // acceptAgeButton
+            // 
+            acceptAgeButton.BackColor = Color.Transparent;
+            acceptAgeButton.FlatStyle = FlatStyle.Popup;
+            acceptAgeButton.Location = new Point(153, 440);
+            acceptAgeButton.Name = "acceptAgeButton";
+            acceptAgeButton.Size = new Size(112, 23);
+            acceptAgeButton.TabIndex = 51;
+            acceptAgeButton.Text = "Hyväksy ikä";
+            acceptAgeButton.UseVisualStyleBackColor = false;
+            acceptAgeButton.Visible = false;
+            acceptAgeButton.Click += acceptAgeButton_Click;
+            // 
+            // AgeInputLabel
+            // 
+            AgeInputLabel.AutoSize = true;
+            AgeInputLabel.BackColor = Color.Transparent;
+            AgeInputLabel.Location = new Point(42, 416);
+            AgeInputLabel.Name = "AgeInputLabel";
+            AgeInputLabel.Size = new Size(57, 15);
+            AgeInputLabel.TabIndex = 52;
+            AgeInputLabel.Text = "Syötä ikä:";
+            AgeInputLabel.Visible = false;
+            // 
             // StatSelection
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -513,6 +564,10 @@
             BackColor = Color.FromArgb(255, 224, 192);
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(642, 475);
+            Controls.Add(AgeInputLabel);
+            Controls.Add(acceptAgeButton);
+            Controls.Add(AgeInput);
+            Controls.Add(ConfirmButton_StatSelection);
             Controls.Add(BackButton_StatSelect);
             Controls.Add(chaFinalLbl);
             Controls.Add(agiFinalLbl);
@@ -614,5 +669,9 @@
         private Label wisFinalLbl;
         private Label intFinalLbl;
         private Button BackButton_StatSelect;
+        private Button ConfirmButton_StatSelection;
+        private TextBox AgeInput;
+        private Button acceptAgeButton;
+        private Label AgeInputLabel;
     }
 }

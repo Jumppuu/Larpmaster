@@ -25,17 +25,17 @@ namespace Larpmaster
 
         private void RaceBtn_Human_Click(object sender, EventArgs e)
         {
-            OpenGenderSelection("Human");
+            OpenGenderSelection("Ihminen");
         }
 
         private void RaceBtn_Elf_Click(object sender, EventArgs e)
         {
-            OpenGenderSelection("Elf");
+            OpenGenderSelection("Haltija");
         }
 
         private void RaceBtn_HalfElf_Click(object sender, EventArgs e)
         {
-            OpenGenderSelection("HalfElf");
+            OpenGenderSelection("Puolihaltija");
         }
         private void RaceBtn_Peikko_Click(object sender, EventArgs e)
         {
