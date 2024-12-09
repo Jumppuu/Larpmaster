@@ -48,12 +48,7 @@ namespace Larpmaster
             var genderSelection = new GenderSelection(race);
             genderSelection.Show();
         }
-        private void OpenStatSelection(string race)
-        {
-            this.Hide();
-            var statSelection = new StatSelection(race, ""); // Pass the selected race
-            statSelection.Show();
-        }
+        
 
 
         private void BackButton_NewChar_Click(object sender, EventArgs e)

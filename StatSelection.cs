@@ -28,6 +28,7 @@ namespace Larpmaster
 
         private string currentRace;
 
+
         // Constructor
         public StatSelection(string race, string gender)
         {
@@ -342,18 +343,48 @@ namespace Larpmaster
 
         private void acceptAgeButton_Click(object sender, EventArgs e)
         {
+            
+
             string race = currentRace;
             if (raceAgeData.TryGetValue(race, out var ageData))
             {
-                if (int.Parse(AgeInput.Text) < (ageData.minimumAge))
-                {
-                    MessageBox.Show("Hahmosi on liian nuori!","Huomio!", MessageBoxButtons.OK);
-                }
-            }
+
+                if (string.IsNullOrEmpty(AgeInput.Text))
                 {
 
+                    MessageBox.Show("Hahmon ikä on tyhjä!", "Huomio!", MessageBoxButtons.OK);
+                    return;
+
                 }
+
+                if (!AgeInput.Text.All(char.IsDigit))
+                {
+                    MessageBox.Show("Hahmon ikä voi olla vain numeroita!", "Huomio!", MessageBoxButtons.OK);
+                    return;
+
+                }
+                int age = int.Parse(AgeInput.Text);
+
+
+                if (age < ageData.minimumAge)
+                {
+                    MessageBox.Show("Hahmosi on liian nuori!", "Huomio!", MessageBoxButtons.OK);
+                }
+
+                else
+                {
+                    this.Hide();
+                    CreatedCharacterSummary createdCharacterSummary = new CreatedCharacterSummary();
+                    createdCharacterSummary.Show();
+                }
+
+
             }
+
+
+
         }
     }
+}
+    
 
