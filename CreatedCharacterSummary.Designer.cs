@@ -41,7 +41,9 @@
             DirectionLabel_Int = new Label();
             CancelDirectionLabel = new Label();
             CharSummary_Delete = new Button();
-            button2 = new Button();
+            CharSummary_Ok = new Button();
+            CharSummary_SavedAge = new Label();
+            ConPercentage = new Label();
             SuspendLayout();
             // 
             // CharacterSummaryExplain_Label
@@ -60,7 +62,7 @@
             AgeLabel.AutoSize = true;
             AgeLabel.BackColor = Color.Transparent;
             AgeLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            AgeLabel.Location = new Point(37, 89);
+            AgeLabel.Location = new Point(29, 89);
             AgeLabel.Name = "AgeLabel";
             AgeLabel.Size = new Size(31, 20);
             AgeLabel.TabIndex = 1;
@@ -82,7 +84,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(304, 89);
+            label4.Location = new Point(340, 89);
             label4.Name = "label4";
             label4.Size = new Size(21, 20);
             label4.TabIndex = 3;
@@ -188,16 +190,39 @@
             CharSummary_Delete.UseVisualStyleBackColor = false;
             CharSummary_Delete.Click += CharSummary_Delete_Click;
             // 
-            // button2
+            // CharSummary_Ok
             // 
-            button2.BackColor = Color.Transparent;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(250, 415);
-            button2.Name = "button2";
-            button2.Size = new Size(150, 23);
-            button2.TabIndex = 13;
-            button2.Text = "Hyväksy hahmonluonti";
-            button2.UseVisualStyleBackColor = false;
+            CharSummary_Ok.BackColor = Color.Transparent;
+            CharSummary_Ok.FlatStyle = FlatStyle.Popup;
+            CharSummary_Ok.Location = new Point(250, 415);
+            CharSummary_Ok.Name = "CharSummary_Ok";
+            CharSummary_Ok.Size = new Size(150, 23);
+            CharSummary_Ok.TabIndex = 13;
+            CharSummary_Ok.Text = "Hyväksy hahmonluonti";
+            CharSummary_Ok.UseVisualStyleBackColor = false;
+            CharSummary_Ok.Click += CharSummary_Ok_Click;
+            // 
+            // CharSummary_SavedAge
+            // 
+            CharSummary_SavedAge.AutoSize = true;
+            CharSummary_SavedAge.BackColor = Color.Transparent;
+            CharSummary_SavedAge.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CharSummary_SavedAge.Location = new Point(60, 89);
+            CharSummary_SavedAge.Name = "CharSummary_SavedAge";
+            CharSummary_SavedAge.Size = new Size(46, 20);
+            CharSummary_SavedAge.TabIndex = 14;
+            CharSummary_SavedAge.Text = "Teksti";
+            CharSummary_SavedAge.Visible = false;
+            // 
+            // ConPercentage
+            // 
+            ConPercentage.AutoSize = true;
+            ConPercentage.BackColor = Color.Transparent;
+            ConPercentage.Location = new Point(265, 94);
+            ConPercentage.Name = "ConPercentage";
+            ConPercentage.Size = new Size(69, 15);
+            ConPercentage.TabIndex = 15;
+            ConPercentage.Text = "Placeholder";
             // 
             // CreatedCharacterSummary
             // 
@@ -205,7 +230,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
+            Controls.Add(ConPercentage);
+            Controls.Add(CharSummary_SavedAge);
+            Controls.Add(CharSummary_Ok);
             Controls.Add(CharSummary_Delete);
             Controls.Add(CancelDirectionLabel);
             Controls.Add(DirectionLabel_Int);
@@ -240,6 +267,8 @@
         private Label DirectionLabel_Int;
         private Label CancelDirectionLabel;
         private Button CharSummary_Delete;
-        private Button button2;
+        private Button CharSummary_Ok;
+        private Label CharSummary_SavedAge;
+        private Label ConPercentage;
     }
 }
