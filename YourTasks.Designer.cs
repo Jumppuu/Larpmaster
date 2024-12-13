@@ -81,6 +81,7 @@
             // okBtn1
             // 
             okBtn1.BackColor = Color.Transparent;
+            okBtn1.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn1.FlatStyle = FlatStyle.Popup;
             okBtn1.Location = new Point(417, 81);
             okBtn1.Name = "okBtn1";
@@ -93,6 +94,7 @@
             // okBtn2
             // 
             okBtn2.BackColor = Color.Transparent;
+            okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn2.FlatStyle = FlatStyle.Popup;
             okBtn2.Location = new Point(417, 226);
             okBtn2.Name = "okBtn2";

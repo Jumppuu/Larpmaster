@@ -158,10 +158,11 @@
             // 
             StatSelectionInstruction.AutoSize = true;
             StatSelectionInstruction.BackColor = Color.Transparent;
-            StatSelectionInstruction.Location = new Point(84, 20);
+            StatSelectionInstruction.Font = new Font("Engravers MT", 8F, FontStyle.Bold);
+            StatSelectionInstruction.Location = new Point(16, 31);
             StatSelectionInstruction.Margin = new Padding(2, 0, 2, 0);
             StatSelectionInstruction.Name = "StatSelectionInstruction";
-            StatSelectionInstruction.Size = new Size(268, 15);
+            StatSelectionInstruction.Size = new Size(515, 12);
             StatSelectionInstruction.TabIndex = 9;
             StatSelectionInstruction.Text = "Siirrä hiirellä vasemmalta oikealle haluamasi arvot";
             // 
@@ -505,7 +506,7 @@
             // 
             BackButton_StatSelect.BackColor = Color.Transparent;
             BackButton_StatSelect.FlatStyle = FlatStyle.Popup;
-            BackButton_StatSelect.Location = new Point(555, 16);
+            BackButton_StatSelect.Location = new Point(641, 20);
             BackButton_StatSelect.Name = "BackButton_StatSelect";
             BackButton_StatSelect.Size = new Size(75, 23);
             BackButton_StatSelect.TabIndex = 48;
@@ -563,7 +564,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(255, 224, 192);
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(642, 475);
+            ClientSize = new Size(728, 495);
             Controls.Add(AgeInputLabel);
             Controls.Add(acceptAgeButton);
             Controls.Add(ageInputBox);

@@ -33,10 +33,11 @@
             // 
             ChooseRaceLabel.AutoSize = true;
             ChooseRaceLabel.BackColor = Color.Transparent;
-            ChooseRaceLabel.Location = new Point(98, 43);
+            ChooseRaceLabel.Font = new Font("Elephant", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ChooseRaceLabel.Location = new Point(204, 39);
             ChooseRaceLabel.Margin = new Padding(2, 0, 2, 0);
             ChooseRaceLabel.Name = "ChooseRaceLabel";
-            ChooseRaceLabel.Size = new Size(68, 15);
+            ChooseRaceLabel.Size = new Size(105, 21);
             ChooseRaceLabel.TabIndex = 1;
             ChooseRaceLabel.Text = "Valitse rotu:";
             // 
@@ -44,7 +45,7 @@
             // 
             RaceBtn_Human.BackColor = Color.Transparent;
             RaceBtn_Human.FlatStyle = FlatStyle.Popup;
-            RaceBtn_Human.Location = new Point(23, 84);
+            RaceBtn_Human.Location = new Point(204, 99);
             RaceBtn_Human.Margin = new Padding(2);
             RaceBtn_Human.Name = "RaceBtn_Human";
             RaceBtn_Human.Size = new Size(78, 27);
@@ -57,7 +58,7 @@
             // 
             RaceBtn_Elf.BackColor = Color.Transparent;
             RaceBtn_Elf.FlatStyle = FlatStyle.Popup;
-            RaceBtn_Elf.Location = new Point(98, 84);
+            RaceBtn_Elf.Location = new Point(279, 99);
             RaceBtn_Elf.Margin = new Padding(2);
             RaceBtn_Elf.Name = "RaceBtn_Elf";
             RaceBtn_Elf.Size = new Size(78, 27);
@@ -71,7 +72,7 @@
             RaceBtn_HalfElf.BackColor = Color.Transparent;
             RaceBtn_HalfElf.FlatStyle = FlatStyle.Popup;
             RaceBtn_HalfElf.ForeColor = SystemColors.ControlText;
-            RaceBtn_HalfElf.Location = new Point(171, 84);
+            RaceBtn_HalfElf.Location = new Point(352, 99);
             RaceBtn_HalfElf.Margin = new Padding(2);
             RaceBtn_HalfElf.Name = "RaceBtn_HalfElf";
             RaceBtn_HalfElf.Size = new Size(78, 27);
@@ -95,7 +96,7 @@
             // 
             BackButton_NewChar.BackColor = Color.Transparent;
             BackButton_NewChar.FlatStyle = FlatStyle.Popup;
-            BackButton_NewChar.Location = new Point(464, 206);
+            BackButton_NewChar.Location = new Point(573, 25);
             BackButton_NewChar.Name = "BackButton_NewChar";
             BackButton_NewChar.Size = new Size(75, 23);
             BackButton_NewChar.TabIndex = 5;

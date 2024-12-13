@@ -38,7 +38,7 @@
             MaleButton.BackColor = Color.Transparent;
             MaleButton.FlatStyle = FlatStyle.Popup;
             MaleButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            MaleButton.Location = new Point(45, 34);
+            MaleButton.Location = new Point(293, 188);
             MaleButton.Margin = new Padding(2);
             MaleButton.Name = "MaleButton";
             MaleButton.Size = new Size(78, 20);
@@ -52,7 +52,7 @@
             FemaleButton.BackColor = Color.Transparent;
             FemaleButton.FlatStyle = FlatStyle.Popup;
             FemaleButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            FemaleButton.Location = new Point(141, 34);
+            FemaleButton.Location = new Point(389, 188);
             FemaleButton.Margin = new Padding(2);
             FemaleButton.Name = "FemaleButton";
             FemaleButton.Size = new Size(87, 20);
@@ -66,7 +66,7 @@
             BackButton_GenderSelect.BackColor = Color.Transparent;
             BackButton_GenderSelect.FlatStyle = FlatStyle.Popup;
             BackButton_GenderSelect.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BackButton_GenderSelect.Location = new Point(432, 31);
+            BackButton_GenderSelect.Location = new Point(670, 25);
             BackButton_GenderSelect.Name = "BackButton_GenderSelect";
             BackButton_GenderSelect.Size = new Size(118, 23);
             BackButton_GenderSelect.TabIndex = 2;
