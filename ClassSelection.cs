@@ -17,7 +17,7 @@ namespace Larpmaster
         public ClassSelection(int yearsUsable)
         {
             InitializeComponent();
-            statSelection = new StatSelection("Ihminen", "Male"); // Example initialization
+            statSelection = new StatSelection("race", "gender"); // Example initialization
             yearsUseableLbl.Text = $"Years Usable: {yearsUsable}";
             SubscribeToStatSelection(statSelection);
         }
@@ -34,7 +34,6 @@ namespace Larpmaster
             int minimumAge = statSelection.MinimumAgeValue;
             int yearsUseable = ageInput - minimumAge;
             yearsUseableLbl.Text = $"Years Usable: {yearsUseable}";
-            MessageBox.Show($"UpdateYearsUseable called: {yearsUseable}"); // Debug message
         }
 
         // Event handler for Cult buttons

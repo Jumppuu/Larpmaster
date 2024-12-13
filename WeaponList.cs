@@ -48,7 +48,8 @@ namespace Larpmaster
 
         private void exitWeaponListBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            new YourTasks().Show();
         }
     }
 }
