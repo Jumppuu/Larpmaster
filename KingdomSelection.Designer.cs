@@ -44,6 +44,7 @@
             vuoriniittyBtn.TabIndex = 0;
             vuoriniittyBtn.Text = "Vuoriniitty";
             vuoriniittyBtn.UseVisualStyleBackColor = true;
+            vuoriniittyBtn.Click += vuoriniittyBtn_Click;
             // 
             // vardakovBtn
             // 
@@ -54,6 +55,7 @@
             vardakovBtn.TabIndex = 1;
             vardakovBtn.Text = "Vardakov";
             vardakovBtn.UseVisualStyleBackColor = true;
+            vardakovBtn.Click += vardakovBtn_Click;
             // 
             // metsäläisetBtn
             // 
@@ -64,6 +66,7 @@
             metsäläisetBtn.TabIndex = 2;
             metsäläisetBtn.Text = "Metsäläiset";
             metsäläisetBtn.UseVisualStyleBackColor = true;
+            metsäläisetBtn.Click += metsäläisetBtn_Click;
             // 
             // noKingdomBtn
             // 

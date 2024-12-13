@@ -44,6 +44,11 @@
             ClassBardBtn = new Button();
             classSpyBtn = new Button();
             classBaseBtn = new Button();
+            yearsAvailableLbl = new Label();
+            yearsUseableLbl = new Label();
+            yearsConfirmedBtn = new Button();
+            yearsInCultInput = new TextBox();
+            yearsinCultLbl = new Label();
             SuspendLayout();
             // 
             // label1
@@ -66,6 +71,7 @@
             classZharinBtn.TabIndex = 1;
             classZharinBtn.Text = "Zharin mestarit";
             classZharinBtn.UseVisualStyleBackColor = true;
+            classZharinBtn.Click += CultButton_Click;
             // 
             // classArdakovBtn
             // 
@@ -76,6 +82,7 @@
             classArdakovBtn.TabIndex = 2;
             classArdakovBtn.Text = "Ardakov sotavelhot";
             classArdakovBtn.UseVisualStyleBackColor = true;
+            classArdakovBtn.Click += CultButton_Click;
             // 
             // classZadaBtn
             // 
@@ -86,6 +93,7 @@
             classZadaBtn.TabIndex = 3;
             classZadaBtn.Text = "Zada-papit";
             classZadaBtn.UseVisualStyleBackColor = true;
+            classZadaBtn.Click += CultButton_Click;
             // 
             // classDeinosanBtn
             // 
@@ -96,6 +104,7 @@
             classDeinosanBtn.TabIndex = 4;
             classDeinosanBtn.Text = "Deinosan";
             classDeinosanBtn.UseVisualStyleBackColor = true;
+            classDeinosanBtn.Click += CultButton_Click;
             // 
             // classRaiaBtn
             // 
@@ -106,6 +115,7 @@
             classRaiaBtn.TabIndex = 5;
             classRaiaBtn.Text = "Raia Haltijat";
             classRaiaBtn.UseVisualStyleBackColor = true;
+            classRaiaBtn.Click += CultButton_Click;
             // 
             // classBokeanBtn
             // 
@@ -116,6 +126,7 @@
             classBokeanBtn.TabIndex = 6;
             classBokeanBtn.Text = "Bokean illusio";
             classBokeanBtn.UseVisualStyleBackColor = true;
+            classBokeanBtn.Click += CultButton_Click;
             // 
             // classThiefBtn
             // 
@@ -126,6 +137,7 @@
             classThiefBtn.TabIndex = 7;
             classThiefBtn.Text = "Varas";
             classThiefBtn.UseVisualStyleBackColor = true;
+            classThiefBtn.Click += CultButton_Click;
             // 
             // classFighterBtn
             // 
@@ -136,6 +148,7 @@
             classFighterBtn.TabIndex = 8;
             classFighterBtn.Text = "Taistelija";
             classFighterBtn.UseVisualStyleBackColor = true;
+            classFighterBtn.Click += CultButton_Click;
             // 
             // classScoutBtn
             // 
@@ -146,6 +159,7 @@
             classScoutBtn.TabIndex = 9;
             classScoutBtn.Text = "Tiedustelija";
             classScoutBtn.UseVisualStyleBackColor = true;
+            classScoutBtn.Click += CultButton_Click;
             // 
             // classDerecasBtn
             // 
@@ -156,6 +170,7 @@
             classDerecasBtn.TabIndex = 10;
             classDerecasBtn.Text = "Derecas-papit";
             classDerecasBtn.UseVisualStyleBackColor = true;
+            classDerecasBtn.Click += CultButton_Click;
             // 
             // classHealerBtn
             // 
@@ -166,6 +181,7 @@
             classHealerBtn.TabIndex = 11;
             classHealerBtn.Text = "Parantaja";
             classHealerBtn.UseVisualStyleBackColor = true;
+            classHealerBtn.Click += CultButton_Click;
             // 
             // ClassSamoojaBtn
             // 
@@ -176,6 +192,7 @@
             ClassSamoojaBtn.TabIndex = 12;
             ClassSamoojaBtn.Text = "Samooja";
             ClassSamoojaBtn.UseVisualStyleBackColor = true;
+            ClassSamoojaBtn.Click += CultButton_Click;
             // 
             // ClassBardBtn
             // 
@@ -186,6 +203,7 @@
             ClassBardBtn.TabIndex = 13;
             ClassBardBtn.Text = "Bardi";
             ClassBardBtn.UseVisualStyleBackColor = true;
+            ClassBardBtn.Click += CultButton_Click;
             // 
             // classSpyBtn
             // 
@@ -196,6 +214,7 @@
             classSpyBtn.TabIndex = 14;
             classSpyBtn.Text = "Vakoilija";
             classSpyBtn.UseVisualStyleBackColor = true;
+            classSpyBtn.Click += CultButton_Click;
             // 
             // classBaseBtn
             // 
@@ -206,6 +225,59 @@
             classBaseBtn.TabIndex = 15;
             classBaseBtn.Text = "Tavallinen";
             classBaseBtn.UseVisualStyleBackColor = true;
+            classBaseBtn.Click += CultButton_Click;
+            // 
+            // yearsAvailableLbl
+            // 
+            yearsAvailableLbl.AutoSize = true;
+            yearsAvailableLbl.BackColor = Color.Transparent;
+            yearsAvailableLbl.Location = new Point(606, 28);
+            yearsAvailableLbl.Name = "yearsAvailableLbl";
+            yearsAvailableLbl.Size = new Size(112, 15);
+            yearsAvailableLbl.TabIndex = 16;
+            yearsAvailableLbl.Text = "Vuosia käytettävissä";
+            // 
+            // yearsUseableLbl
+            // 
+            yearsUseableLbl.AutoSize = true;
+            yearsUseableLbl.BackColor = Color.Transparent;
+            yearsUseableLbl.Location = new Point(609, 49);
+            yearsUseableLbl.Name = "yearsUseableLbl";
+            yearsUseableLbl.Size = new Size(32, 15);
+            yearsUseableLbl.TabIndex = 17;
+            yearsUseableLbl.Text = "Esim";
+            // 
+            // yearsConfirmedBtn
+            // 
+            yearsConfirmedBtn.BackColor = Color.Transparent;
+            yearsConfirmedBtn.FlatStyle = FlatStyle.Popup;
+            yearsConfirmedBtn.Location = new Point(171, 385);
+            yearsConfirmedBtn.Name = "yearsConfirmedBtn";
+            yearsConfirmedBtn.Size = new Size(75, 23);
+            yearsConfirmedBtn.TabIndex = 18;
+            yearsConfirmedBtn.Text = "Ok";
+            yearsConfirmedBtn.UseVisualStyleBackColor = false;
+            yearsConfirmedBtn.Visible = false;
+            yearsConfirmedBtn.Click += yearsConfirmedBtn_Click;
+            // 
+            // yearsInCultInput
+            // 
+            yearsInCultInput.Location = new Point(65, 385);
+            yearsInCultInput.Name = "yearsInCultInput";
+            yearsInCultInput.Size = new Size(100, 23);
+            yearsInCultInput.TabIndex = 19;
+            yearsInCultInput.Visible = false;
+            // 
+            // yearsinCultLbl
+            // 
+            yearsinCultLbl.AutoSize = true;
+            yearsinCultLbl.BackColor = Color.Transparent;
+            yearsinCultLbl.Location = new Point(65, 353);
+            yearsinCultLbl.Name = "yearsinCultLbl";
+            yearsinCultLbl.Size = new Size(189, 15);
+            yearsinCultLbl.TabIndex = 20;
+            yearsinCultLbl.Text = "Kuinka monta vuotta toimit täällä?";
+            yearsinCultLbl.Visible = false;
             // 
             // ClassSelection
             // 
@@ -213,6 +285,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(800, 450);
+            Controls.Add(yearsinCultLbl);
+            Controls.Add(yearsInCultInput);
+            Controls.Add(yearsConfirmedBtn);
+            Controls.Add(yearsUseableLbl);
+            Controls.Add(yearsAvailableLbl);
             Controls.Add(classBaseBtn);
             Controls.Add(classSpyBtn);
             Controls.Add(ClassBardBtn);
@@ -254,5 +331,10 @@
         private Button ClassBardBtn;
         private Button classSpyBtn;
         private Button classBaseBtn;
+        private Label yearsAvailableLbl;
+        private Label yearsUseableLbl;
+        private Button yearsConfirmedBtn;
+        private TextBox yearsInCultInput;
+        private Label yearsinCultLbl;
     }
 }

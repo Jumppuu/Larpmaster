@@ -8,6 +8,8 @@ namespace Larpmaster
 {
     public partial class StatSelection : Form
     {
+        
+
         private Random random = new Random();
 
         // Dictionary to store race-specific age data
@@ -28,7 +30,6 @@ namespace Larpmaster
 
         private string currentRace;
 
-
         // Constructor
         public StatSelection(string race, string gender)
         {
@@ -38,19 +39,30 @@ namespace Larpmaster
 
             this.Load += (sender, e) => GenerateStats();
         }
-        // Method to update race and age labels
 
+        // Expose AgeInput and MinimumAgeLabel values
+        public int AgeInputValue
+        {
+            get { return int.Parse(ageInputBox.Text); }
+        }
+
+        public int MinimumAgeValue
+        {
+            get { return int.Parse(minimumAgeLabel.Text.Split(' ')[2]); }
+        }
+
+        // Event to notify when age is confirmed
+        public event Action AgeConfirmed;
+
+        // Method to update race and age labels
         private void UpdateRaceAndAgeLabels(string race)
         {
-
             raceLabel.Text = $"Rodun {race}";
 
             if (raceAgeData.TryGetValue(race, out var ageData))
             {
                 averageLifespanLabel.Text = $"Keskimääräinen elinikä: {ageData.averageLifespan} vuotta";
                 minimumAgeLabel.Text = $"Minimi ikä: {ageData.minimumAge} vuotta";
-
-
             }
             else
             {
@@ -69,8 +81,6 @@ namespace Larpmaster
                 agiMultiplierLbl.Text = $"{multipliers["Agi"] * 100:F2}%";
             }
         }
-
-
 
         // Method to initialize drag-and-drop functionality
         private void InitializeDragAndDrop()
@@ -316,6 +326,7 @@ namespace Larpmaster
 
             UpdateFinalStats();
         }
+
         // Method for the back-button in the initial Stat Selection screen
         private void BackButton_StatSelect_Click(object sender, EventArgs e)
         {
@@ -323,7 +334,6 @@ namespace Larpmaster
             this.Close();
             GenderSelection genderSelection = new GenderSelection(race);
             genderSelection.Show();
-
         }
 
         private void ConfirmButton_StatSelection_Click(object sender, EventArgs e)
@@ -335,56 +345,44 @@ namespace Larpmaster
             averageLifespanLabel.Show();
             minimumAgeLabel.Show();
 
-            AgeInput.Show();
+            ageInputBox.Show();
             AgeInputLabel.Show();
             acceptAgeButton.Show();
-
         }
 
         private void acceptAgeButton_Click(object sender, EventArgs e)
         {
-            
-
             string race = currentRace;
             if (raceAgeData.TryGetValue(race, out var ageData))
             {
-
-                if (string.IsNullOrEmpty(AgeInput.Text))
+                if (string.IsNullOrEmpty(ageInputBox.Text))
                 {
-
                     MessageBox.Show("Hahmon ikä on tyhjä!", "Huomio!", MessageBoxButtons.OK);
                     return;
-
                 }
 
-                if (!AgeInput.Text.All(char.IsDigit))
+                if (!ageInputBox.Text.All(char.IsDigit))
                 {
                     MessageBox.Show("Hahmon ikä voi olla vain numeroita!", "Huomio!", MessageBoxButtons.OK);
                     return;
-
                 }
-                int age = int.Parse(AgeInput.Text);
-
+                int age = int.Parse(ageInputBox.Text);
 
                 if (age < ageData.minimumAge)
                 {
                     MessageBox.Show("Hahmosi on liian nuori!", "Huomio!", MessageBoxButtons.OK);
                 }
-
                 else
                 {
+                    int yearsUsable = age - ageData.minimumAge;
+                    AgeConfirmed?.Invoke();
                     this.Hide();
-                    CreatedCharacterSummary createdCharacterSummary = new CreatedCharacterSummary();
+                    CreatedCharacterSummary createdCharacterSummary = new CreatedCharacterSummary(yearsUsable);
                     createdCharacterSummary.Show();
+
+
                 }
-
-
             }
-
-
-
         }
     }
 }
-    
-

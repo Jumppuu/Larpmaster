@@ -12,9 +12,11 @@ namespace Larpmaster
 {
     public partial class CreatedCharacterSummary : Form
     {
-        public CreatedCharacterSummary()
+        private int yearsUsable;
+        public CreatedCharacterSummary(int yearsUsable)
         {
             InitializeComponent();
+            this.yearsUsable = yearsUsable;
         }
 
         private void CharSummary_Delete_Click(object sender, EventArgs e)
@@ -23,21 +25,16 @@ namespace Larpmaster
             if (MessageBox.Show("Oletko varma, että haluat poistaa luomasi hahmon?", "Huomio!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 this.Hide();
-                mainMenu MainMenu = new mainMenu(false);
+                var MainMenu = new mainMenu(false);
                 MainMenu.Show();
             }
-
-
-
         }
 
         private void CharSummary_Ok_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ClassSelection classSelection = new ClassSelection();
+            ClassSelection classSelection = new ClassSelection(yearsUsable);
             classSelection.Show();
         }
-
-        
     }
 }

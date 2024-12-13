@@ -16,5 +16,26 @@ namespace Larpmaster
         {
             InitializeComponent();
         }
+
+        private void vuoriniittyBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NameSelection nameselection = new NameSelection();
+            nameselection.Show();
+        }
+
+        private void vardakovBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NameSelection nameselection = new NameSelection();
+            nameselection.Show();
+        }
+
+        private void metsäläisetBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NameSelection nameselection = new NameSelection();
+            nameselection.Show();
+        }
     }
 }

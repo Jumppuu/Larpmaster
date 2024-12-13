@@ -7,7 +7,7 @@ namespace Larpmaster
         public mainMenu(bool isgameMaster)
         {
             InitializeComponent();
-            UpdateUI(isgameMaster); 
+            UpdateUI(isgameMaster);
 
             // Subscribe to the FormClosed event
             this.FormClosed += new FormClosedEventHandler(MainMenu_FormClosed);
@@ -52,11 +52,5 @@ namespace Larpmaster
             NewCharacter newchar = new NewCharacter();
             newchar.Show();
         }
-
-        private void titleLbl_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }

@@ -61,7 +61,6 @@
             titleLbl.Size = new Size(735, 165);
             titleLbl.TabIndex = 1;
             titleLbl.Text = "Larpmaster";
-            titleLbl.Click += titleLbl_Click;
             // 
             // newCharBtn
             // 

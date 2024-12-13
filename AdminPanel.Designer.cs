@@ -47,6 +47,7 @@
             loadCharBtn = new Button();
             saveCharBtn = new Button();
             characterDetailsBox = new RichTextBox();
+            weaponListBtn = new Button();
             SuspendLayout();
             // 
             // editCharBtn
@@ -287,6 +288,16 @@
             characterDetailsBox.Text = "";
             characterDetailsBox.Visible = false;
             // 
+            // weaponListBtn
+            // 
+            weaponListBtn.Location = new Point(735, 488);
+            weaponListBtn.Name = "weaponListBtn";
+            weaponListBtn.Size = new Size(75, 23);
+            weaponListBtn.TabIndex = 19;
+            weaponListBtn.Text = "button1";
+            weaponListBtn.UseVisualStyleBackColor = true;
+            weaponListBtn.Click += weaponListBtn_Click;
+            // 
             // Pelinjohto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -294,6 +305,7 @@
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1205, 702);
+            Controls.Add(weaponListBtn);
             Controls.Add(characterDetailsBox);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
@@ -341,5 +353,6 @@
         private Button loadCharBtn;
         private Button saveCharBtn;
         private RichTextBox characterDetailsBox;
+        private Button weaponListBtn;
     }
 }

@@ -75,7 +75,7 @@
             intFinalLbl = new Label();
             BackButton_StatSelect = new Button();
             ConfirmButton_StatSelection = new Button();
-            AgeInput = new TextBox();
+            ageInputBox = new TextBox();
             acceptAgeButton = new Button();
             AgeInputLabel = new Label();
             SuspendLayout();
@@ -525,13 +525,13 @@
             ConfirmButton_StatSelection.UseVisualStyleBackColor = false;
             ConfirmButton_StatSelection.Click += ConfirmButton_StatSelection_Click;
             // 
-            // AgeInput
+            // ageInputBox
             // 
-            AgeInput.Location = new Point(35, 440);
-            AgeInput.Name = "AgeInput";
-            AgeInput.Size = new Size(100, 23);
-            AgeInput.TabIndex = 50;
-            AgeInput.Visible = false;
+            ageInputBox.Location = new Point(35, 440);
+            ageInputBox.Name = "ageInputBox";
+            ageInputBox.Size = new Size(100, 23);
+            ageInputBox.TabIndex = 50;
+            ageInputBox.Visible = false;
             // 
             // acceptAgeButton
             // 
@@ -566,7 +566,7 @@
             ClientSize = new Size(642, 475);
             Controls.Add(AgeInputLabel);
             Controls.Add(acceptAgeButton);
-            Controls.Add(AgeInput);
+            Controls.Add(ageInputBox);
             Controls.Add(ConfirmButton_StatSelection);
             Controls.Add(BackButton_StatSelect);
             Controls.Add(chaFinalLbl);
@@ -670,7 +670,7 @@
         private Label intFinalLbl;
         private Button BackButton_StatSelect;
         private Button ConfirmButton_StatSelection;
-        private TextBox AgeInput;
+        private TextBox ageInputBox;
         private Button acceptAgeButton;
         private Label AgeInputLabel;
     }

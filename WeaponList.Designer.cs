@@ -57,6 +57,7 @@
             removeLastWeaponBtn = new Button();
             choseWepLbl = new Label();
             exitWeaponListBtn = new Button();
+            weaponListBox = new ListBox();
             SuspendLayout();
             // 
             // tikariBtn
@@ -71,6 +72,7 @@
             tikariBtn.TabIndex = 0;
             tikariBtn.Text = "Tikari";
             tikariBtn.UseVisualStyleBackColor = false;
+            tikariBtn.Click += WeaponButton_Click;
             // 
             // lyhytMiekkaBtn
             // 
@@ -84,6 +86,7 @@
             lyhytMiekkaBtn.TabIndex = 1;
             lyhytMiekkaBtn.Text = "Lyhyt miekka";
             lyhytMiekkaBtn.UseVisualStyleBackColor = false;
+            lyhytMiekkaBtn.Click += WeaponButton_Click;
             // 
             // pitkäMiekkaBtn
             // 
@@ -97,6 +100,7 @@
             pitkäMiekkaBtn.TabIndex = 2;
             pitkäMiekkaBtn.Text = "Pitkä miekka";
             pitkäMiekkaBtn.UseVisualStyleBackColor = false;
+            pitkäMiekkaBtn.Click += WeaponButton_Click;
             // 
             // kaksKädenMiekkaBtn
             // 
@@ -110,6 +114,7 @@
             kaksKädenMiekkaBtn.TabIndex = 3;
             kaksKädenMiekkaBtn.Text = "Kahdenkäden miekka";
             kaksKädenMiekkaBtn.UseVisualStyleBackColor = false;
+            kaksKädenMiekkaBtn.Click += WeaponButton_Click;
             // 
             // kävelySauvaBtn
             // 
@@ -123,6 +128,7 @@
             kävelySauvaBtn.TabIndex = 7;
             kävelySauvaBtn.Text = "Kävelysauva";
             kävelySauvaBtn.UseVisualStyleBackColor = false;
+            kävelySauvaBtn.Click += WeaponButton_Click;
             // 
             // äpäräMiekkaBtn
             // 
@@ -136,6 +142,7 @@
             äpäräMiekkaBtn.TabIndex = 6;
             äpäräMiekkaBtn.Text = "Äpärämiekka";
             äpäräMiekkaBtn.UseVisualStyleBackColor = false;
+            äpäräMiekkaBtn.Click += WeaponButton_Click;
             // 
             // levyHaarniskaBtn
             // 
@@ -149,6 +156,7 @@
             levyHaarniskaBtn.TabIndex = 5;
             levyHaarniskaBtn.Text = "Levyhaarniska";
             levyHaarniskaBtn.UseVisualStyleBackColor = false;
+            levyHaarniskaBtn.Click += WeaponButton_Click;
             // 
             // rengasHaarniskaBtn
             // 
@@ -162,6 +170,7 @@
             rengasHaarniskaBtn.TabIndex = 4;
             rengasHaarniskaBtn.Text = "Rengashaarniska";
             rengasHaarniskaBtn.UseVisualStyleBackColor = false;
+            rengasHaarniskaBtn.Click += WeaponButton_Click;
             // 
             // käsiKirvesBtn
             // 
@@ -175,6 +184,7 @@
             käsiKirvesBtn.TabIndex = 11;
             käsiKirvesBtn.Text = "Käsikirves";
             käsiKirvesBtn.UseVisualStyleBackColor = false;
+            käsiKirvesBtn.Click += WeaponButton_Click;
             // 
             // ryhmySauvaBtn
             // 
@@ -188,6 +198,7 @@
             ryhmySauvaBtn.TabIndex = 10;
             ryhmySauvaBtn.Text = "Ryhmysauva";
             ryhmySauvaBtn.UseVisualStyleBackColor = false;
+            ryhmySauvaBtn.Click += WeaponButton_Click;
             // 
             // keihäsBtn
             // 
@@ -201,6 +212,7 @@
             keihäsBtn.TabIndex = 9;
             keihäsBtn.Text = "Keihäs";
             keihäsBtn.UseVisualStyleBackColor = false;
+            keihäsBtn.Click += WeaponButton_Click;
             // 
             // sotaKirvesBtn
             // 
@@ -214,6 +226,7 @@
             sotaKirvesBtn.TabIndex = 8;
             sotaKirvesBtn.Text = "Sotakirves";
             sotaKirvesBtn.UseVisualStyleBackColor = false;
+            sotaKirvesBtn.Click += WeaponButton_Click;
             // 
             // lyhytJousiBtn
             // 
@@ -227,6 +240,7 @@
             lyhytJousiBtn.TabIndex = 15;
             lyhytJousiBtn.Text = "Lyhytjousi";
             lyhytJousiBtn.UseVisualStyleBackColor = false;
+            lyhytJousiBtn.Click += WeaponButton_Click;
             // 
             // kirvesBtn
             // 
@@ -240,6 +254,7 @@
             kirvesBtn.TabIndex = 14;
             kirvesBtn.Text = "Kirves";
             kirvesBtn.UseVisualStyleBackColor = false;
+            kirvesBtn.Click += WeaponButton_Click;
             // 
             // isoKilpiBtn
             // 
@@ -253,6 +268,7 @@
             isoKilpiBtn.TabIndex = 13;
             isoKilpiBtn.Text = "Iso Kilpi";
             isoKilpiBtn.UseVisualStyleBackColor = false;
+            isoKilpiBtn.Click += WeaponButton_Click;
             // 
             // rengasPaitaBtn
             // 
@@ -266,6 +282,7 @@
             rengasPaitaBtn.TabIndex = 12;
             rengasPaitaBtn.Text = "Rengaspaita";
             rengasPaitaBtn.UseVisualStyleBackColor = false;
+            rengasPaitaBtn.Click += WeaponButton_Click;
             // 
             // nahkaHaarniskaBtn
             // 
@@ -279,6 +296,7 @@
             nahkaHaarniskaBtn.TabIndex = 19;
             nahkaHaarniskaBtn.Text = "Nahkahaarniska";
             nahkaHaarniskaBtn.UseVisualStyleBackColor = false;
+            nahkaHaarniskaBtn.Click += WeaponButton_Click;
             // 
             // kilpiBtn
             // 
@@ -292,6 +310,7 @@
             kilpiBtn.TabIndex = 18;
             kilpiBtn.Text = "Kilpi";
             kilpiBtn.UseVisualStyleBackColor = false;
+            kilpiBtn.Click += WeaponButton_Click;
             // 
             // pieniKilpiBtn
             // 
@@ -305,6 +324,7 @@
             pieniKilpiBtn.TabIndex = 17;
             pieniKilpiBtn.Text = "Pieni kilpi";
             pieniKilpiBtn.UseVisualStyleBackColor = false;
+            pieniKilpiBtn.Click += WeaponButton_Click;
             // 
             // nuijaBtn
             // 
@@ -318,6 +338,7 @@
             nuijaBtn.TabIndex = 16;
             nuijaBtn.Text = "Nuija";
             nuijaBtn.UseVisualStyleBackColor = false;
+            nuijaBtn.Click += WeaponButton_Click;
             // 
             // nuolibtn
             // 
@@ -331,6 +352,7 @@
             nuolibtn.TabIndex = 23;
             nuolibtn.Text = "Nuoli";
             nuolibtn.UseVisualStyleBackColor = false;
+            nuolibtn.Click += WeaponButton_Click;
             // 
             // pitkäJousiBtn
             // 
@@ -344,6 +366,7 @@
             pitkäJousiBtn.TabIndex = 22;
             pitkäJousiBtn.Text = "Pitkäjousi";
             pitkäJousiBtn.UseVisualStyleBackColor = false;
+            pitkäJousiBtn.Click += WeaponButton_Click;
             // 
             // heikkoLyhytJousiBtn
             // 
@@ -357,6 +380,7 @@
             heikkoLyhytJousiBtn.TabIndex = 21;
             heikkoLyhytJousiBtn.Text = "Heikko lyhytjousi";
             heikkoLyhytJousiBtn.UseVisualStyleBackColor = false;
+            heikkoLyhytJousiBtn.Click += WeaponButton_Click;
             // 
             // kiviLinkoBtn
             // 
@@ -370,6 +394,7 @@
             kiviLinkoBtn.TabIndex = 20;
             kiviLinkoBtn.Text = "Kivilinko";
             kiviLinkoBtn.UseVisualStyleBackColor = false;
+            kiviLinkoBtn.Click += WeaponButton_Click;
             // 
             // sotaVasaraBtn
             // 
@@ -383,6 +408,7 @@
             sotaVasaraBtn.TabIndex = 27;
             sotaVasaraBtn.Text = "Sotavasara";
             sotaVasaraBtn.UseVisualStyleBackColor = false;
+            sotaVasaraBtn.Click += WeaponButton_Click;
             // 
             // ketjuPiikkiPalloBtn
             // 
@@ -396,6 +422,7 @@
             ketjuPiikkiPalloBtn.TabIndex = 26;
             ketjuPiikkiPalloBtn.Text = "Ketjupiikkipallo";
             ketjuPiikkiPalloBtn.UseVisualStyleBackColor = false;
+            ketjuPiikkiPalloBtn.Click += WeaponButton_Click;
             // 
             // removeLastWeaponBtn
             // 
@@ -427,12 +454,24 @@
             exitWeaponListBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             exitWeaponListBtn.FlatAppearance.BorderColor = Color.Black;
             exitWeaponListBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
-            exitWeaponListBtn.Location = new Point(12, 29);
+            exitWeaponListBtn.Location = new Point(12, 33);
             exitWeaponListBtn.Name = "exitWeaponListBtn";
             exitWeaponListBtn.Size = new Size(75, 23);
             exitWeaponListBtn.TabIndex = 30;
             exitWeaponListBtn.Text = "Poistu";
             exitWeaponListBtn.UseVisualStyleBackColor = false;
+            exitWeaponListBtn.Click += exitWeaponListBtn_Click;
+            // 
+            // weaponListBox
+            // 
+            weaponListBox.BackColor = Color.NavajoWhite;
+            weaponListBox.BorderStyle = BorderStyle.None;
+            weaponListBox.FormattingEnabled = true;
+            weaponListBox.ItemHeight = 15;
+            weaponListBox.Location = new Point(354, 262);
+            weaponListBox.Name = "weaponListBox";
+            weaponListBox.Size = new Size(304, 165);
+            weaponListBox.TabIndex = 31;
             // 
             // WeaponList
             // 
@@ -441,6 +480,7 @@
             AutoSize = true;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(800, 450);
+            Controls.Add(weaponListBox);
             Controls.Add(exitWeaponListBtn);
             Controls.Add(choseWepLbl);
             Controls.Add(removeLastWeaponBtn);
@@ -508,5 +548,6 @@
         private Button removeLastWeaponBtn;
         private Label choseWepLbl;
         private Button exitWeaponListBtn;
+        private ListBox weaponListBox;
     }
 }

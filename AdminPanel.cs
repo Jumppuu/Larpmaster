@@ -64,6 +64,13 @@ namespace Larpmaster
             NewCharacter newchar = new NewCharacter();
             newchar.Show();
         }
+
+        private void weaponListBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            WeaponList weaponlist = new WeaponList();
+            weaponlist.Show();
+        }
     }
 }
     

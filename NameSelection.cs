@@ -16,5 +16,19 @@ namespace Larpmaster
         {
             InitializeComponent();
         }
+
+        private void okBtn_Click(object sender, EventArgs e)
+        {
+            oikeaNimiLbl.Visible = true;
+            realNameTxtbox.Visible = true;
+            okBtn2.Visible = true;
+        }
+
+        private void okBtn2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var weaponList = new WeaponList();
+            weaponList.Show();
+        }
     }
 }

@@ -31,6 +31,9 @@
             nameInputTxtBox = new TextBox();
             okBtn = new Button();
             charNameLbl = new Label();
+            oikeaNimiLbl = new Label();
+            realNameTxtbox = new TextBox();
+            okBtn2 = new Button();
             SuspendLayout();
             // 
             // nameInputTxtBox
@@ -50,6 +53,7 @@
             okBtn.TabIndex = 1;
             okBtn.Text = "Ok";
             okBtn.UseVisualStyleBackColor = true;
+            okBtn.Click += okBtn_Click;
             // 
             // charNameLbl
             // 
@@ -62,12 +66,48 @@
             charNameLbl.TabIndex = 2;
             charNameLbl.Text = "Kirjoita hahmosi nimi";
             // 
+            // oikeaNimiLbl
+            // 
+            oikeaNimiLbl.AutoSize = true;
+            oikeaNimiLbl.BackColor = Color.Transparent;
+            oikeaNimiLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold);
+            oikeaNimiLbl.Location = new Point(441, 34);
+            oikeaNimiLbl.Name = "oikeaNimiLbl";
+            oikeaNimiLbl.Size = new Size(283, 19);
+            oikeaNimiLbl.TabIndex = 3;
+            oikeaNimiLbl.Text = "Kirjoita oikea nimesi";
+            oikeaNimiLbl.Visible = false;
+            // 
+            // realNameTxtbox
+            // 
+            realNameTxtbox.BackColor = Color.Moccasin;
+            realNameTxtbox.Location = new Point(450, 77);
+            realNameTxtbox.Name = "realNameTxtbox";
+            realNameTxtbox.Size = new Size(100, 23);
+            realNameTxtbox.TabIndex = 4;
+            realNameTxtbox.Visible = false;
+            // 
+            // okBtn2
+            // 
+            okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            okBtn2.Location = new Point(450, 106);
+            okBtn2.Name = "okBtn2";
+            okBtn2.Size = new Size(75, 23);
+            okBtn2.TabIndex = 5;
+            okBtn2.Text = "Ok";
+            okBtn2.UseVisualStyleBackColor = true;
+            okBtn2.Visible = false;
+            okBtn2.Click += okBtn2_Click;
+            // 
             // NameSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(800, 450);
+            Controls.Add(okBtn2);
+            Controls.Add(realNameTxtbox);
+            Controls.Add(oikeaNimiLbl);
             Controls.Add(charNameLbl);
             Controls.Add(okBtn);
             Controls.Add(nameInputTxtBox);
@@ -82,5 +122,8 @@
         private TextBox nameInputTxtBox;
         private Button okBtn;
         private Label charNameLbl;
+        private Label oikeaNimiLbl;
+        private TextBox realNameTxtbox;
+        private Button okBtn2;
     }
 }
