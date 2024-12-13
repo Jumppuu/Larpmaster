@@ -247,6 +247,7 @@
             Controls.Add(AgeLabel);
             Controls.Add(CharacterSummaryExplain_Label);
             Name = "CreatedCharacterSummary";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CreatedCharacterSummary";
             ResumeLayout(false);
             PerformLayout();

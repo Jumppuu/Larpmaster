@@ -101,6 +101,7 @@
             Controls.Add(vardakovBtn);
             Controls.Add(vuoriniittyBtn);
             Name = "KingdomSelection";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "KingdomSelection";
             ResumeLayout(false);
             PerformLayout();

@@ -141,7 +141,7 @@
             AutoSize = true;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(970, 590);
+            ClientSize = new Size(974, 606);
             Controls.Add(gameMasterBtn);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);

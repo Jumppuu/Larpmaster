@@ -47,6 +47,7 @@
             // okBtn
             // 
             okBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            okBtn.FlatStyle = FlatStyle.Popup;
             okBtn.Location = new Point(27, 106);
             okBtn.Name = "okBtn";
             okBtn.Size = new Size(75, 23);
@@ -90,6 +91,7 @@
             // okBtn2
             // 
             okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            okBtn2.FlatStyle = FlatStyle.Popup;
             okBtn2.Location = new Point(450, 106);
             okBtn2.Name = "okBtn2";
             okBtn2.Size = new Size(75, 23);
@@ -112,6 +114,7 @@
             Controls.Add(okBtn);
             Controls.Add(nameInputTxtBox);
             Name = "NameSelection";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Name Selection";
             ResumeLayout(false);
             PerformLayout();

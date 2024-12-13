@@ -49,6 +49,8 @@
             // 
             // tehtävätTextBox
             // 
+            tehtävätTextBox.BackColor = Color.Moccasin;
+            tehtävätTextBox.BorderStyle = BorderStyle.FixedSingle;
             tehtävätTextBox.Location = new Point(294, 81);
             tehtävätTextBox.Name = "tehtävätTextBox";
             tehtävätTextBox.Size = new Size(100, 23);
@@ -68,6 +70,8 @@
             // 
             // muutaTextBox
             // 
+            muutaTextBox.BackColor = Color.Moccasin;
+            muutaTextBox.BorderStyle = BorderStyle.FixedSingle;
             muutaTextBox.Location = new Point(294, 226);
             muutaTextBox.Name = "muutaTextBox";
             muutaTextBox.Size = new Size(100, 23);
@@ -77,6 +81,7 @@
             // okBtn1
             // 
             okBtn1.BackColor = Color.Transparent;
+            okBtn1.FlatStyle = FlatStyle.Popup;
             okBtn1.Location = new Point(417, 81);
             okBtn1.Name = "okBtn1";
             okBtn1.Size = new Size(75, 23);
@@ -88,6 +93,7 @@
             // okBtn2
             // 
             okBtn2.BackColor = Color.Transparent;
+            okBtn2.FlatStyle = FlatStyle.Popup;
             okBtn2.Location = new Point(417, 226);
             okBtn2.Name = "okBtn2";
             okBtn2.Size = new Size(75, 23);
@@ -110,6 +116,7 @@
             Controls.Add(tehtävätTextBox);
             Controls.Add(missionLbl);
             Name = "YourTasks";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "YourTasks";
             ResumeLayout(false);
             PerformLayout();
