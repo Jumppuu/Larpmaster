@@ -17,11 +17,21 @@ namespace Larpmaster
             InitializeComponent();
         }
 
+        private void nameInputTxtBox_TextChanged(object sender, EventArgs e)
+        {
+            SelectionManager.Instance.Selections.CharacterName = nameInputTxtBox.Text;
+        }
+
         private void okBtn_Click(object sender, EventArgs e)
         {
             oikeaNimiLbl.Visible = true;
             realNameTxtbox.Visible = true;
             okBtn2.Visible = true;
+        }
+
+        private void realNameTxtbox_TextChanged(object sender, EventArgs e)
+        {
+            SelectionManager.Instance.Selections.RealName = realNameTxtbox.Text;
         }
 
         private void okBtn2_Click(object sender, EventArgs e)

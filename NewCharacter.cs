@@ -26,16 +26,19 @@ namespace Larpmaster
         private void RaceBtn_Human_Click(object sender, EventArgs e)
         {
             OpenGenderSelection("Ihminen");
+            SelectionManager.Instance.Selections.Race = "Ihminen";
         }
 
         private void RaceBtn_Elf_Click(object sender, EventArgs e)
         {
             OpenGenderSelection("Haltija");
+            SelectionManager.Instance.Selections.Race = "Haltija";
         }
 
         private void RaceBtn_HalfElf_Click(object sender, EventArgs e)
         {
             OpenGenderSelection("Puolihaltija");
+            SelectionManager.Instance.Selections.Race = "Puolihaltija";
         }
         private void RaceBtn_Peikko_Click(object sender, EventArgs e)
         {

@@ -18,6 +18,10 @@ namespace Larpmaster
         {
             InitializeComponent();
         }
+        private void tehtävätTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SelectionManager.Instance.Selections.Tasks = tehtävätTextBox.Text;
+        }
 
         private void okBtn1_Click(object sender, EventArgs e)
         {
@@ -26,12 +30,15 @@ namespace Larpmaster
             muutaTextBox.Visible = true;
         }
 
-
+        private void muutaTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SelectionManager.Instance.Selections.OtherInfo = muutaTextBox.Text;
+        }
 
         private void okBtn2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new mainMenu(isgameMaster).Show();
+            new FinalSummaryAndSave().Show();
         }
     }
 }

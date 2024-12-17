@@ -24,6 +24,7 @@ namespace Larpmaster
         {
             this.Hide();
             var charStats = new StatSelection(selectedRace, "Male");
+            SelectionManager.Instance.Selections.Gender = "Male";
             charStats.Show();
         }
 
@@ -31,6 +32,7 @@ namespace Larpmaster
         {
             this.Hide();
             var charStats = new StatSelection(selectedRace, "Female");
+            SelectionManager.Instance.Selections.Gender = "Female";
             charStats.Show();
         }
 

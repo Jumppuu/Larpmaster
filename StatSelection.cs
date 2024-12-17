@@ -273,6 +273,8 @@ namespace Larpmaster
                 UpdateFinalStat(StatValue_Wis, wisFinalLbl, multipliers["Wis"]);
                 UpdateFinalStat(StatValue_Cha, chaFinalLbl, multipliers["Cha"]);
                 UpdateFinalStat(StatValue_Agi, agiFinalLbl, multipliers["Agi"]);
+
+                SelectionManager.Instance.Selections.Charisma = chaFinalLbl.Text;
             }
         }
 
@@ -353,6 +355,8 @@ namespace Larpmaster
         private void acceptAgeButton_Click(object sender, EventArgs e)
         {
             string race = currentRace;
+
+
             if (raceAgeData.TryGetValue(race, out var ageData))
             {
                 if (string.IsNullOrEmpty(ageInputBox.Text))

@@ -20,6 +20,7 @@ namespace Larpmaster
         private void vuoriniittyBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            SelectionManager.Instance.Selections.Kingdom = "Vuoriniitty";
             NameSelection nameselection = new NameSelection();
             nameselection.Show();
         }
@@ -27,6 +28,7 @@ namespace Larpmaster
         private void vardakovBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            SelectionManager.Instance.Selections.Kingdom = "Vardakov";
             NameSelection nameselection = new NameSelection();
             nameselection.Show();
         }
@@ -34,6 +36,7 @@ namespace Larpmaster
         private void metsäläisetBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            SelectionManager.Instance.Selections.Kingdom = "Metsäläiset";
             NameSelection nameselection = new NameSelection();
             nameselection.Show();
         }

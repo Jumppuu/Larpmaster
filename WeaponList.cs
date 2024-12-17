@@ -44,6 +44,7 @@ namespace Larpmaster
             {
                 weaponListBox.Items.Add(weapon);
             }
+            SelectionManager.Instance.Selections.Weapons = new List<string>(selectedWeapons);
         }
 
         private void exitWeaponListBtn_Click(object sender, EventArgs e)

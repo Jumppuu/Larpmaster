@@ -299,7 +299,7 @@
             // 
             reRollStatsBtn.BackColor = Color.Transparent;
             reRollStatsBtn.FlatStyle = FlatStyle.Popup;
-            reRollStatsBtn.Location = new Point(555, 427);
+            reRollStatsBtn.Location = new Point(629, 439);
             reRollStatsBtn.Name = "reRollStatsBtn";
             reRollStatsBtn.Size = new Size(75, 23);
             reRollStatsBtn.TabIndex = 26;

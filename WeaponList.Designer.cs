@@ -464,7 +464,7 @@
             // 
             // weaponListBox
             // 
-            weaponListBox.BackColor = Color.NavajoWhite;
+            weaponListBox.BackColor = Color.Moccasin;
             weaponListBox.BorderStyle = BorderStyle.None;
             weaponListBox.FormattingEnabled = true;
             weaponListBox.ItemHeight = 15;

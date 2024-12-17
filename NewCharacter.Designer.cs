@@ -34,18 +34,18 @@
             ChooseRaceLabel.AutoSize = true;
             ChooseRaceLabel.BackColor = Color.Transparent;
             ChooseRaceLabel.Font = new Font("Elephant", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ChooseRaceLabel.Location = new Point(204, 39);
+            ChooseRaceLabel.Location = new Point(65, 171);
             ChooseRaceLabel.Margin = new Padding(2, 0, 2, 0);
             ChooseRaceLabel.Name = "ChooseRaceLabel";
-            ChooseRaceLabel.Size = new Size(105, 21);
+            ChooseRaceLabel.Size = new Size(100, 21);
             ChooseRaceLabel.TabIndex = 1;
-            ChooseRaceLabel.Text = "Valitse rotu:";
+            ChooseRaceLabel.Text = "Valitse rotu";
             // 
             // RaceBtn_Human
             // 
             RaceBtn_Human.BackColor = Color.Transparent;
             RaceBtn_Human.FlatStyle = FlatStyle.Popup;
-            RaceBtn_Human.Location = new Point(204, 99);
+            RaceBtn_Human.Location = new Point(190, 169);
             RaceBtn_Human.Margin = new Padding(2);
             RaceBtn_Human.Name = "RaceBtn_Human";
             RaceBtn_Human.Size = new Size(78, 27);
@@ -58,7 +58,7 @@
             // 
             RaceBtn_Elf.BackColor = Color.Transparent;
             RaceBtn_Elf.FlatStyle = FlatStyle.Popup;
-            RaceBtn_Elf.Location = new Point(279, 99);
+            RaceBtn_Elf.Location = new Point(265, 169);
             RaceBtn_Elf.Margin = new Padding(2);
             RaceBtn_Elf.Name = "RaceBtn_Elf";
             RaceBtn_Elf.Size = new Size(78, 27);
@@ -72,7 +72,7 @@
             RaceBtn_HalfElf.BackColor = Color.Transparent;
             RaceBtn_HalfElf.FlatStyle = FlatStyle.Popup;
             RaceBtn_HalfElf.ForeColor = SystemColors.ControlText;
-            RaceBtn_HalfElf.Location = new Point(352, 99);
+            RaceBtn_HalfElf.Location = new Point(338, 169);
             RaceBtn_HalfElf.Margin = new Padding(2);
             RaceBtn_HalfElf.Name = "RaceBtn_HalfElf";
             RaceBtn_HalfElf.Size = new Size(78, 27);
