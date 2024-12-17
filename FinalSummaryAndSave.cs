@@ -13,17 +13,20 @@ namespace Larpmaster
 {
     public partial class FinalSummaryAndSave : Form
     {
-        public FinalSummaryAndSave(bool showSaveButton = true)
+        public FinalSummaryAndSave(bool showSaveButton = true, string characterFilePath = "")
         {
             InitializeComponent();
             DisplaySelections();
             saveButton.Visible = showSaveButton;
+
+            if (!string.IsNullOrEmpty(characterFilePath))
+            {
+                summaryTextBox.Text = System.IO.File.ReadAllText(characterFilePath); // Load and display the character file content
+            }
         }
 
         private void DisplaySelections()
         {
-
-
 
             var selections = SelectionManager.Instance.Selections;
             var formattedText = new StringBuilder();

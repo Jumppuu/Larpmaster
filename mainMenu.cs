@@ -3,6 +3,7 @@ namespace Larpmaster
     public partial class mainMenu : Form
     {
         private bool isCharacterLoaded = false; // Flag to indicate if a character is loaded
+        private string loadedCharacterFilePath = string.Empty; // Store the loaded character file path
 
         public mainMenu(bool isgameMaster)
         {
@@ -36,6 +37,7 @@ namespace Larpmaster
             {                                                       // Message box containing the chosen file's filepath is shown.
                 MessageBox.Show(LoadCharFileDialog.FileName);
                 isCharacterLoaded = true; // Set the flag to true when a character is loaded
+                loadedCharacterFilePath = LoadCharFileDialog.FileName; // Store the file path
             }
         }
 
@@ -58,7 +60,7 @@ namespace Larpmaster
         private void charInfoBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FinalSummaryAndSave finalSummary = new FinalSummaryAndSave(showSaveButton: false);
+            FinalSummaryAndSave finalSummary = new FinalSummaryAndSave(showSaveButton: false, loadedCharacterFilePath);
             finalSummary.Show();
         }
     }
