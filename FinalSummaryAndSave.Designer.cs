@@ -37,7 +37,7 @@
             // 
             saveButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveButton.FlatStyle = FlatStyle.Popup;
-            saveButton.Location = new Point(12, 357);
+            saveButton.Location = new Point(452, 285);
             saveButton.Name = "saveButton";
             saveButton.Size = new Size(184, 55);
             saveButton.TabIndex = 0;

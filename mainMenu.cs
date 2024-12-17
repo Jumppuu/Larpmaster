@@ -33,12 +33,40 @@ namespace Larpmaster
 
         private void loadCharBtn_Click(object sender, EventArgs e) // Event handler method when user clicks "lataa hahmo" -button.
         {
-            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK) // Opens browse file dialog. If user has chosen a file and clicked "OK" (instead of closing dialog window or clicked cancel)
-            {                                                       // Message box containing the chosen file's filepath is shown.
-                MessageBox.Show(LoadCharFileDialog.FileName);
+            if (LoadCharFileDialog.ShowDialog() == DialogResult.OK) // Opens browse file dialog. 
+            {                                                       
+                string filePath = LoadCharFileDialog.FileName;
+                string characterName = GetCharacterNameFromFileName(filePath);
+
+                if (!string.IsNullOrEmpty(characterName))
+                {
+                    MessageBox.Show($"Hahmo {characterName} ladattu");
+                }
+                else
+                {
+                    MessageBox.Show("Hahmo ladattu onnistuneesti.");
+                }
+
                 isCharacterLoaded = true; // Set the flag to true when a character is loaded
-                loadedCharacterFilePath = LoadCharFileDialog.FileName; // Store the file path
+                loadedCharacterFilePath = filePath; // Store the file path
             }
+        }
+
+        private string GetCharacterNameFromFileName(string filePath)
+        {
+            // Extract the file name from the file path
+            string fileName = System.IO.Path.GetFileNameWithoutExtension(filePath);
+
+            // Find the index of the underscore
+            int underscoreIndex = fileName.IndexOf('_');
+
+            if (underscoreIndex > 0)
+            {
+                // Extract the character name before the underscore
+                return fileName.Substring(0, underscoreIndex);
+            }
+
+            return string.Empty;
         }
 
         private void gameMasterBtn_Click(object sender, EventArgs e)
@@ -47,7 +75,6 @@ namespace Larpmaster
             Pelinjohto adminPanelForm = new Pelinjohto(true); // Gamemaster role
             adminPanelForm.Show(); // Show the admin panel
         }
-
 
         private void newCharBtn_Click(object sender, EventArgs e)
         {
