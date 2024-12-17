@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Larpmaster
 {
@@ -30,6 +31,7 @@ namespace Larpmaster
             formattedText.AppendLine($"Rotu: {selections.Race}");
             formattedText.AppendLine($"Sukupuoli: {selections.Gender}");
             formattedText.AppendLine($"Ikä: {selections.Age}");
+            formattedText.AppendLine("Osumapisteet: " + CalculateHitPoints());
             formattedText.AppendLine($"Fyysinen kunto: {physicalCondition}%");
             formattedText.AppendLine($"Karisma: {selections.Charisma}");
             formattedText.AppendLine($"Voimakkuus: {selections.Strength}");
@@ -61,6 +63,7 @@ namespace Larpmaster
             txt.AppendLine("Rotu: " + selections.Race);
             txt.AppendLine("Sukupuoli: " + selections.Gender);
             txt.AppendLine("Ikä: " + selections.Age);
+            txt.AppendLine("Osumapisteet: " + CalculateHitPoints());
             txt.AppendLine("Fyysinen kunto: " + physicalCondition + "%");
             txt.AppendLine("Karisma: " + selections.Charisma);
             txt.AppendLine("Voimakkuus: " + selections.Strength);
@@ -91,6 +94,44 @@ namespace Larpmaster
                 }
             }
         }
+
+        private int CalculateHitPoints()
+        {
+            if (int.TryParse(SelectionManager.Instance.Selections.Constitution, out int constitution))
+            {
+                if (constitution >= 0 && constitution <= 50)
+                {
+                    return 1;
+                }
+                else if (constitution >= 51 && constitution <= 100)
+                {
+                    return 2;
+                }
+                else if (constitution >= 101 && constitution <= 129)
+                {
+                    return 3;
+                }
+                else if (constitution >= 130 && constitution <= 149)
+                {
+                    return 4;
+                }
+                else if (constitution >= 150 && constitution <= 159)
+                {
+                    return 5;
+                }
+                else
+                {
+                  
+                    return 0; // if constitution is not in the valid range handle it here
+                }
+            }
+            else
+            {
+                // Handle cases where constitution is not a valid integer
+                return 0;
+            }
+        }
+
 
         private double CalculatePhysicalCondition(int age)
         {
