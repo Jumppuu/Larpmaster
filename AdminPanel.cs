@@ -42,7 +42,7 @@ namespace Larpmaster
             {
                 try
                 {
-                    string fileContent = File.ReadAllText(LoadCharFileDialog.FileName, Encoding.GetEncoding("ISO-8859-1"));
+                    string fileContent = File.ReadAllText(LoadCharFileDialog.FileName, Encoding.GetEncoding("UTF-8"));
                     characterDetailsBox.Text = fileContent; // Display file content in RichTextBox
                     characterDetailsBox.Visible = true; // Make the RichTextBox visible
                 }

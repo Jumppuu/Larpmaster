@@ -47,7 +47,7 @@
             loadCharBtn = new Button();
             saveCharBtn = new Button();
             characterDetailsBox = new RichTextBox();
-            weaponListBtn = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // editCharBtn
@@ -288,15 +288,16 @@
             characterDetailsBox.Text = "";
             characterDetailsBox.Visible = false;
             // 
-            // weaponListBtn
+            // label1
             // 
-            weaponListBtn.Location = new Point(735, 488);
-            weaponListBtn.Name = "weaponListBtn";
-            weaponListBtn.Size = new Size(75, 23);
-            weaponListBtn.TabIndex = 19;
-            weaponListBtn.Text = "button1";
-            weaponListBtn.UseVisualStyleBackColor = true;
-            weaponListBtn.Click += weaponListBtn_Click;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(22, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(1008, 20);
+            label1.TabIndex = 19;
+            label1.Text = "Tämä osio on suurimmaksi osaksi vain visuaalista ja toimivuus voi tulla seuraavassa versiossa. Uusi hahmo, Lataa hahmo ja Pelaajatila toimivat.";
             // 
             // Pelinjohto
             // 
@@ -305,7 +306,7 @@
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1205, 702);
-            Controls.Add(weaponListBtn);
+            Controls.Add(label1);
             Controls.Add(characterDetailsBox);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
@@ -330,6 +331,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pelinjohto Paneeli";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -353,6 +355,6 @@
         private Button loadCharBtn;
         private Button saveCharBtn;
         private RichTextBox characterDetailsBox;
-        private Button weaponListBtn;
+        private Label label1;
     }
 }

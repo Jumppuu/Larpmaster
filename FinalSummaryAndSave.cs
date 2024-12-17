@@ -13,18 +13,23 @@ namespace Larpmaster
 {
     public partial class FinalSummaryAndSave : Form
     {
-        public FinalSummaryAndSave()
+        public FinalSummaryAndSave(bool showSaveButton = true)
         {
             InitializeComponent();
             DisplaySelections();
+            saveButton.Visible = showSaveButton;
         }
 
         private void DisplaySelections()
         {
+
+
+
             var selections = SelectionManager.Instance.Selections;
             var formattedText = new StringBuilder();
 
             double physicalCondition = CalculatePhysicalCondition(selections.Age);
+
 
 
             formattedText.AppendLine("Hahmosi tiedot:");
@@ -121,7 +126,7 @@ namespace Larpmaster
                 }
                 else
                 {
-                  
+
                     return 0; // if constitution is not in the valid range handle it here
                 }
             }
@@ -148,7 +153,7 @@ namespace Larpmaster
             }
             else
             {
-                
+
                 Random random = new Random();
                 double physicalCondition = 100;
                 for (int i = 23; i <= age; i++)
@@ -164,10 +169,12 @@ namespace Larpmaster
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
-            SelectionManager.Instance.ClearSelections();
+        
             this.Hide();
             mainMenu MainMenu = new mainMenu(false);
             MainMenu.Show();
         }
+
+
     }
 }

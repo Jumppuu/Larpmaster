@@ -89,6 +89,7 @@
             charInfoBtn.TabIndex = 3;
             charInfoBtn.Text = "Hahmon Tiedot";
             charInfoBtn.UseVisualStyleBackColor = false;
+            charInfoBtn.Click += charInfoBtn_Click;
             // 
             // loadCharBtn
             // 

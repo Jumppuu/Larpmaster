@@ -2,7 +2,7 @@ namespace Larpmaster
 {
     public partial class mainMenu : Form
     {
-
+        private bool isCharacterLoaded = false; // Flag to indicate if a character is loaded
 
         public mainMenu(bool isgameMaster)
         {
@@ -35,6 +35,7 @@ namespace Larpmaster
             if (LoadCharFileDialog.ShowDialog() == DialogResult.OK) // Opens browse file dialog. If user has chosen a file and clicked "OK" (instead of closing dialog window or clicked cancel)
             {                                                       // Message box containing the chosen file's filepath is shown.
                 MessageBox.Show(LoadCharFileDialog.FileName);
+                isCharacterLoaded = true; // Set the flag to true when a character is loaded
             }
         }
 
@@ -49,8 +50,16 @@ namespace Larpmaster
         private void newCharBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            SelectionManager.Instance.ClearSelections();
             NewCharacter newchar = new NewCharacter();
             newchar.Show();
+        }
+
+        private void charInfoBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FinalSummaryAndSave finalSummary = new FinalSummaryAndSave(showSaveButton: false);
+            finalSummary.Show();
         }
     }
 }
