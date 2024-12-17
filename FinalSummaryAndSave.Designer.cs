@@ -37,7 +37,7 @@
             // 
             saveButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveButton.FlatStyle = FlatStyle.Popup;
-            saveButton.Location = new Point(590, 195);
+            saveButton.Location = new Point(12, 357);
             saveButton.Name = "saveButton";
             saveButton.Size = new Size(184, 55);
             saveButton.TabIndex = 0;
@@ -52,17 +52,17 @@
             summaryTextBox.Location = new Point(12, 11);
             summaryTextBox.Multiline = true;
             summaryTextBox.Name = "summaryTextBox";
-            summaryTextBox.Size = new Size(559, 427);
+            summaryTextBox.Size = new Size(412, 329);
             summaryTextBox.TabIndex = 1;
             // 
             // mainMenuBtn
             // 
             mainMenuBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            mainMenuBtn.Location = new Point(713, 405);
+            mainMenuBtn.Location = new Point(682, 24);
             mainMenuBtn.Name = "mainMenuBtn";
-            mainMenuBtn.Size = new Size(75, 23);
+            mainMenuBtn.Size = new Size(106, 55);
             mainMenuBtn.TabIndex = 2;
-            mainMenuBtn.Text = "Päämenu";
+            mainMenuBtn.Text = "Päävalikko";
             mainMenuBtn.UseVisualStyleBackColor = true;
             mainMenuBtn.Click += mainMenuBtn_Click;
             // 

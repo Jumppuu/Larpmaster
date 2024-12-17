@@ -89,6 +89,7 @@ namespace Larpmaster
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
+            SelectionManager.Instance.ClearSelections();
             this.Hide();
             mainMenu MainMenu = new mainMenu(false);
             MainMenu.Show();

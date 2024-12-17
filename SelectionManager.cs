@@ -17,5 +17,11 @@ namespace Larpmaster
         }
 
         public static SelectionManager Instance => _instance ??= new SelectionManager();
+
+        // Method to clear the selections
+        public void ClearSelections()
+        {
+            Selections = new CharacterSelections();
+        }
     }
 }
