@@ -30,6 +30,7 @@
         {
             saveButton = new Button();
             summaryTextBox = new TextBox();
+            mainMenuBtn = new Button();
             SuspendLayout();
             // 
             // saveButton
@@ -54,12 +55,24 @@
             summaryTextBox.Size = new Size(559, 427);
             summaryTextBox.TabIndex = 1;
             // 
+            // mainMenuBtn
+            // 
+            mainMenuBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            mainMenuBtn.Location = new Point(713, 405);
+            mainMenuBtn.Name = "mainMenuBtn";
+            mainMenuBtn.Size = new Size(75, 23);
+            mainMenuBtn.TabIndex = 2;
+            mainMenuBtn.Text = "Päämenu";
+            mainMenuBtn.UseVisualStyleBackColor = true;
+            mainMenuBtn.Click += mainMenuBtn_Click;
+            // 
             // FinalSummaryAndSave
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(800, 450);
+            Controls.Add(mainMenuBtn);
             Controls.Add(summaryTextBox);
             Controls.Add(saveButton);
             Name = "FinalSummaryAndSave";
@@ -72,5 +85,6 @@
 
         private Button saveButton;
         private TextBox summaryTextBox;
+        private Button mainMenuBtn;
     }
 }

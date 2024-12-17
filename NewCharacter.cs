@@ -18,11 +18,6 @@ namespace Larpmaster
             InitializeComponent();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void RaceBtn_Human_Click(object sender, EventArgs e)
         {
             OpenGenderSelection("Ihminen");

@@ -39,16 +39,16 @@
             // nameInputTxtBox
             // 
             nameInputTxtBox.BackColor = Color.Moccasin;
-            nameInputTxtBox.Location = new Point(27, 77);
+            nameInputTxtBox.Location = new Point(54, 205);
             nameInputTxtBox.Name = "nameInputTxtBox";
-            nameInputTxtBox.Size = new Size(100, 23);
+            nameInputTxtBox.Size = new Size(263, 23);
             nameInputTxtBox.TabIndex = 0;
             // 
             // okBtn
             // 
             okBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn.FlatStyle = FlatStyle.Popup;
-            okBtn.Location = new Point(27, 106);
+            okBtn.Location = new Point(151, 234);
             okBtn.Name = "okBtn";
             okBtn.Size = new Size(75, 23);
             okBtn.TabIndex = 1;
@@ -61,7 +61,7 @@
             charNameLbl.AutoSize = true;
             charNameLbl.BackColor = Color.Transparent;
             charNameLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            charNameLbl.Location = new Point(27, 34);
+            charNameLbl.Location = new Point(54, 162);
             charNameLbl.Name = "charNameLbl";
             charNameLbl.Size = new Size(291, 19);
             charNameLbl.TabIndex = 2;
@@ -72,7 +72,7 @@
             oikeaNimiLbl.AutoSize = true;
             oikeaNimiLbl.BackColor = Color.Transparent;
             oikeaNimiLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold);
-            oikeaNimiLbl.Location = new Point(441, 34);
+            oikeaNimiLbl.Location = new Point(468, 162);
             oikeaNimiLbl.Name = "oikeaNimiLbl";
             oikeaNimiLbl.Size = new Size(283, 19);
             oikeaNimiLbl.TabIndex = 3;
@@ -82,9 +82,9 @@
             // realNameTxtbox
             // 
             realNameTxtbox.BackColor = Color.Moccasin;
-            realNameTxtbox.Location = new Point(450, 77);
+            realNameTxtbox.Location = new Point(477, 205);
             realNameTxtbox.Name = "realNameTxtbox";
-            realNameTxtbox.Size = new Size(100, 23);
+            realNameTxtbox.Size = new Size(263, 23);
             realNameTxtbox.TabIndex = 4;
             realNameTxtbox.Visible = false;
             // 
@@ -92,7 +92,7 @@
             // 
             okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn2.FlatStyle = FlatStyle.Popup;
-            okBtn2.Location = new Point(450, 106);
+            okBtn2.Location = new Point(582, 234);
             okBtn2.Name = "okBtn2";
             okBtn2.Size = new Size(75, 23);
             okBtn2.TabIndex = 5;

@@ -23,9 +23,11 @@ namespace Larpmaster
             var selections = SelectionManager.Instance.Selections;
             var formattedText = new StringBuilder();
 
+            formattedText.AppendLine("Hahmosi tiedot:");
             formattedText.AppendLine($"Rotu: {selections.Race}");
             formattedText.AppendLine($"Sukupuoli: {selections.Gender}");
             formattedText.AppendLine($"Ikä: {selections.Age}");
+            formattedText.AppendLine("Fyysinenkunto 100%"); // Placeholder for future feature
             formattedText.AppendLine($"Karisma: {selections.Charisma}");
             formattedText.AppendLine($"Voimakkuus: {selections.Strength}");
             formattedText.AppendLine($"Näppäryys: {selections.Dexterity}");
@@ -50,9 +52,11 @@ namespace Larpmaster
             var selections = SelectionManager.Instance.Selections;
             var txt = new StringBuilder();
 
+            txt.AppendLine("Hahmosi tiedot:");
             txt.AppendLine("Rotu: " + selections.Race);
             txt.AppendLine("Sukupuoli: " + selections.Gender);
             txt.AppendLine("Ikä: " + selections.Age);
+            txt.AppendLine("Fyysinenkunto 100%"); // Placeholder for future feature
             txt.AppendLine("Karisma: " + selections.Charisma);
             txt.AppendLine("Voimakkuus: " + selections.Strength);
             txt.AppendLine("Näppäryys: " + selections.Dexterity);
@@ -81,6 +85,13 @@ namespace Larpmaster
                     MessageBox.Show("Hahmon tallennus onnistui.");
                 }
             }
+        }
+
+        private void mainMenuBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            mainMenu MainMenu = new mainMenu(false);
+            MainMenu.Show();
         }
     }
 }

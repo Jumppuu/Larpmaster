@@ -17,7 +17,7 @@ namespace Larpmaster
         public ClassSelection(int yearsUsable)
         {
             InitializeComponent();
-            statSelection = new StatSelection("race", "gender"); // Example initialization
+            statSelection = new StatSelection("rotu", "sukupuoli"); // Example initialization
             yearsUseableLbl.Text = $"Vuosia Käytettävissä: {yearsUsable}";
             SubscribeToStatSelection(statSelection);
         }
