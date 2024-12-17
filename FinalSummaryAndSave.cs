@@ -107,7 +107,7 @@ namespace Larpmaster
             }
             else
             {
-                // After age 22, there's a small chance of physical condition decreasing each year
+                
                 Random random = new Random();
                 double physicalCondition = 100;
                 for (int i = 23; i <= age; i++)
