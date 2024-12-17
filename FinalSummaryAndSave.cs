@@ -48,36 +48,36 @@ namespace Larpmaster
         private void saveButton_Click(object sender, EventArgs e)
         {
             var selections = SelectionManager.Instance.Selections;
-            var csv = new StringBuilder();
+            var txt = new StringBuilder();
 
-            csv.AppendLine("Rotu: " + selections.Race);
-            csv.AppendLine("Sukupuoli: " + selections.Gender);
-            csv.AppendLine("Ikä: " + selections.Age);
-            csv.AppendLine("Karisma: " + selections.Charisma);
-            csv.AppendLine("Voimakkuus: " + selections.Strength);
-            csv.AppendLine("Näppäryys: " + selections.Dexterity);
-            csv.AppendLine("Rakenne: " + selections.Constitution);
-            csv.AppendLine("Älykkyys: " + selections.Intelligence);
-            csv.AppendLine("Viisaus: " + selections.Wisdom);
-            csv.AppendLine("Ketteryys: " + selections.Agility);
-            csv.AppendLine("Kultti: " + selections.Class);
-            csv.AppendLine("Vuosia kultissa: " + selections.YearsInCult);
-            csv.AppendLine("Kuningaskunta: " + selections.Kingdom);
-            csv.AppendLine("Hahmon nimi: " + selections.CharacterName);
-            csv.AppendLine("Oikea nimi: " + selections.RealName);
-            csv.AppendLine("Aseet: " + string.Join(", ", selections.Weapons));
-            csv.AppendLine("Tehtävät: " + selections.Tasks);
-            csv.AppendLine("Muuta: " + selections.OtherInfo);
+            txt.AppendLine("Rotu: " + selections.Race);
+            txt.AppendLine("Sukupuoli: " + selections.Gender);
+            txt.AppendLine("Ikä: " + selections.Age);
+            txt.AppendLine("Karisma: " + selections.Charisma);
+            txt.AppendLine("Voimakkuus: " + selections.Strength);
+            txt.AppendLine("Näppäryys: " + selections.Dexterity);
+            txt.AppendLine("Rakenne: " + selections.Constitution);
+            txt.AppendLine("Älykkyys: " + selections.Intelligence);
+            txt.AppendLine("Viisaus: " + selections.Wisdom);
+            txt.AppendLine("Ketteryys: " + selections.Agility);
+            txt.AppendLine("Kultti: " + selections.Class);
+            txt.AppendLine("Vuosia kultissa: " + selections.YearsInCult);
+            txt.AppendLine("Kuningaskunta: " + selections.Kingdom);
+            txt.AppendLine("Hahmon nimi: " + selections.CharacterName);
+            txt.AppendLine("Oikea nimi: " + selections.RealName);
+            txt.AppendLine("Aseet: " + string.Join(", ", selections.Weapons));
+            txt.AppendLine("Tehtävät: " + selections.Tasks);
+            txt.AppendLine("Muuta: " + selections.OtherInfo);
 
 
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
-                saveFileDialog.Filter = "CSV file (*.csv)|*.csv";
+                saveFileDialog.Filter = "Text file (*.txt)|*.txt";
                 saveFileDialog.InitialDirectory = @"C:\Downloads";
-                saveFileDialog.FileName = $"{selections.CharacterName}_Luotuhahmo.csv"; // Use character name for file name
+                saveFileDialog.FileName = $"{selections.CharacterName}_Luotuhahmo.txt"; // Use character name for file name
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    System.IO.File.WriteAllText(saveFileDialog.FileName, csv.ToString());
+                    System.IO.File.WriteAllText(saveFileDialog.FileName, txt.ToString());
                     MessageBox.Show("Hahmon tallennus onnistui.");
                 }
             }
