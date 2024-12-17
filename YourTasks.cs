@@ -25,6 +25,7 @@ namespace Larpmaster
 
         private void okBtn1_Click(object sender, EventArgs e)
         {
+            SelectionManager.Instance.Selections.Tasks = tehtävätTextBox.Text;
             okBtn2.Visible = true;
             muutaLbl.Visible = true;
             muutaTextBox.Visible = true;
@@ -37,6 +38,7 @@ namespace Larpmaster
 
         private void okBtn2_Click(object sender, EventArgs e)
         {
+            SelectionManager.Instance.Selections.OtherInfo = muutaTextBox.Text;
             this.Hide();
             new FinalSummaryAndSave().Show();
         }

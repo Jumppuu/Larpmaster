@@ -267,6 +267,7 @@
             yearsInCultInput.Size = new Size(100, 23);
             yearsInCultInput.TabIndex = 19;
             yearsInCultInput.Visible = false;
+            yearsInCultInput.TextChanged += yearsInCultInput_TextChanged;
             // 
             // yearsinCultLbl
             // 

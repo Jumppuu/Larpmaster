@@ -34,7 +34,7 @@ namespace Larpmaster
             InitializeComponent();
             InitializeDragAndDrop();
             currentRace = race;
-
+            UpdateRaceAndAgeLabels(currentRace); // Call this method to update labels immediately
             this.Load += (sender, e) => GenerateStats();
         }
 
@@ -359,7 +359,7 @@ namespace Larpmaster
         private void acceptAgeButton_Click(object sender, EventArgs e)
         {
             string race = currentRace;
-
+            
             if (raceAgeData.TryGetValue(race, out var ageData))
             {
                 if (string.IsNullOrEmpty(ageInputBox.Text))
@@ -387,6 +387,19 @@ namespace Larpmaster
                     CreatedCharacterSummary createdCharacterSummary = new CreatedCharacterSummary(yearsUsable);
                     createdCharacterSummary.Show();
                 }
+            }
+        }
+
+        private void ageInputBox_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(ageInputBox.Text, out int age))
+            {
+                SelectionManager.Instance.Selections.Age = age;
+            }
+            else
+            {
+                // Handle invalid input if necessary
+                SelectionManager.Instance.Selections.Age = 0; // or some default value
             }
         }
     }

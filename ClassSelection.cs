@@ -18,7 +18,7 @@ namespace Larpmaster
         {
             InitializeComponent();
             statSelection = new StatSelection("race", "gender"); // Example initialization
-            yearsUseableLbl.Text = $"Years Usable: {yearsUsable}";
+            yearsUseableLbl.Text = $"Vuosia Käytettävissä: {yearsUsable}";
             SubscribeToStatSelection(statSelection);
         }
 
@@ -33,12 +33,20 @@ namespace Larpmaster
             int ageInput = statSelection.AgeInputValue;
             int minimumAge = statSelection.MinimumAgeValue;
             int yearsUseable = ageInput - minimumAge;
-            yearsUseableLbl.Text = $"Years Usable: {yearsUseable}";
+            yearsUseableLbl.Text = $"Vuosia Käytettävissä: {yearsUseable}";
         }
 
         // Event handler for Cult buttons
         private void CultButton_Click(object sender, EventArgs e)
         {
+            var button = sender as Button;
+            if (button != null)
+            {
+                string selectedClass = button.Text;
+                SetSelectedClass(selectedClass);
+                MessageBox.Show($"Kultti {selectedClass} Valittu.");
+            }
+
             yearsInCultInput.Visible = true;
             yearsConfirmedBtn.Visible = true;
             yearsinCultLbl.Visible = true;
@@ -46,9 +54,29 @@ namespace Larpmaster
 
         private void yearsConfirmedBtn_Click(object sender, EventArgs e)
         {
+            if (int.TryParse(yearsInCultInput.Text, out int yearsInCult))
+            {
+                SelectionManager.Instance.Selections.YearsInCult = yearsInCult;
+            }
+            else
+            {
+                MessageBox.Show("Laita oikea määrä vuosia");
+                return;
+            }
+
             this.Hide();
             var kingdomSelection = new KingdomSelection();
             kingdomSelection.Show();
+        }
+        // Method to set the selected class
+        private void SetSelectedClass(string selectedClass)
+        {
+            SelectionManager.Instance.Selections.Class = selectedClass;
+        }
+
+        private void yearsInCultInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

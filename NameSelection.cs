@@ -24,6 +24,7 @@ namespace Larpmaster
 
         private void okBtn_Click(object sender, EventArgs e)
         {
+            SelectionManager.Instance.Selections.CharacterName = nameInputTxtBox.Text;
             oikeaNimiLbl.Visible = true;
             realNameTxtbox.Visible = true;
             okBtn2.Visible = true;
@@ -37,6 +38,7 @@ namespace Larpmaster
         private void okBtn2_Click(object sender, EventArgs e)
         {
             this.Hide();
+            SelectionManager.Instance.Selections.RealName = realNameTxtbox.Text;
             var weaponList = new WeaponList();
             weaponList.Show();
         }

@@ -34,16 +34,20 @@
             // 
             // saveButton
             // 
-            saveButton.Location = new Point(703, 415);
+            saveButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            saveButton.FlatStyle = FlatStyle.Popup;
+            saveButton.Location = new Point(590, 195);
             saveButton.Name = "saveButton";
-            saveButton.Size = new Size(75, 23);
+            saveButton.Size = new Size(184, 55);
             saveButton.TabIndex = 0;
-            saveButton.Text = "Save";
+            saveButton.Text = "Tallenna Hahmo";
             saveButton.UseVisualStyleBackColor = true;
             saveButton.Click += saveButton_Click;
             // 
             // summaryTextBox
             // 
+            summaryTextBox.BackColor = Color.Moccasin;
+            summaryTextBox.BorderStyle = BorderStyle.FixedSingle;
             summaryTextBox.Location = new Point(12, 11);
             summaryTextBox.Multiline = true;
             summaryTextBox.Name = "summaryTextBox";

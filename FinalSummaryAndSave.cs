@@ -23,24 +23,24 @@ namespace Larpmaster
             var selections = SelectionManager.Instance.Selections;
             var formattedText = new StringBuilder();
 
-            formattedText.AppendLine($"Race: {selections.Race}");
-            formattedText.AppendLine($"Gender: {selections.Gender}");
-            formattedText.AppendLine($"Age: {selections.Age}");
-            formattedText.AppendLine($"Charisma: {selections.Charisma}");
-            formattedText.AppendLine($"Strength: {selections.Strength}");
-            formattedText.AppendLine($"Dexterity: {selections.Dexterity}");
-            formattedText.AppendLine($"Constitution: {selections.Constitution}");
-            formattedText.AppendLine($"Intelligence: {selections.Intelligence}");
-            formattedText.AppendLine($"Wisdom: {selections.Wisdom}");
-            formattedText.AppendLine($"Agility: {selections.Agility}");
-            formattedText.AppendLine($"Class: {selections.Class}");
-            formattedText.AppendLine($"Years in Cult: {selections.YearsInCult}");
-            formattedText.AppendLine($"Kingdom: {selections.Kingdom}");
-            formattedText.AppendLine($"Character Name: {selections.CharacterName}");
-            formattedText.AppendLine($"Real Name: {selections.RealName}");
-            formattedText.AppendLine($"Weapons: {string.Join(", ", selections.Weapons)}");
-            formattedText.AppendLine($"Tasks: {selections.Tasks}");
-            formattedText.AppendLine($"Other Info: {selections.OtherInfo}");
+            formattedText.AppendLine($"Rotu: {selections.Race}");
+            formattedText.AppendLine($"Sukupuoli: {selections.Gender}");
+            formattedText.AppendLine($"Ikä: {selections.Age}");
+            formattedText.AppendLine($"Karisma: {selections.Charisma}");
+            formattedText.AppendLine($"Voimakkuus: {selections.Strength}");
+            formattedText.AppendLine($"Näppäryys: {selections.Dexterity}");
+            formattedText.AppendLine($"Rakenne: {selections.Constitution}");
+            formattedText.AppendLine($"Älykkyys: {selections.Intelligence}");
+            formattedText.AppendLine($"Viisaus: {selections.Wisdom}");
+            formattedText.AppendLine($"Ketteryys: {selections.Agility}");
+            formattedText.AppendLine($"Kultti: {selections.Class}");
+            formattedText.AppendLine($"Vuosia kultissa: {selections.YearsInCult}");
+            formattedText.AppendLine($"Kuningaskunta: {selections.Kingdom}");
+            formattedText.AppendLine($"Hahmon nimi: {selections.CharacterName}");
+            formattedText.AppendLine($"Oikea nimi: {selections.RealName}");
+            formattedText.AppendLine($"Aseet: {string.Join(", ", selections.Weapons)}");
+            formattedText.AppendLine($"Tehtävät: {selections.Tasks}");
+            formattedText.AppendLine($"Muuta: {selections.OtherInfo}");
 
             summaryTextBox.Text = formattedText.ToString();
         }
@@ -59,7 +59,7 @@ namespace Larpmaster
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     System.IO.File.WriteAllText(saveFileDialog.FileName, csv);
-                    MessageBox.Show("File saved successfully.");
+                    MessageBox.Show("Hahmon tallennus onnistui.");
                 }
             }
         }

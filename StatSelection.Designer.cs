@@ -533,6 +533,7 @@
             ageInputBox.Size = new Size(100, 23);
             ageInputBox.TabIndex = 50;
             ageInputBox.Visible = false;
+            ageInputBox.TextChanged += ageInputBox_TextChanged;
             // 
             // acceptAgeButton
             // 
