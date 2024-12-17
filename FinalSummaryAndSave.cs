@@ -48,17 +48,36 @@ namespace Larpmaster
         private void saveButton_Click(object sender, EventArgs e)
         {
             var selections = SelectionManager.Instance.Selections;
-            var csv = $"Race,Gender,Age,Charisma,Class,YearsInCult,Kingdom,CharacterName,RealName,Weapons,Tasks,OtherInfo\n" +
-                      $"{selections.Race},{selections.Gender},{selections.Age},{selections.Charisma},{selections.Agility},{selections.Wisdom},{selections.Strength},{selections.Dexterity},{selections.Constitution},{selections.Intelligence},{selections.Class},{selections.YearsInCult},{selections.Kingdom},{selections.CharacterName},{selections.RealName},{string.Join(";", selections.Weapons)},{selections.Tasks},{selections.OtherInfo}";
+            var csv = new StringBuilder();
+
+            csv.AppendLine("Rotu: " + selections.Race);
+            csv.AppendLine("Sukupuoli: " + selections.Gender);
+            csv.AppendLine("Ikä: " + selections.Age);
+            csv.AppendLine("Karisma: " + selections.Charisma);
+            csv.AppendLine("Voimakkuus: " + selections.Strength);
+            csv.AppendLine("Näppäryys: " + selections.Dexterity);
+            csv.AppendLine("Rakenne: " + selections.Constitution);
+            csv.AppendLine("Älykkyys: " + selections.Intelligence);
+            csv.AppendLine("Viisaus: " + selections.Wisdom);
+            csv.AppendLine("Ketteryys: " + selections.Agility);
+            csv.AppendLine("Kultti: " + selections.Class);
+            csv.AppendLine("Vuosia kultissa: " + selections.YearsInCult);
+            csv.AppendLine("Kuningaskunta: " + selections.Kingdom);
+            csv.AppendLine("Hahmon nimi: " + selections.CharacterName);
+            csv.AppendLine("Oikea nimi: " + selections.RealName);
+            csv.AppendLine("Aseet: " + string.Join(", ", selections.Weapons));
+            csv.AppendLine("Tehtävät: " + selections.Tasks);
+            csv.AppendLine("Muuta: " + selections.OtherInfo);
+
 
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.Filter = "CSV file (*.csv)|*.csv";
                 saveFileDialog.InitialDirectory = @"C:\Downloads";
-                saveFileDialog.FileName = $"{selections.CharacterName}_CharacterSelections.csv"; // Use character name for file name
+                saveFileDialog.FileName = $"{selections.CharacterName}_Luotuhahmo.csv"; // Use character name for file name
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    System.IO.File.WriteAllText(saveFileDialog.FileName, csv);
+                    System.IO.File.WriteAllText(saveFileDialog.FileName, csv.ToString());
                     MessageBox.Show("Hahmon tallennus onnistui.");
                 }
             }

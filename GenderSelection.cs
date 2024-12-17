@@ -23,16 +23,16 @@ namespace Larpmaster
         private void MaleButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var charStats = new StatSelection(selectedRace, "Male");
-            SelectionManager.Instance.Selections.Gender = "Male";
+            var charStats = new StatSelection(selectedRace, "Mies");
+            SelectionManager.Instance.Selections.Gender = "Mies";
             charStats.Show();
         }
 
         private void FemaleButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var charStats = new StatSelection(selectedRace, "Female");
-            SelectionManager.Instance.Selections.Gender = "Female";
+            var charStats = new StatSelection(selectedRace, "Nainen");
+            SelectionManager.Instance.Selections.Gender = "Nainen";
             charStats.Show();
         }
 
