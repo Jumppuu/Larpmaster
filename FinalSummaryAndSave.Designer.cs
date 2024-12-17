@@ -76,6 +76,7 @@
             Controls.Add(summaryTextBox);
             Controls.Add(saveButton);
             Name = "FinalSummaryAndSave";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Summary and Save";
             ResumeLayout(false);
             PerformLayout();
