@@ -27,6 +27,12 @@ namespace Larpmaster
             formattedText.AppendLine($"Gender: {selections.Gender}");
             formattedText.AppendLine($"Age: {selections.Age}");
             formattedText.AppendLine($"Charisma: {selections.Charisma}");
+            formattedText.AppendLine($"Strength: {selections.Strength}");
+            formattedText.AppendLine($"Dexterity: {selections.Dexterity}");
+            formattedText.AppendLine($"Constitution: {selections.Constitution}");
+            formattedText.AppendLine($"Intelligence: {selections.Intelligence}");
+            formattedText.AppendLine($"Wisdom: {selections.Wisdom}");
+            formattedText.AppendLine($"Agility: {selections.Agility}");
             formattedText.AppendLine($"Class: {selections.Class}");
             formattedText.AppendLine($"Years in Cult: {selections.YearsInCult}");
             formattedText.AppendLine($"Kingdom: {selections.Kingdom}");
@@ -43,7 +49,7 @@ namespace Larpmaster
         {
             var selections = SelectionManager.Instance.Selections;
             var csv = $"Race,Gender,Age,Charisma,Class,YearsInCult,Kingdom,CharacterName,RealName,Weapons,Tasks,OtherInfo\n" +
-                      $"{selections.Race},{selections.Gender},{selections.Age},{selections.Charisma},{selections.Class},{selections.YearsInCult},{selections.Kingdom},{selections.CharacterName},{selections.RealName},{string.Join(";", selections.Weapons)},{selections.Tasks},{selections.OtherInfo}";
+                      $"{selections.Race},{selections.Gender},{selections.Age},{selections.Charisma},{selections.Agility},{selections.Wisdom},{selections.Strength},{selections.Dexterity},{selections.Constitution},{selections.Intelligence},{selections.Class},{selections.YearsInCult},{selections.Kingdom},{selections.CharacterName},{selections.RealName},{string.Join(";", selections.Weapons)},{selections.Tasks},{selections.OtherInfo}";
 
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {

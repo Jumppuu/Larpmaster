@@ -8,8 +8,6 @@ namespace Larpmaster
 {
     public partial class StatSelection : Form
     {
-        
-
         private Random random = new Random();
 
         // Dictionary to store race-specific age data
@@ -72,13 +70,13 @@ namespace Larpmaster
 
             if (raceStatMultipliers.TryGetValue(race, out var multipliers))
             {
-                strMultiplierLbl.Text = $"{multipliers["Str"] * 100:F2}%";
-                dexMultiplierLbl.Text = $"{multipliers["Dex"] * 100:F2}%";
-                conMultiplierLbl.Text = $"{multipliers["Con"] * 100:F2}%";
-                intMultiplierLbl.Text = $"{multipliers["Int"] * 100:F2}%";
-                wisMultiplierLbl.Text = $"{multipliers["Wis"] * 100:F2}%";
-                chaMultiplierLbl.Text = $"{multipliers["Cha"] * 100:F2}%";
-                agiMultiplierLbl.Text = $"{multipliers["Agi"] * 100:F2}%";
+                strMultiplierLbl.Text = $"{(int)(multipliers["Str"] * 100)}%";
+                dexMultiplierLbl.Text = $"{(int)(multipliers["Dex"] * 100)}%";
+                conMultiplierLbl.Text = $"{(int)(multipliers["Con"] * 100)}%";
+                intMultiplierLbl.Text = $"{(int)(multipliers["Int"] * 100)}%";
+                wisMultiplierLbl.Text = $"{(int)(multipliers["Wis"] * 100)}%";
+                chaMultiplierLbl.Text = $"{(int)(multipliers["Cha"] * 100)}%";
+                agiMultiplierLbl.Text = $"{(int)(multipliers["Agi"] * 100)}%";
             }
         }
 
@@ -274,7 +272,13 @@ namespace Larpmaster
                 UpdateFinalStat(StatValue_Cha, chaFinalLbl, multipliers["Cha"]);
                 UpdateFinalStat(StatValue_Agi, agiFinalLbl, multipliers["Agi"]);
 
+                SelectionManager.Instance.Selections.Strength = strFinalLbl.Text;
+                SelectionManager.Instance.Selections.Dexterity = dexFinalLbl.Text;
+                SelectionManager.Instance.Selections.Constitution = conFinalLbl.Text;
+                SelectionManager.Instance.Selections.Intelligence = intFinalLbl.Text;
+                SelectionManager.Instance.Selections.Wisdom = wisFinalLbl.Text;
                 SelectionManager.Instance.Selections.Charisma = chaFinalLbl.Text;
+                SelectionManager.Instance.Selections.Agility = agiFinalLbl.Text;
             }
         }
 
@@ -283,7 +287,7 @@ namespace Larpmaster
         {
             if (int.TryParse(initialControl.Text, out int value))
             {
-                finalControl.Text = (value * multiplier).ToString("F2");
+                finalControl.Text = ((int)(value * multiplier)).ToString();
             }
         }
 
@@ -356,7 +360,6 @@ namespace Larpmaster
         {
             string race = currentRace;
 
-
             if (raceAgeData.TryGetValue(race, out var ageData))
             {
                 if (string.IsNullOrEmpty(ageInputBox.Text))
@@ -383,8 +386,6 @@ namespace Larpmaster
                     this.Hide();
                     CreatedCharacterSummary createdCharacterSummary = new CreatedCharacterSummary(yearsUsable);
                     createdCharacterSummary.Show();
-
-
                 }
             }
         }

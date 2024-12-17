@@ -12,6 +12,12 @@ namespace Larpmaster
             public string Gender { get; set; }
             public int Age { get; set; }
             public string Charisma { get; set; }
+            public string Strength { get; set; }
+            public string Dexterity { get; set; }
+            public string Constitution { get; set; }
+            public string Intelligence { get; set; }
+            public string Wisdom { get; set; }
+            public string Agility { get; set; }
             public string Class { get; set; }
             public int YearsInCult { get; set; }
             public string Kingdom { get; set; }
