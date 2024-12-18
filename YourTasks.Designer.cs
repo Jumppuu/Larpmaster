@@ -41,7 +41,7 @@
             missionLbl.AutoSize = true;
             missionLbl.BackColor = Color.Transparent;
             missionLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            missionLbl.Location = new Point(279, 40);
+            missionLbl.Location = new Point(163, 169);
             missionLbl.Name = "missionLbl";
             missionLbl.Size = new Size(130, 19);
             missionLbl.TabIndex = 0;
@@ -51,9 +51,9 @@
             // 
             tehtävätTextBox.BackColor = Color.Moccasin;
             tehtävätTextBox.BorderStyle = BorderStyle.FixedSingle;
-            tehtävätTextBox.Location = new Point(294, 81);
+            tehtävätTextBox.Location = new Point(479, 207);
             tehtävätTextBox.Name = "tehtävätTextBox";
-            tehtävätTextBox.Size = new Size(100, 23);
+            tehtävätTextBox.Size = new Size(207, 23);
             tehtävätTextBox.TabIndex = 1;
             // 
             // muutaLbl
@@ -61,7 +61,7 @@
             muutaLbl.AutoSize = true;
             muutaLbl.BackColor = Color.Transparent;
             muutaLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            muutaLbl.Location = new Point(294, 177);
+            muutaLbl.Location = new Point(531, 169);
             muutaLbl.Name = "muutaLbl";
             muutaLbl.Size = new Size(92, 19);
             muutaLbl.TabIndex = 2;
@@ -72,9 +72,9 @@
             // 
             muutaTextBox.BackColor = Color.Moccasin;
             muutaTextBox.BorderStyle = BorderStyle.FixedSingle;
-            muutaTextBox.Location = new Point(294, 226);
+            muutaTextBox.Location = new Point(119, 205);
             muutaTextBox.Name = "muutaTextBox";
-            muutaTextBox.Size = new Size(100, 23);
+            muutaTextBox.Size = new Size(207, 23);
             muutaTextBox.TabIndex = 3;
             muutaTextBox.Visible = false;
             // 
@@ -83,7 +83,7 @@
             okBtn1.BackColor = Color.Transparent;
             okBtn1.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn1.FlatStyle = FlatStyle.Popup;
-            okBtn1.Location = new Point(417, 81);
+            okBtn1.Location = new Point(180, 236);
             okBtn1.Name = "okBtn1";
             okBtn1.Size = new Size(75, 23);
             okBtn1.TabIndex = 4;
@@ -96,9 +96,9 @@
             okBtn2.BackColor = Color.Transparent;
             okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn2.FlatStyle = FlatStyle.Popup;
-            okBtn2.Location = new Point(417, 226);
+            okBtn2.Location = new Point(545, 236);
             okBtn2.Name = "okBtn2";
-            okBtn2.Size = new Size(75, 23);
+            okBtn2.Size = new Size(78, 23);
             okBtn2.TabIndex = 5;
             okBtn2.Text = "Ok";
             okBtn2.UseVisualStyleBackColor = false;

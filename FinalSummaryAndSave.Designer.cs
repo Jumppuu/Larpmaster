@@ -37,7 +37,7 @@
             // 
             saveButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveButton.FlatStyle = FlatStyle.Popup;
-            saveButton.Location = new Point(452, 285);
+            saveButton.Location = new Point(446, 317);
             saveButton.Name = "saveButton";
             saveButton.Size = new Size(184, 55);
             saveButton.TabIndex = 0;
@@ -52,7 +52,7 @@
             summaryTextBox.Location = new Point(12, 11);
             summaryTextBox.Multiline = true;
             summaryTextBox.Name = "summaryTextBox";
-            summaryTextBox.Size = new Size(412, 329);
+            summaryTextBox.Size = new Size(412, 361);
             summaryTextBox.TabIndex = 1;
             // 
             // mainMenuBtn

@@ -57,7 +57,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Engravers MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(30, 53);
+            label1.Location = new Point(154, 86);
             label1.Name = "label1";
             label1.Size = new Size(426, 19);
             label1.TabIndex = 0;
@@ -66,7 +66,7 @@
             // classZharinBtn
             // 
             classZharinBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classZharinBtn.Location = new Point(30, 92);
+            classZharinBtn.Location = new Point(154, 125);
             classZharinBtn.Name = "classZharinBtn";
             classZharinBtn.Size = new Size(95, 45);
             classZharinBtn.TabIndex = 1;
@@ -77,7 +77,7 @@
             // classArdakovBtn
             // 
             classArdakovBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classArdakovBtn.Location = new Point(132, 92);
+            classArdakovBtn.Location = new Point(256, 125);
             classArdakovBtn.Name = "classArdakovBtn";
             classArdakovBtn.Size = new Size(95, 45);
             classArdakovBtn.TabIndex = 2;
@@ -88,7 +88,7 @@
             // classZadaBtn
             // 
             classZadaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classZadaBtn.Location = new Point(233, 92);
+            classZadaBtn.Location = new Point(357, 125);
             classZadaBtn.Name = "classZadaBtn";
             classZadaBtn.Size = new Size(95, 45);
             classZadaBtn.TabIndex = 3;
@@ -99,7 +99,7 @@
             // classDeinosanBtn
             // 
             classDeinosanBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classDeinosanBtn.Location = new Point(339, 92);
+            classDeinosanBtn.Location = new Point(463, 125);
             classDeinosanBtn.Name = "classDeinosanBtn";
             classDeinosanBtn.Size = new Size(95, 45);
             classDeinosanBtn.TabIndex = 4;
@@ -110,7 +110,7 @@
             // classRaiaBtn
             // 
             classRaiaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classRaiaBtn.Location = new Point(30, 143);
+            classRaiaBtn.Location = new Point(154, 176);
             classRaiaBtn.Name = "classRaiaBtn";
             classRaiaBtn.Size = new Size(95, 45);
             classRaiaBtn.TabIndex = 5;
@@ -121,7 +121,7 @@
             // classBokeanBtn
             // 
             classBokeanBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classBokeanBtn.Location = new Point(132, 143);
+            classBokeanBtn.Location = new Point(256, 176);
             classBokeanBtn.Name = "classBokeanBtn";
             classBokeanBtn.Size = new Size(95, 45);
             classBokeanBtn.TabIndex = 6;
@@ -132,7 +132,7 @@
             // classThiefBtn
             // 
             classThiefBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classThiefBtn.Location = new Point(233, 143);
+            classThiefBtn.Location = new Point(357, 176);
             classThiefBtn.Name = "classThiefBtn";
             classThiefBtn.Size = new Size(95, 45);
             classThiefBtn.TabIndex = 7;
@@ -143,7 +143,7 @@
             // classFighterBtn
             // 
             classFighterBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classFighterBtn.Location = new Point(339, 143);
+            classFighterBtn.Location = new Point(463, 176);
             classFighterBtn.Name = "classFighterBtn";
             classFighterBtn.Size = new Size(95, 45);
             classFighterBtn.TabIndex = 8;
@@ -154,7 +154,7 @@
             // classScoutBtn
             // 
             classScoutBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classScoutBtn.Location = new Point(30, 202);
+            classScoutBtn.Location = new Point(154, 235);
             classScoutBtn.Name = "classScoutBtn";
             classScoutBtn.Size = new Size(95, 45);
             classScoutBtn.TabIndex = 9;
@@ -165,7 +165,7 @@
             // classDerecasBtn
             // 
             classDerecasBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classDerecasBtn.Location = new Point(132, 202);
+            classDerecasBtn.Location = new Point(256, 235);
             classDerecasBtn.Name = "classDerecasBtn";
             classDerecasBtn.Size = new Size(95, 45);
             classDerecasBtn.TabIndex = 10;
@@ -176,7 +176,7 @@
             // classHealerBtn
             // 
             classHealerBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classHealerBtn.Location = new Point(233, 202);
+            classHealerBtn.Location = new Point(357, 235);
             classHealerBtn.Name = "classHealerBtn";
             classHealerBtn.Size = new Size(95, 45);
             classHealerBtn.TabIndex = 11;
@@ -187,7 +187,7 @@
             // ClassSamoojaBtn
             // 
             ClassSamoojaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClassSamoojaBtn.Location = new Point(339, 202);
+            ClassSamoojaBtn.Location = new Point(463, 235);
             ClassSamoojaBtn.Name = "ClassSamoojaBtn";
             ClassSamoojaBtn.Size = new Size(95, 45);
             ClassSamoojaBtn.TabIndex = 12;
@@ -198,7 +198,7 @@
             // ClassBardBtn
             // 
             ClassBardBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClassBardBtn.Location = new Point(30, 259);
+            ClassBardBtn.Location = new Point(154, 292);
             ClassBardBtn.Name = "ClassBardBtn";
             ClassBardBtn.Size = new Size(95, 45);
             ClassBardBtn.TabIndex = 13;
@@ -209,7 +209,7 @@
             // classSpyBtn
             // 
             classSpyBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classSpyBtn.Location = new Point(132, 259);
+            classSpyBtn.Location = new Point(256, 292);
             classSpyBtn.Name = "classSpyBtn";
             classSpyBtn.Size = new Size(95, 45);
             classSpyBtn.TabIndex = 14;
@@ -220,7 +220,7 @@
             // classBaseBtn
             // 
             classBaseBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            classBaseBtn.Location = new Point(233, 259);
+            classBaseBtn.Location = new Point(357, 292);
             classBaseBtn.Name = "classBaseBtn";
             classBaseBtn.Size = new Size(95, 45);
             classBaseBtn.TabIndex = 15;
@@ -232,7 +232,7 @@
             // 
             yearsAvailableLbl.AutoSize = true;
             yearsAvailableLbl.BackColor = Color.Transparent;
-            yearsAvailableLbl.Location = new Point(605, 53);
+            yearsAvailableLbl.Location = new Point(154, 23);
             yearsAvailableLbl.Name = "yearsAvailableLbl";
             yearsAvailableLbl.Size = new Size(115, 15);
             yearsAvailableLbl.TabIndex = 16;
@@ -242,7 +242,7 @@
             // 
             yearsUseableLbl.AutoSize = true;
             yearsUseableLbl.BackColor = Color.Transparent;
-            yearsUseableLbl.Location = new Point(723, 53);
+            yearsUseableLbl.Location = new Point(272, 23);
             yearsUseableLbl.Name = "yearsUseableLbl";
             yearsUseableLbl.Size = new Size(32, 15);
             yearsUseableLbl.TabIndex = 17;
@@ -252,7 +252,7 @@
             // 
             yearsConfirmedBtn.BackColor = Color.Transparent;
             yearsConfirmedBtn.FlatStyle = FlatStyle.Popup;
-            yearsConfirmedBtn.Location = new Point(171, 372);
+            yearsConfirmedBtn.Location = new Point(569, 310);
             yearsConfirmedBtn.Name = "yearsConfirmedBtn";
             yearsConfirmedBtn.Size = new Size(75, 23);
             yearsConfirmedBtn.TabIndex = 18;
@@ -263,7 +263,7 @@
             // 
             // yearsInCultInput
             // 
-            yearsInCultInput.Location = new Point(65, 372);
+            yearsInCultInput.Location = new Point(463, 310);
             yearsInCultInput.Name = "yearsInCultInput";
             yearsInCultInput.Size = new Size(100, 23);
             yearsInCultInput.TabIndex = 19;
@@ -274,7 +274,7 @@
             // 
             yearsinCultLbl.AutoSize = true;
             yearsinCultLbl.BackColor = Color.Transparent;
-            yearsinCultLbl.Location = new Point(65, 354);
+            yearsinCultLbl.Location = new Point(463, 292);
             yearsinCultLbl.Name = "yearsinCultLbl";
             yearsinCultLbl.Size = new Size(189, 15);
             yearsinCultLbl.TabIndex = 20;
@@ -285,11 +285,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Location = new Point(65, 398);
+            label2.Location = new Point(154, 360);
             label2.Name = "label2";
             label2.Size = new Size(284, 30);
             label2.TabIndex = 21;
-            label2.Text = "Prototyyppi jotenka vuosia käytössä 1 tällä hetkellä\r\njotta pysytään järkevyydessä hahmon tason suhteen.";
+            label2.Text = "Prototyyppi jotenka vuosia käytössä tällä hetkellä 1\r\njotta pysytään järkevyydessä hahmon tason suhteen.";
             // 
             // ClassSelection
             // 

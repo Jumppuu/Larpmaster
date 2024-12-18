@@ -18,7 +18,7 @@ namespace Larpmaster
         {
             InitializeComponent();
             statSelection = new StatSelection("rotu", "sukupuoli"); // Example initialization
-            yearsUseableLbl.Text = $"Vuosia Käytettävissä: {yearsUsable}";
+            yearsUseableLbl.Text = $"{yearsUsable}";
             SubscribeToStatSelection(statSelection);
         }
 
