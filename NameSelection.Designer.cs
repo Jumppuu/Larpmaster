@@ -48,7 +48,7 @@
             // 
             okBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn.FlatStyle = FlatStyle.Popup;
-            okBtn.Location = new Point(151, 234);
+            okBtn.Location = new Point(140, 234);
             okBtn.Name = "okBtn";
             okBtn.Size = new Size(75, 23);
             okBtn.TabIndex = 1;
@@ -92,7 +92,7 @@
             // 
             okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn2.FlatStyle = FlatStyle.Popup;
-            okBtn2.Location = new Point(582, 234);
+            okBtn2.Location = new Point(579, 234);
             okBtn2.Name = "okBtn2";
             okBtn2.Size = new Size(75, 23);
             okBtn2.TabIndex = 5;

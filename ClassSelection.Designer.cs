@@ -49,6 +49,7 @@
             yearsConfirmedBtn = new Button();
             yearsInCultInput = new TextBox();
             yearsinCultLbl = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -80,7 +81,7 @@
             classArdakovBtn.Name = "classArdakovBtn";
             classArdakovBtn.Size = new Size(95, 45);
             classArdakovBtn.TabIndex = 2;
-            classArdakovBtn.Text = "Ardakov sotavelhot";
+            classArdakovBtn.Text = "Vardakov sotavelhot";
             classArdakovBtn.UseVisualStyleBackColor = true;
             classArdakovBtn.Click += CultButton_Click;
             // 
@@ -231,17 +232,17 @@
             // 
             yearsAvailableLbl.AutoSize = true;
             yearsAvailableLbl.BackColor = Color.Transparent;
-            yearsAvailableLbl.Location = new Point(606, 28);
+            yearsAvailableLbl.Location = new Point(605, 53);
             yearsAvailableLbl.Name = "yearsAvailableLbl";
-            yearsAvailableLbl.Size = new Size(112, 15);
+            yearsAvailableLbl.Size = new Size(115, 15);
             yearsAvailableLbl.TabIndex = 16;
-            yearsAvailableLbl.Text = "Vuosia käytettävissä";
+            yearsAvailableLbl.Text = "Vuosia käytettävissä:";
             // 
             // yearsUseableLbl
             // 
             yearsUseableLbl.AutoSize = true;
             yearsUseableLbl.BackColor = Color.Transparent;
-            yearsUseableLbl.Location = new Point(609, 49);
+            yearsUseableLbl.Location = new Point(723, 53);
             yearsUseableLbl.Name = "yearsUseableLbl";
             yearsUseableLbl.Size = new Size(32, 15);
             yearsUseableLbl.TabIndex = 17;
@@ -251,7 +252,7 @@
             // 
             yearsConfirmedBtn.BackColor = Color.Transparent;
             yearsConfirmedBtn.FlatStyle = FlatStyle.Popup;
-            yearsConfirmedBtn.Location = new Point(171, 385);
+            yearsConfirmedBtn.Location = new Point(171, 372);
             yearsConfirmedBtn.Name = "yearsConfirmedBtn";
             yearsConfirmedBtn.Size = new Size(75, 23);
             yearsConfirmedBtn.TabIndex = 18;
@@ -262,7 +263,7 @@
             // 
             // yearsInCultInput
             // 
-            yearsInCultInput.Location = new Point(65, 385);
+            yearsInCultInput.Location = new Point(65, 372);
             yearsInCultInput.Name = "yearsInCultInput";
             yearsInCultInput.Size = new Size(100, 23);
             yearsInCultInput.TabIndex = 19;
@@ -273,12 +274,22 @@
             // 
             yearsinCultLbl.AutoSize = true;
             yearsinCultLbl.BackColor = Color.Transparent;
-            yearsinCultLbl.Location = new Point(65, 353);
+            yearsinCultLbl.Location = new Point(65, 354);
             yearsinCultLbl.Name = "yearsinCultLbl";
             yearsinCultLbl.Size = new Size(189, 15);
             yearsinCultLbl.TabIndex = 20;
             yearsinCultLbl.Text = "Kuinka monta vuotta toimit täällä?";
             yearsinCultLbl.Visible = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(65, 398);
+            label2.Name = "label2";
+            label2.Size = new Size(284, 30);
+            label2.TabIndex = 21;
+            label2.Text = "Prototyyppi jotenka vuosia käytössä 1 tällä hetkellä\r\njotta pysytään järkevyydessä hahmon tason suhteen.";
             // 
             // ClassSelection
             // 
@@ -286,6 +297,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(yearsinCultLbl);
             Controls.Add(yearsInCultInput);
             Controls.Add(yearsConfirmedBtn);
@@ -337,5 +349,6 @@
         private Button yearsConfirmedBtn;
         private TextBox yearsInCultInput;
         private Label yearsinCultLbl;
+        private Label label2;
     }
 }

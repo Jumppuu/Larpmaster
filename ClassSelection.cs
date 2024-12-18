@@ -33,7 +33,7 @@ namespace Larpmaster
             int ageInput = statSelection.AgeInputValue;
             int minimumAge = statSelection.MinimumAgeValue;
             int yearsUseable = ageInput - minimumAge;
-            yearsUseableLbl.Text = $"Vuosia Käytettävissä: {yearsUseable}";
+            yearsUseableLbl.Text = $"{yearsUseable}";
         }
 
         // Event handler for Cult buttons

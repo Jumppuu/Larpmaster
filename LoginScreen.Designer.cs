@@ -30,6 +30,7 @@
         {
             playerBtn = new Button();
             gameMasterBtn = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // playerBtn
@@ -59,23 +60,36 @@
             gameMasterBtn.UseVisualStyleBackColor = false;
             gameMasterBtn.Click += gameMasterBtn_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(12, 405);
+            label1.Name = "label1";
+            label1.Size = new Size(410, 30);
+            label1.TabIndex = 2;
+            label1.Text = "Tämä on prototyyppi hahmonluonnista joten kaikkea ei tästä versiosta löydy.\r\nHahmonluonti toimii mutta rajoitettu Hahmon tasoon 0. ";
+            // 
             // LoginScreen
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(827, 454);
+            Controls.Add(label1);
             Controls.Add(gameMasterBtn);
             Controls.Add(playerBtn);
             Name = "LoginScreen";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login Screen";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button playerBtn;
         private Button gameMasterBtn;
+        private Label label1;
     }
 }

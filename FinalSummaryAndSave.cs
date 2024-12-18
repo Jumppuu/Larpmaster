@@ -39,6 +39,7 @@ namespace Larpmaster
             formattedText.AppendLine($"Rotu: {selections.Race}");
             formattedText.AppendLine($"Sukupuoli: {selections.Gender}");
             formattedText.AppendLine($"Ikä: {selections.Age}");
+            formattedText.AppendLine("Hahmontaso: 0");
             formattedText.AppendLine("Osumapisteet: " + CalculateHitPoints());
             formattedText.AppendLine($"Fyysinen kunto: {physicalCondition}%");
             formattedText.AppendLine($"Karisma: {selections.Charisma}");
@@ -71,6 +72,7 @@ namespace Larpmaster
             txt.AppendLine("Rotu: " + selections.Race);
             txt.AppendLine("Sukupuoli: " + selections.Gender);
             txt.AppendLine("Ikä: " + selections.Age);
+            txt.AppendLine("Hahmontaso: 0");
             txt.AppendLine("Osumapisteet: " + CalculateHitPoints());
             txt.AppendLine("Fyysinen kunto: " + physicalCondition + "%");
             txt.AppendLine("Karisma: " + selections.Charisma);
