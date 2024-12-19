@@ -42,8 +42,15 @@
             CancelDirectionLabel = new Label();
             CharSummary_Delete = new Button();
             CharSummary_Ok = new Button();
-            CharSummary_SavedAge = new Label();
+            AgeValue = new Label();
             ConPercentage = new Label();
+            WisValue = new Label();
+            DexValue = new Label();
+            StrValue = new Label();
+            ConValue = new Label();
+            AgiValue = new Label();
+            ChaValue = new Label();
+            IntValue = new Label();
             SuspendLayout();
             // 
             // CharacterSummaryExplain_Label
@@ -73,7 +80,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(102, 89);
+            label3.Location = new Point(110, 89);
             label3.Name = "label3";
             label3.Size = new Size(165, 20);
             label3.TabIndex = 2;
@@ -84,7 +91,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(340, 89);
+            label4.Location = new Point(356, 89);
             label4.Name = "label4";
             label4.Size = new Size(21, 20);
             label4.TabIndex = 3;
@@ -202,27 +209,96 @@
             CharSummary_Ok.UseVisualStyleBackColor = false;
             CharSummary_Ok.Click += CharSummary_Ok_Click;
             // 
-            // CharSummary_SavedAge
+            // AgeValue
             // 
-            CharSummary_SavedAge.AutoSize = true;
-            CharSummary_SavedAge.BackColor = Color.Transparent;
-            CharSummary_SavedAge.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CharSummary_SavedAge.Location = new Point(60, 89);
-            CharSummary_SavedAge.Name = "CharSummary_SavedAge";
-            CharSummary_SavedAge.Size = new Size(46, 20);
-            CharSummary_SavedAge.TabIndex = 14;
-            CharSummary_SavedAge.Text = "Teksti";
-            CharSummary_SavedAge.Visible = false;
+            AgeValue.AutoSize = true;
+            AgeValue.BackColor = Color.Transparent;
+            AgeValue.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AgeValue.Location = new Point(60, 89);
+            AgeValue.Name = "AgeValue";
+            AgeValue.Size = new Size(46, 20);
+            AgeValue.TabIndex = 14;
+            AgeValue.Text = "Teksti";
             // 
             // ConPercentage
             // 
             ConPercentage.AutoSize = true;
             ConPercentage.BackColor = Color.Transparent;
-            ConPercentage.Location = new Point(265, 94);
+            ConPercentage.Location = new Point(281, 94);
             ConPercentage.Name = "ConPercentage";
             ConPercentage.Size = new Size(69, 15);
             ConPercentage.TabIndex = 15;
             ConPercentage.Text = "Placeholder";
+            // 
+            // WisValue
+            // 
+            WisValue.AutoSize = true;
+            WisValue.BackColor = Color.Transparent;
+            WisValue.Location = new Point(123, 175);
+            WisValue.Name = "WisValue";
+            WisValue.Size = new Size(43, 15);
+            WisValue.TabIndex = 16;
+            WisValue.Text = "Viisaus";
+            // 
+            // DexValue
+            // 
+            DexValue.AutoSize = true;
+            DexValue.BackColor = Color.Transparent;
+            DexValue.Location = new Point(128, 239);
+            DexValue.Name = "DexValue";
+            DexValue.Size = new Size(63, 15);
+            DexValue.TabIndex = 17;
+            DexValue.Text = "Näppäryys";
+            // 
+            // StrValue
+            // 
+            StrValue.AutoSize = true;
+            StrValue.BackColor = Color.Transparent;
+            StrValue.Location = new Point(128, 207);
+            StrValue.Name = "StrValue";
+            StrValue.Size = new Size(71, 15);
+            StrValue.TabIndex = 18;
+            StrValue.Text = "Voimakkuus";
+            // 
+            // ConValue
+            // 
+            ConValue.AutoSize = true;
+            ConValue.BackColor = Color.Transparent;
+            ConValue.Location = new Point(128, 270);
+            ConValue.Name = "ConValue";
+            ConValue.Size = new Size(52, 15);
+            ConValue.TabIndex = 19;
+            ConValue.Text = "Rakenne";
+            // 
+            // AgiValue
+            // 
+            AgiValue.AutoSize = true;
+            AgiValue.BackColor = Color.Transparent;
+            AgiValue.Location = new Point(123, 301);
+            AgiValue.Name = "AgiValue";
+            AgiValue.Size = new Size(55, 15);
+            AgiValue.TabIndex = 20;
+            AgiValue.Text = "Ketteryys";
+            // 
+            // ChaValue
+            // 
+            ChaValue.AutoSize = true;
+            ChaValue.BackColor = Color.Transparent;
+            ChaValue.Location = new Point(123, 333);
+            ChaValue.Name = "ChaValue";
+            ChaValue.Size = new Size(49, 15);
+            ChaValue.TabIndex = 21;
+            ChaValue.Text = "Karisma";
+            // 
+            // IntValue
+            // 
+            IntValue.AutoSize = true;
+            IntValue.BackColor = Color.Transparent;
+            IntValue.Location = new Point(123, 141);
+            IntValue.Name = "IntValue";
+            IntValue.Size = new Size(53, 15);
+            IntValue.TabIndex = 22;
+            IntValue.Text = "Älykkyys";
             // 
             // CreatedCharacterSummary
             // 
@@ -230,8 +306,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             ClientSize = new Size(800, 450);
+            Controls.Add(IntValue);
+            Controls.Add(ChaValue);
+            Controls.Add(AgiValue);
+            Controls.Add(ConValue);
+            Controls.Add(StrValue);
+            Controls.Add(DexValue);
+            Controls.Add(WisValue);
             Controls.Add(ConPercentage);
-            Controls.Add(CharSummary_SavedAge);
+            Controls.Add(AgeValue);
             Controls.Add(CharSummary_Ok);
             Controls.Add(CharSummary_Delete);
             Controls.Add(CancelDirectionLabel);
@@ -249,6 +332,7 @@
             Name = "CreatedCharacterSummary";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CreatedCharacterSummary";
+            Load += CreatedCharacterSummary_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -269,7 +353,14 @@
         private Label CancelDirectionLabel;
         private Button CharSummary_Delete;
         private Button CharSummary_Ok;
-        private Label CharSummary_SavedAge;
+        private Label AgeValue;
         private Label ConPercentage;
+        private Label WisValue;
+        private Label DexValue;
+        private Label StrValue;
+        private Label ConValue;
+        private Label AgiValue;
+        private Label ChaValue;
+        private Label IntValue;
     }
 }

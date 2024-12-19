@@ -27,7 +27,9 @@ namespace Larpmaster
         };
 
         private string currentRace;
-
+        
+            
+        
         // Constructor
         public StatSelection(string race, string gender)
         {
@@ -342,6 +344,24 @@ namespace Larpmaster
             genderSelection.Show();
         }
 
+
+        
+        private void SaveCharacterStats()
+        {
+
+            SavedStats.UpdateStats("Int", intFinalLbl.Text);
+            SavedStats.UpdateStats("Wis", wisFinalLbl.Text);
+            SavedStats.UpdateStats("Str", strFinalLbl.Text);
+            SavedStats.UpdateStats("Dex", dexFinalLbl.Text);
+            SavedStats.UpdateStats("Con", conFinalLbl.Text);
+            SavedStats.UpdateStats("Agi", agiFinalLbl.Text);
+            SavedStats.UpdateStats("Cha", chaFinalLbl.Text);
+            SavedStats.UpdateStats("Age", ageInputBox.Text);
+        }
+            
+        
+
+        
         private void ConfirmButton_StatSelection_Click(object sender, EventArgs e)
         {
             string race = currentRace;
@@ -354,10 +374,14 @@ namespace Larpmaster
             ageInputBox.Show();
             AgeInputLabel.Show();
             acceptAgeButton.Show();
+
+            
         }
 
         private void acceptAgeButton_Click(object sender, EventArgs e)
         {
+
+
             string race = currentRace;
             
             if (raceAgeData.TryGetValue(race, out var ageData))
@@ -383,6 +407,7 @@ namespace Larpmaster
                 {
                     int yearsUsable = age - ageData.minimumAge;
                     AgeConfirmed?.Invoke();
+                    SaveCharacterStats();
                     this.Hide();
                     CreatedCharacterSummary createdCharacterSummary = new CreatedCharacterSummary(yearsUsable);
                     createdCharacterSummary.Show();
@@ -400,6 +425,22 @@ namespace Larpmaster
             {
                 // Handle invalid input if necessary
                 SelectionManager.Instance.Selections.Age = 0; // or some default value
+            }
+        }
+    }
+    // Class and methods for saving the stats chosen during StatSelection
+    public static class SavedStats
+    {
+        public static Dictionary<string, string> CharStats { get; private set; } = new Dictionary<string, string>();
+        public static void UpdateStats(string key, string value)
+        {
+            if (CharStats.ContainsKey(key))
+            {
+                CharStats[key] = value;
+            }
+            else
+            {
+                CharStats.Add(key, value);
             }
         }
     }
