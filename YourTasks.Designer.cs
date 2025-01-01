@@ -83,6 +83,7 @@
             okBtn1.BackColor = Color.Transparent;
             okBtn1.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn1.FlatStyle = FlatStyle.Popup;
+            okBtn1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             okBtn1.Location = new Point(191, 236);
             okBtn1.Name = "okBtn1";
             okBtn1.Size = new Size(75, 23);
@@ -96,7 +97,8 @@
             okBtn2.BackColor = Color.Transparent;
             okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn2.FlatStyle = FlatStyle.Popup;
-            okBtn2.Location = new Point(545, 236);
+            okBtn2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            okBtn2.Location = new Point(559, 236);
             okBtn2.Name = "okBtn2";
             okBtn2.Size = new Size(78, 23);
             okBtn2.TabIndex = 5;

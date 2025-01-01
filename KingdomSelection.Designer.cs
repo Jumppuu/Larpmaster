@@ -38,7 +38,8 @@
             // vuoriniittyBtn
             // 
             vuoriniittyBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            vuoriniittyBtn.Location = new Point(80, 114);
+            vuoriniittyBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            vuoriniittyBtn.Location = new Point(238, 215);
             vuoriniittyBtn.Name = "vuoriniittyBtn";
             vuoriniittyBtn.Size = new Size(149, 23);
             vuoriniittyBtn.TabIndex = 0;
@@ -49,7 +50,8 @@
             // vardakovBtn
             // 
             vardakovBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            vardakovBtn.Location = new Point(241, 114);
+            vardakovBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            vardakovBtn.Location = new Point(399, 215);
             vardakovBtn.Name = "vardakovBtn";
             vardakovBtn.Size = new Size(149, 23);
             vardakovBtn.TabIndex = 1;
@@ -60,7 +62,8 @@
             // metsäläisetBtn
             // 
             metsäläisetBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            metsäläisetBtn.Location = new Point(396, 114);
+            metsäläisetBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            metsäläisetBtn.Location = new Point(238, 244);
             metsäläisetBtn.Name = "metsäläisetBtn";
             metsäläisetBtn.Size = new Size(149, 23);
             metsäläisetBtn.TabIndex = 2;
@@ -71,7 +74,8 @@
             // noKingdomBtn
             // 
             noKingdomBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
-            noKingdomBtn.Location = new Point(80, 72);
+            noKingdomBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            noKingdomBtn.Location = new Point(399, 244);
             noKingdomBtn.Name = "noKingdomBtn";
             noKingdomBtn.Size = new Size(149, 23);
             noKingdomBtn.TabIndex = 3;
@@ -83,7 +87,7 @@
             choseKingdomLbl.AutoSize = true;
             choseKingdomLbl.BackColor = Color.Transparent;
             choseKingdomLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            choseKingdomLbl.Location = new Point(80, 33);
+            choseKingdomLbl.Location = new Point(267, 174);
             choseKingdomLbl.Name = "choseKingdomLbl";
             choseKingdomLbl.Size = new Size(265, 19);
             choseKingdomLbl.TabIndex = 4;

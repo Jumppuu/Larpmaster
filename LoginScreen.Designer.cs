@@ -64,9 +64,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Location = new Point(12, 405);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 391);
             label1.Name = "label1";
-            label1.Size = new Size(410, 30);
+            label1.Size = new Size(598, 42);
             label1.TabIndex = 2;
             label1.Text = "Tämä on prototyyppi hahmonluonnista joten kaikkea ei tästä versiosta löydy.\r\nHahmonluonti toimii mutta rajoitettu Hahmon tasoon 0. ";
             // 

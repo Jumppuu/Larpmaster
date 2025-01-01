@@ -57,6 +57,7 @@ namespace Larpmaster
             {
                 this.Hide();
                 var MainMenu = new mainMenu(false);
+                SelectionManager.Instance.ClearSelections();
                 MainMenu.Show();
             }
         }

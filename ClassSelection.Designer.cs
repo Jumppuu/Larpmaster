@@ -66,6 +66,7 @@
             // classZharinBtn
             // 
             classZharinBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classZharinBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classZharinBtn.Location = new Point(154, 125);
             classZharinBtn.Name = "classZharinBtn";
             classZharinBtn.Size = new Size(95, 45);
@@ -77,6 +78,7 @@
             // classArdakovBtn
             // 
             classArdakovBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classArdakovBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classArdakovBtn.Location = new Point(256, 125);
             classArdakovBtn.Name = "classArdakovBtn";
             classArdakovBtn.Size = new Size(95, 45);
@@ -88,6 +90,7 @@
             // classZadaBtn
             // 
             classZadaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classZadaBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classZadaBtn.Location = new Point(357, 125);
             classZadaBtn.Name = "classZadaBtn";
             classZadaBtn.Size = new Size(95, 45);
@@ -99,6 +102,7 @@
             // classDeinosanBtn
             // 
             classDeinosanBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classDeinosanBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classDeinosanBtn.Location = new Point(463, 125);
             classDeinosanBtn.Name = "classDeinosanBtn";
             classDeinosanBtn.Size = new Size(95, 45);
@@ -110,6 +114,7 @@
             // classRaiaBtn
             // 
             classRaiaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classRaiaBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classRaiaBtn.Location = new Point(154, 176);
             classRaiaBtn.Name = "classRaiaBtn";
             classRaiaBtn.Size = new Size(95, 45);
@@ -121,6 +126,7 @@
             // classBokeanBtn
             // 
             classBokeanBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classBokeanBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classBokeanBtn.Location = new Point(256, 176);
             classBokeanBtn.Name = "classBokeanBtn";
             classBokeanBtn.Size = new Size(95, 45);
@@ -132,6 +138,7 @@
             // classThiefBtn
             // 
             classThiefBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classThiefBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classThiefBtn.Location = new Point(357, 176);
             classThiefBtn.Name = "classThiefBtn";
             classThiefBtn.Size = new Size(95, 45);
@@ -143,6 +150,7 @@
             // classFighterBtn
             // 
             classFighterBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classFighterBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classFighterBtn.Location = new Point(463, 176);
             classFighterBtn.Name = "classFighterBtn";
             classFighterBtn.Size = new Size(95, 45);
@@ -154,6 +162,7 @@
             // classScoutBtn
             // 
             classScoutBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classScoutBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classScoutBtn.Location = new Point(154, 235);
             classScoutBtn.Name = "classScoutBtn";
             classScoutBtn.Size = new Size(95, 45);
@@ -165,6 +174,7 @@
             // classDerecasBtn
             // 
             classDerecasBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classDerecasBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classDerecasBtn.Location = new Point(256, 235);
             classDerecasBtn.Name = "classDerecasBtn";
             classDerecasBtn.Size = new Size(95, 45);
@@ -176,6 +186,7 @@
             // classHealerBtn
             // 
             classHealerBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classHealerBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classHealerBtn.Location = new Point(357, 235);
             classHealerBtn.Name = "classHealerBtn";
             classHealerBtn.Size = new Size(95, 45);
@@ -187,6 +198,7 @@
             // ClassSamoojaBtn
             // 
             ClassSamoojaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            ClassSamoojaBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             ClassSamoojaBtn.Location = new Point(463, 235);
             ClassSamoojaBtn.Name = "ClassSamoojaBtn";
             ClassSamoojaBtn.Size = new Size(95, 45);
@@ -198,6 +210,7 @@
             // ClassBardBtn
             // 
             ClassBardBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            ClassBardBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             ClassBardBtn.Location = new Point(154, 292);
             ClassBardBtn.Name = "ClassBardBtn";
             ClassBardBtn.Size = new Size(95, 45);
@@ -209,6 +222,7 @@
             // classSpyBtn
             // 
             classSpyBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classSpyBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classSpyBtn.Location = new Point(256, 292);
             classSpyBtn.Name = "classSpyBtn";
             classSpyBtn.Size = new Size(95, 45);
@@ -220,6 +234,7 @@
             // classBaseBtn
             // 
             classBaseBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classBaseBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classBaseBtn.Location = new Point(357, 292);
             classBaseBtn.Name = "classBaseBtn";
             classBaseBtn.Size = new Size(95, 45);
@@ -232,9 +247,10 @@
             // 
             yearsAvailableLbl.AutoSize = true;
             yearsAvailableLbl.BackColor = Color.Transparent;
-            yearsAvailableLbl.Location = new Point(154, 23);
+            yearsAvailableLbl.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            yearsAvailableLbl.Location = new Point(640, 24);
             yearsAvailableLbl.Name = "yearsAvailableLbl";
-            yearsAvailableLbl.Size = new Size(115, 15);
+            yearsAvailableLbl.Size = new Size(120, 15);
             yearsAvailableLbl.TabIndex = 16;
             yearsAvailableLbl.Text = "Vuosia käytettävissä:";
             // 
@@ -242,7 +258,8 @@
             // 
             yearsUseableLbl.AutoSize = true;
             yearsUseableLbl.BackColor = Color.Transparent;
-            yearsUseableLbl.Location = new Point(272, 23);
+            yearsUseableLbl.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            yearsUseableLbl.Location = new Point(752, 24);
             yearsUseableLbl.Name = "yearsUseableLbl";
             yearsUseableLbl.Size = new Size(32, 15);
             yearsUseableLbl.TabIndex = 17;
@@ -252,6 +269,7 @@
             // 
             yearsConfirmedBtn.BackColor = Color.Transparent;
             yearsConfirmedBtn.FlatStyle = FlatStyle.Popup;
+            yearsConfirmedBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             yearsConfirmedBtn.Location = new Point(569, 310);
             yearsConfirmedBtn.Name = "yearsConfirmedBtn";
             yearsConfirmedBtn.Size = new Size(75, 23);
@@ -263,9 +281,10 @@
             // 
             // yearsInCultInput
             // 
+            yearsInCultInput.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             yearsInCultInput.Location = new Point(463, 310);
             yearsInCultInput.Name = "yearsInCultInput";
-            yearsInCultInput.Size = new Size(100, 23);
+            yearsInCultInput.Size = new Size(100, 24);
             yearsInCultInput.TabIndex = 19;
             yearsInCultInput.Visible = false;
             yearsInCultInput.TextChanged += yearsInCultInput_TextChanged;
@@ -274,9 +293,10 @@
             // 
             yearsinCultLbl.AutoSize = true;
             yearsinCultLbl.BackColor = Color.Transparent;
+            yearsinCultLbl.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             yearsinCultLbl.Location = new Point(463, 292);
             yearsinCultLbl.Name = "yearsinCultLbl";
-            yearsinCultLbl.Size = new Size(189, 15);
+            yearsinCultLbl.Size = new Size(196, 15);
             yearsinCultLbl.TabIndex = 20;
             yearsinCultLbl.Text = "Kuinka monta vuotta toimit täällä?";
             yearsinCultLbl.Visible = false;
@@ -285,9 +305,10 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(154, 360);
             label2.Name = "label2";
-            label2.Size = new Size(284, 30);
+            label2.Size = new Size(413, 42);
             label2.TabIndex = 21;
             label2.Text = "Prototyyppi jotenka vuosia käytössä tällä hetkellä 1\r\njotta pysytään järkevyydessä hahmon tason suhteen.";
             // 

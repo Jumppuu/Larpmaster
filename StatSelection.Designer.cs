@@ -180,6 +180,7 @@
             // 
             StatLabel_Int.AutoSize = true;
             StatLabel_Int.BackColor = Color.Transparent;
+            StatLabel_Int.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             StatLabel_Int.Location = new Point(144, 104);
             StatLabel_Int.Margin = new Padding(2, 0, 2, 0);
             StatLabel_Int.Name = "StatLabel_Int";
@@ -239,9 +240,10 @@
             // 
             StatLabel_Wis.AutoSize = true;
             StatLabel_Wis.BackColor = Color.Transparent;
+            StatLabel_Wis.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             StatLabel_Wis.Location = new Point(153, 132);
             StatLabel_Wis.Name = "StatLabel_Wis";
-            StatLabel_Wis.Size = new Size(43, 15);
+            StatLabel_Wis.Size = new Size(45, 15);
             StatLabel_Wis.TabIndex = 19;
             StatLabel_Wis.Text = "Viisaus";
             // 
@@ -249,9 +251,10 @@
             // 
             StatLabel_Str.AutoSize = true;
             StatLabel_Str.BackColor = Color.Transparent;
+            StatLabel_Str.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             StatLabel_Str.Location = new Point(129, 166);
             StatLabel_Str.Name = "StatLabel_Str";
-            StatLabel_Str.Size = new Size(71, 15);
+            StatLabel_Str.Size = new Size(74, 15);
             StatLabel_Str.TabIndex = 20;
             StatLabel_Str.Text = "Voimakkuus";
             // 
@@ -259,9 +262,10 @@
             // 
             StatLabel_Agi.AutoSize = true;
             StatLabel_Agi.BackColor = Color.Transparent;
+            StatLabel_Agi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             StatLabel_Agi.Location = new Point(144, 256);
             StatLabel_Agi.Name = "StatLabel_Agi";
-            StatLabel_Agi.Size = new Size(55, 15);
+            StatLabel_Agi.Size = new Size(57, 15);
             StatLabel_Agi.TabIndex = 22;
             StatLabel_Agi.Text = "Ketteryys";
             // 
@@ -269,9 +273,10 @@
             // 
             StatLabel_Dex.AutoSize = true;
             StatLabel_Dex.BackColor = Color.Transparent;
+            StatLabel_Dex.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             StatLabel_Dex.Location = new Point(138, 193);
             StatLabel_Dex.Name = "StatLabel_Dex";
-            StatLabel_Dex.Size = new Size(63, 15);
+            StatLabel_Dex.Size = new Size(66, 15);
             StatLabel_Dex.TabIndex = 23;
             StatLabel_Dex.Text = "Näppäryys";
             // 
@@ -279,9 +284,10 @@
             // 
             StatLabel_Con.AutoSize = true;
             StatLabel_Con.BackColor = Color.Transparent;
+            StatLabel_Con.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             StatLabel_Con.Location = new Point(141, 225);
             StatLabel_Con.Name = "StatLabel_Con";
-            StatLabel_Con.Size = new Size(52, 15);
+            StatLabel_Con.Size = new Size(53, 15);
             StatLabel_Con.TabIndex = 24;
             StatLabel_Con.Text = "Rakenne";
             // 
@@ -289,9 +295,10 @@
             // 
             StatLabel_Cha.AutoSize = true;
             StatLabel_Cha.BackColor = Color.Transparent;
+            StatLabel_Cha.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             StatLabel_Cha.Location = new Point(144, 286);
             StatLabel_Cha.Name = "StatLabel_Cha";
-            StatLabel_Cha.Size = new Size(49, 15);
+            StatLabel_Cha.Size = new Size(53, 15);
             StatLabel_Cha.TabIndex = 25;
             StatLabel_Cha.Text = "Karisma";
             // 
@@ -299,6 +306,7 @@
             // 
             reRollStatsBtn.BackColor = Color.Transparent;
             reRollStatsBtn.FlatStyle = FlatStyle.Popup;
+            reRollStatsBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             reRollStatsBtn.Location = new Point(629, 439);
             reRollStatsBtn.Name = "reRollStatsBtn";
             reRollStatsBtn.Size = new Size(75, 23);
@@ -311,6 +319,7 @@
             // 
             autoDistributeBtn.BackColor = Color.Transparent;
             autoDistributeBtn.FlatStyle = FlatStyle.Popup;
+            autoDistributeBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             autoDistributeBtn.Location = new Point(35, 327);
             autoDistributeBtn.Name = "autoDistributeBtn";
             autoDistributeBtn.Size = new Size(75, 23);
@@ -444,68 +453,69 @@
             chaFinalLbl.AutoSize = true;
             chaFinalLbl.Location = new Point(502, 284);
             chaFinalLbl.Name = "chaFinalLbl";
-            chaFinalLbl.Size = new Size(57, 15);
+            chaFinalLbl.Size = new Size(10, 15);
             chaFinalLbl.TabIndex = 47;
-            chaFinalLbl.Text = "Charisma";
+            chaFinalLbl.Text = ".";
             // 
             // agiFinalLbl
             // 
             agiFinalLbl.AutoSize = true;
             agiFinalLbl.Location = new Point(502, 260);
             agiFinalLbl.Name = "agiFinalLbl";
-            agiFinalLbl.Size = new Size(41, 15);
+            agiFinalLbl.Size = new Size(10, 15);
             agiFinalLbl.TabIndex = 46;
-            agiFinalLbl.Text = "Agility";
+            agiFinalLbl.Text = ".";
             // 
             // conFinalLbl
             // 
             conFinalLbl.AutoSize = true;
             conFinalLbl.Location = new Point(502, 226);
             conFinalLbl.Name = "conFinalLbl";
-            conFinalLbl.Size = new Size(34, 15);
+            conFinalLbl.Size = new Size(10, 15);
             conFinalLbl.TabIndex = 45;
-            conFinalLbl.Text = "Cons";
+            conFinalLbl.Text = ".";
             // 
             // dexFinalLbl
             // 
             dexFinalLbl.AutoSize = true;
             dexFinalLbl.Location = new Point(504, 197);
             dexFinalLbl.Name = "dexFinalLbl";
-            dexFinalLbl.Size = new Size(27, 15);
+            dexFinalLbl.Size = new Size(10, 15);
             dexFinalLbl.TabIndex = 44;
-            dexFinalLbl.Text = "Dex";
+            dexFinalLbl.Text = ".";
             // 
             // strFinalLbl
             // 
             strFinalLbl.AutoSize = true;
             strFinalLbl.Location = new Point(504, 164);
             strFinalLbl.Name = "strFinalLbl";
-            strFinalLbl.Size = new Size(21, 15);
+            strFinalLbl.Size = new Size(10, 15);
             strFinalLbl.TabIndex = 43;
-            strFinalLbl.Text = "Str";
+            strFinalLbl.Text = ".";
             // 
             // wisFinalLbl
             // 
             wisFinalLbl.AutoSize = true;
             wisFinalLbl.Location = new Point(504, 130);
             wisFinalLbl.Name = "wisFinalLbl";
-            wisFinalLbl.Size = new Size(33, 15);
+            wisFinalLbl.Size = new Size(10, 15);
             wisFinalLbl.TabIndex = 42;
-            wisFinalLbl.Text = "Wisd";
+            wisFinalLbl.Text = ".";
             // 
             // intFinalLbl
             // 
             intFinalLbl.AutoSize = true;
             intFinalLbl.Location = new Point(504, 101);
             intFinalLbl.Name = "intFinalLbl";
-            intFinalLbl.Size = new Size(21, 15);
+            intFinalLbl.Size = new Size(10, 15);
             intFinalLbl.TabIndex = 41;
-            intFinalLbl.Text = "Int";
+            intFinalLbl.Text = ".";
             // 
             // BackButton_StatSelect
             // 
             BackButton_StatSelect.BackColor = Color.Transparent;
             BackButton_StatSelect.FlatStyle = FlatStyle.Popup;
+            BackButton_StatSelect.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             BackButton_StatSelect.Location = new Point(641, 20);
             BackButton_StatSelect.Name = "BackButton_StatSelect";
             BackButton_StatSelect.Size = new Size(75, 23);
@@ -518,6 +528,7 @@
             // 
             ConfirmButton_StatSelection.BackColor = Color.Transparent;
             ConfirmButton_StatSelection.FlatStyle = FlatStyle.Popup;
+            ConfirmButton_StatSelection.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             ConfirmButton_StatSelection.Location = new Point(474, 362);
             ConfirmButton_StatSelection.Name = "ConfirmButton_StatSelection";
             ConfirmButton_StatSelection.Size = new Size(75, 23);
@@ -539,6 +550,7 @@
             // 
             acceptAgeButton.BackColor = Color.Transparent;
             acceptAgeButton.FlatStyle = FlatStyle.Popup;
+            acceptAgeButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             acceptAgeButton.Location = new Point(153, 440);
             acceptAgeButton.Name = "acceptAgeButton";
             acceptAgeButton.Size = new Size(112, 23);
@@ -552,9 +564,10 @@
             // 
             AgeInputLabel.AutoSize = true;
             AgeInputLabel.BackColor = Color.Transparent;
+            AgeInputLabel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             AgeInputLabel.Location = new Point(42, 416);
             AgeInputLabel.Name = "AgeInputLabel";
-            AgeInputLabel.Size = new Size(57, 15);
+            AgeInputLabel.Size = new Size(59, 15);
             AgeInputLabel.TabIndex = 52;
             AgeInputLabel.Text = "Syötä ikä:";
             AgeInputLabel.Visible = false;

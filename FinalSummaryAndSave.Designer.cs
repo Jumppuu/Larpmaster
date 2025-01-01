@@ -37,6 +37,7 @@
             // 
             saveButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveButton.FlatStyle = FlatStyle.Popup;
+            saveButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             saveButton.Location = new Point(446, 317);
             saveButton.Name = "saveButton";
             saveButton.Size = new Size(184, 55);
@@ -49,6 +50,7 @@
             // 
             summaryTextBox.BackColor = Color.Moccasin;
             summaryTextBox.BorderStyle = BorderStyle.FixedSingle;
+            summaryTextBox.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             summaryTextBox.Location = new Point(12, 11);
             summaryTextBox.Multiline = true;
             summaryTextBox.Name = "summaryTextBox";
@@ -58,6 +60,8 @@
             // mainMenuBtn
             // 
             mainMenuBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            mainMenuBtn.FlatStyle = FlatStyle.Flat;
+            mainMenuBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             mainMenuBtn.Location = new Point(682, 24);
             mainMenuBtn.Name = "mainMenuBtn";
             mainMenuBtn.Size = new Size(106, 55);

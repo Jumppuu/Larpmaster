@@ -57,10 +57,10 @@
             // 
             CharacterSummaryExplain_Label.AutoSize = true;
             CharacterSummaryExplain_Label.BackColor = Color.Transparent;
-            CharacterSummaryExplain_Label.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CharacterSummaryExplain_Label.Location = new Point(65, 39);
+            CharacterSummaryExplain_Label.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            CharacterSummaryExplain_Label.Location = new Point(32, 54);
             CharacterSummaryExplain_Label.Name = "CharacterSummaryExplain_Label";
-            CharacterSummaryExplain_Label.Size = new Size(166, 20);
+            CharacterSummaryExplain_Label.Size = new Size(136, 15);
             CharacterSummaryExplain_Label.TabIndex = 0;
             CharacterSummaryExplain_Label.Text = "Luodun Hahmon tiedot:";
             // 
@@ -68,10 +68,10 @@
             // 
             AgeLabel.AutoSize = true;
             AgeLabel.BackColor = Color.Transparent;
-            AgeLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AgeLabel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             AgeLabel.Location = new Point(29, 89);
             AgeLabel.Name = "AgeLabel";
-            AgeLabel.Size = new Size(31, 20);
+            AgeLabel.Size = new Size(26, 15);
             AgeLabel.TabIndex = 1;
             AgeLabel.Text = "Ikä:";
             // 
@@ -79,10 +79,10 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             label3.Location = new Point(110, 89);
             label3.Name = "label3";
-            label3.Size = new Size(165, 20);
+            label3.Size = new Size(136, 15);
             label3.TabIndex = 2;
             label3.Text = "vuotta ja fyysinen kunto";
             // 
@@ -90,10 +90,10 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(356, 89);
+            label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            label4.Location = new Point(306, 89);
             label4.Name = "label4";
-            label4.Size = new Size(21, 20);
+            label4.Size = new Size(17, 15);
             label4.TabIndex = 3;
             label4.Text = "%";
             // 
@@ -101,10 +101,10 @@
             // 
             DirectionLabel_Con.AutoSize = true;
             DirectionLabel_Con.BackColor = Color.Transparent;
-            DirectionLabel_Con.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DirectionLabel_Con.Location = new Point(37, 265);
+            DirectionLabel_Con.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DirectionLabel_Con.Location = new Point(29, 265);
             DirectionLabel_Con.Name = "DirectionLabel_Con";
-            DirectionLabel_Con.Size = new Size(65, 20);
+            DirectionLabel_Con.Size = new Size(53, 15);
             DirectionLabel_Con.TabIndex = 4;
             DirectionLabel_Con.Text = "Rakenne";
             // 
@@ -112,10 +112,10 @@
             // 
             DirectionLabel_Wis.AutoSize = true;
             DirectionLabel_Wis.BackColor = Color.Transparent;
-            DirectionLabel_Wis.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DirectionLabel_Wis.Location = new Point(37, 171);
+            DirectionLabel_Wis.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DirectionLabel_Wis.Location = new Point(30, 171);
             DirectionLabel_Wis.Name = "DirectionLabel_Wis";
-            DirectionLabel_Wis.Size = new Size(54, 20);
+            DirectionLabel_Wis.Size = new Size(45, 15);
             DirectionLabel_Wis.TabIndex = 5;
             DirectionLabel_Wis.Text = "Viisaus";
             // 
@@ -123,10 +123,10 @@
             // 
             DirectionLabel_Str.AutoSize = true;
             DirectionLabel_Str.BackColor = Color.Transparent;
-            DirectionLabel_Str.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DirectionLabel_Str.Location = new Point(37, 202);
+            DirectionLabel_Str.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DirectionLabel_Str.Location = new Point(30, 202);
             DirectionLabel_Str.Name = "DirectionLabel_Str";
-            DirectionLabel_Str.Size = new Size(87, 20);
+            DirectionLabel_Str.Size = new Size(74, 15);
             DirectionLabel_Str.TabIndex = 6;
             DirectionLabel_Str.Text = "Voimakkuus";
             // 
@@ -134,10 +134,10 @@
             // 
             DirectionLabel_Dex.AutoSize = true;
             DirectionLabel_Dex.BackColor = Color.Transparent;
-            DirectionLabel_Dex.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DirectionLabel_Dex.Location = new Point(37, 234);
+            DirectionLabel_Dex.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DirectionLabel_Dex.Location = new Point(30, 234);
             DirectionLabel_Dex.Name = "DirectionLabel_Dex";
-            DirectionLabel_Dex.Size = new Size(79, 20);
+            DirectionLabel_Dex.Size = new Size(66, 15);
             DirectionLabel_Dex.TabIndex = 7;
             DirectionLabel_Dex.Text = "Näppäryys";
             // 
@@ -145,10 +145,10 @@
             // 
             DirectionLabel_Cha.AutoSize = true;
             DirectionLabel_Cha.BackColor = Color.Transparent;
-            DirectionLabel_Cha.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DirectionLabel_Cha.Location = new Point(37, 328);
+            DirectionLabel_Cha.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DirectionLabel_Cha.Location = new Point(32, 328);
             DirectionLabel_Cha.Name = "DirectionLabel_Cha";
-            DirectionLabel_Cha.Size = new Size(62, 20);
+            DirectionLabel_Cha.Size = new Size(53, 15);
             DirectionLabel_Cha.TabIndex = 8;
             DirectionLabel_Cha.Text = "Karisma";
             // 
@@ -156,10 +156,10 @@
             // 
             DirectionLabel_Agi.AutoSize = true;
             DirectionLabel_Agi.BackColor = Color.Transparent;
-            DirectionLabel_Agi.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DirectionLabel_Agi.Location = new Point(37, 296);
+            DirectionLabel_Agi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DirectionLabel_Agi.Location = new Point(30, 296);
             DirectionLabel_Agi.Name = "DirectionLabel_Agi";
-            DirectionLabel_Agi.Size = new Size(69, 20);
+            DirectionLabel_Agi.Size = new Size(57, 15);
             DirectionLabel_Agi.TabIndex = 9;
             DirectionLabel_Agi.Text = "Ketteryys";
             // 
@@ -167,10 +167,10 @@
             // 
             DirectionLabel_Int.AutoSize = true;
             DirectionLabel_Int.BackColor = Color.Transparent;
-            DirectionLabel_Int.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DirectionLabel_Int.Location = new Point(37, 137);
+            DirectionLabel_Int.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DirectionLabel_Int.Location = new Point(30, 138);
             DirectionLabel_Int.Name = "DirectionLabel_Int";
-            DirectionLabel_Int.Size = new Size(64, 20);
+            DirectionLabel_Int.Size = new Size(53, 15);
             DirectionLabel_Int.TabIndex = 10;
             DirectionLabel_Int.Text = "Älykkyys";
             // 
@@ -179,7 +179,7 @@
             CancelDirectionLabel.AutoSize = true;
             CancelDirectionLabel.BackColor = Color.Transparent;
             CancelDirectionLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CancelDirectionLabel.Location = new Point(37, 383);
+            CancelDirectionLabel.Location = new Point(31, 372);
             CancelDirectionLabel.Name = "CancelDirectionLabel";
             CancelDirectionLabel.Size = new Size(428, 20);
             CancelDirectionLabel.TabIndex = 11;
@@ -189,7 +189,8 @@
             // 
             CharSummary_Delete.BackColor = Color.Transparent;
             CharSummary_Delete.FlatStyle = FlatStyle.Popup;
-            CharSummary_Delete.Location = new Point(49, 415);
+            CharSummary_Delete.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            CharSummary_Delete.Location = new Point(30, 404);
             CharSummary_Delete.Name = "CharSummary_Delete";
             CharSummary_Delete.Size = new Size(151, 23);
             CharSummary_Delete.TabIndex = 12;
@@ -201,7 +202,8 @@
             // 
             CharSummary_Ok.BackColor = Color.Transparent;
             CharSummary_Ok.FlatStyle = FlatStyle.Popup;
-            CharSummary_Ok.Location = new Point(250, 415);
+            CharSummary_Ok.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            CharSummary_Ok.Location = new Point(224, 404);
             CharSummary_Ok.Name = "CharSummary_Ok";
             CharSummary_Ok.Size = new Size(150, 23);
             CharSummary_Ok.TabIndex = 13;
@@ -213,10 +215,10 @@
             // 
             AgeValue.AutoSize = true;
             AgeValue.BackColor = Color.Transparent;
-            AgeValue.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AgeValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             AgeValue.Location = new Point(60, 89);
             AgeValue.Name = "AgeValue";
-            AgeValue.Size = new Size(46, 20);
+            AgeValue.Size = new Size(38, 15);
             AgeValue.TabIndex = 14;
             AgeValue.Text = "Teksti";
             // 
@@ -224,19 +226,21 @@
             // 
             ConPercentage.AutoSize = true;
             ConPercentage.BackColor = Color.Transparent;
-            ConPercentage.Location = new Point(281, 94);
+            ConPercentage.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            ConPercentage.Location = new Point(281, 93);
             ConPercentage.Name = "ConPercentage";
-            ConPercentage.Size = new Size(69, 15);
+            ConPercentage.Size = new Size(21, 15);
             ConPercentage.TabIndex = 15;
-            ConPercentage.Text = "Placeholder";
+            ConPercentage.Text = "88";
             // 
             // WisValue
             // 
             WisValue.AutoSize = true;
             WisValue.BackColor = Color.Transparent;
+            WisValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             WisValue.Location = new Point(123, 175);
             WisValue.Name = "WisValue";
-            WisValue.Size = new Size(43, 15);
+            WisValue.Size = new Size(45, 15);
             WisValue.TabIndex = 16;
             WisValue.Text = "Viisaus";
             // 
@@ -244,9 +248,10 @@
             // 
             DexValue.AutoSize = true;
             DexValue.BackColor = Color.Transparent;
-            DexValue.Location = new Point(128, 239);
+            DexValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            DexValue.Location = new Point(123, 238);
             DexValue.Name = "DexValue";
-            DexValue.Size = new Size(63, 15);
+            DexValue.Size = new Size(66, 15);
             DexValue.TabIndex = 17;
             DexValue.Text = "Näppäryys";
             // 
@@ -254,9 +259,10 @@
             // 
             StrValue.AutoSize = true;
             StrValue.BackColor = Color.Transparent;
-            StrValue.Location = new Point(128, 207);
+            StrValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            StrValue.Location = new Point(123, 207);
             StrValue.Name = "StrValue";
-            StrValue.Size = new Size(71, 15);
+            StrValue.Size = new Size(74, 15);
             StrValue.TabIndex = 18;
             StrValue.Text = "Voimakkuus";
             // 
@@ -264,9 +270,10 @@
             // 
             ConValue.AutoSize = true;
             ConValue.BackColor = Color.Transparent;
-            ConValue.Location = new Point(128, 270);
+            ConValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            ConValue.Location = new Point(121, 270);
             ConValue.Name = "ConValue";
-            ConValue.Size = new Size(52, 15);
+            ConValue.Size = new Size(53, 15);
             ConValue.TabIndex = 19;
             ConValue.Text = "Rakenne";
             // 
@@ -274,9 +281,10 @@
             // 
             AgiValue.AutoSize = true;
             AgiValue.BackColor = Color.Transparent;
-            AgiValue.Location = new Point(123, 301);
+            AgiValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            AgiValue.Location = new Point(121, 301);
             AgiValue.Name = "AgiValue";
-            AgiValue.Size = new Size(55, 15);
+            AgiValue.Size = new Size(57, 15);
             AgiValue.TabIndex = 20;
             AgiValue.Text = "Ketteryys";
             // 
@@ -284,9 +292,10 @@
             // 
             ChaValue.AutoSize = true;
             ChaValue.BackColor = Color.Transparent;
-            ChaValue.Location = new Point(123, 333);
+            ChaValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            ChaValue.Location = new Point(123, 332);
             ChaValue.Name = "ChaValue";
-            ChaValue.Size = new Size(49, 15);
+            ChaValue.Size = new Size(53, 15);
             ChaValue.TabIndex = 21;
             ChaValue.Text = "Karisma";
             // 
@@ -294,7 +303,8 @@
             // 
             IntValue.AutoSize = true;
             IntValue.BackColor = Color.Transparent;
-            IntValue.Location = new Point(123, 141);
+            IntValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            IntValue.Location = new Point(123, 142);
             IntValue.Name = "IntValue";
             IntValue.Size = new Size(53, 15);
             IntValue.TabIndex = 22;

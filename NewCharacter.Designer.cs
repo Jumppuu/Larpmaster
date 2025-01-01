@@ -45,6 +45,7 @@
             // 
             RaceBtn_Human.BackColor = Color.Transparent;
             RaceBtn_Human.FlatStyle = FlatStyle.Popup;
+            RaceBtn_Human.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             RaceBtn_Human.Location = new Point(190, 169);
             RaceBtn_Human.Margin = new Padding(2);
             RaceBtn_Human.Name = "RaceBtn_Human";
@@ -58,6 +59,7 @@
             // 
             RaceBtn_Elf.BackColor = Color.Transparent;
             RaceBtn_Elf.FlatStyle = FlatStyle.Popup;
+            RaceBtn_Elf.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             RaceBtn_Elf.Location = new Point(265, 169);
             RaceBtn_Elf.Margin = new Padding(2);
             RaceBtn_Elf.Name = "RaceBtn_Elf";
@@ -71,6 +73,7 @@
             // 
             RaceBtn_HalfElf.BackColor = Color.Transparent;
             RaceBtn_HalfElf.FlatStyle = FlatStyle.Popup;
+            RaceBtn_HalfElf.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             RaceBtn_HalfElf.ForeColor = SystemColors.ControlText;
             RaceBtn_HalfElf.Location = new Point(338, 169);
             RaceBtn_HalfElf.Margin = new Padding(2);
@@ -96,6 +99,7 @@
             // 
             BackButton_NewChar.BackColor = Color.Transparent;
             BackButton_NewChar.FlatStyle = FlatStyle.Popup;
+            BackButton_NewChar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             BackButton_NewChar.Location = new Point(573, 25);
             BackButton_NewChar.Name = "BackButton_NewChar";
             BackButton_NewChar.Size = new Size(75, 23);

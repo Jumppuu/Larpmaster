@@ -164,9 +164,14 @@ namespace Larpmaster
                 for (int i = 23; i <= age; i++)
                 {
                     if (random.NextDouble() < 0.05) // 5% chance of decrease each year
+                    {
                         physicalCondition -= random.Next(1, 5); // Decrease by 1 to 4 percent
-                    if (physicalCondition < 0)
-                        physicalCondition = 0;
+                        if (physicalCondition < 0)
+                        {
+                            physicalCondition = 0;
+                            break; // Exit the loop if physical condition reaches 0
+                        }
+                    }
                 }
                 return physicalCondition;
             }

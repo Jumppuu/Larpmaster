@@ -65,7 +65,7 @@
             tikariBtn.BackColor = SystemColors.ActiveBorder;
             tikariBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             tikariBtn.FlatAppearance.BorderColor = Color.Black;
-            tikariBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            tikariBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             tikariBtn.Location = new Point(44, 94);
             tikariBtn.Name = "tikariBtn";
             tikariBtn.Size = new Size(149, 23);
@@ -79,7 +79,7 @@
             lyhytMiekkaBtn.BackColor = SystemColors.ActiveBorder;
             lyhytMiekkaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             lyhytMiekkaBtn.FlatAppearance.BorderColor = Color.Black;
-            lyhytMiekkaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            lyhytMiekkaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lyhytMiekkaBtn.Location = new Point(199, 94);
             lyhytMiekkaBtn.Name = "lyhytMiekkaBtn";
             lyhytMiekkaBtn.Size = new Size(149, 23);
@@ -93,7 +93,7 @@
             pitkäMiekkaBtn.BackColor = SystemColors.ActiveBorder;
             pitkäMiekkaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             pitkäMiekkaBtn.FlatAppearance.BorderColor = Color.Black;
-            pitkäMiekkaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            pitkäMiekkaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             pitkäMiekkaBtn.Location = new Point(354, 94);
             pitkäMiekkaBtn.Name = "pitkäMiekkaBtn";
             pitkäMiekkaBtn.Size = new Size(149, 23);
@@ -107,7 +107,7 @@
             kaksKädenMiekkaBtn.BackColor = SystemColors.ActiveBorder;
             kaksKädenMiekkaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             kaksKädenMiekkaBtn.FlatAppearance.BorderColor = Color.Black;
-            kaksKädenMiekkaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            kaksKädenMiekkaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             kaksKädenMiekkaBtn.Location = new Point(509, 94);
             kaksKädenMiekkaBtn.Name = "kaksKädenMiekkaBtn";
             kaksKädenMiekkaBtn.Size = new Size(149, 23);
@@ -121,7 +121,7 @@
             kävelySauvaBtn.BackColor = SystemColors.ActiveBorder;
             kävelySauvaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             kävelySauvaBtn.FlatAppearance.BorderColor = Color.Black;
-            kävelySauvaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            kävelySauvaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             kävelySauvaBtn.Location = new Point(509, 152);
             kävelySauvaBtn.Name = "kävelySauvaBtn";
             kävelySauvaBtn.Size = new Size(149, 23);
@@ -135,7 +135,7 @@
             äpäräMiekkaBtn.BackColor = SystemColors.ActiveBorder;
             äpäräMiekkaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             äpäräMiekkaBtn.FlatAppearance.BorderColor = Color.Black;
-            äpäräMiekkaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            äpäräMiekkaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             äpäräMiekkaBtn.Location = new Point(354, 152);
             äpäräMiekkaBtn.Name = "äpäräMiekkaBtn";
             äpäräMiekkaBtn.Size = new Size(149, 23);
@@ -149,7 +149,7 @@
             levyHaarniskaBtn.BackColor = SystemColors.ActiveBorder;
             levyHaarniskaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             levyHaarniskaBtn.FlatAppearance.BorderColor = Color.Black;
-            levyHaarniskaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            levyHaarniskaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             levyHaarniskaBtn.Location = new Point(199, 152);
             levyHaarniskaBtn.Name = "levyHaarniskaBtn";
             levyHaarniskaBtn.Size = new Size(149, 23);
@@ -163,7 +163,7 @@
             rengasHaarniskaBtn.BackColor = SystemColors.ActiveBorder;
             rengasHaarniskaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             rengasHaarniskaBtn.FlatAppearance.BorderColor = Color.Black;
-            rengasHaarniskaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            rengasHaarniskaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             rengasHaarniskaBtn.Location = new Point(44, 152);
             rengasHaarniskaBtn.Name = "rengasHaarniskaBtn";
             rengasHaarniskaBtn.Size = new Size(149, 23);
@@ -177,7 +177,7 @@
             käsiKirvesBtn.BackColor = SystemColors.ActiveBorder;
             käsiKirvesBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             käsiKirvesBtn.FlatAppearance.BorderColor = Color.Black;
-            käsiKirvesBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            käsiKirvesBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             käsiKirvesBtn.Location = new Point(509, 210);
             käsiKirvesBtn.Name = "käsiKirvesBtn";
             käsiKirvesBtn.Size = new Size(149, 23);
@@ -191,7 +191,7 @@
             ryhmySauvaBtn.BackColor = SystemColors.ActiveBorder;
             ryhmySauvaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             ryhmySauvaBtn.FlatAppearance.BorderColor = Color.Black;
-            ryhmySauvaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            ryhmySauvaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             ryhmySauvaBtn.Location = new Point(354, 210);
             ryhmySauvaBtn.Name = "ryhmySauvaBtn";
             ryhmySauvaBtn.Size = new Size(149, 23);
@@ -205,7 +205,7 @@
             keihäsBtn.BackColor = SystemColors.ActiveBorder;
             keihäsBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             keihäsBtn.FlatAppearance.BorderColor = Color.Black;
-            keihäsBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            keihäsBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             keihäsBtn.Location = new Point(199, 210);
             keihäsBtn.Name = "keihäsBtn";
             keihäsBtn.Size = new Size(149, 23);
@@ -219,7 +219,7 @@
             sotaKirvesBtn.BackColor = SystemColors.ActiveBorder;
             sotaKirvesBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             sotaKirvesBtn.FlatAppearance.BorderColor = Color.Black;
-            sotaKirvesBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            sotaKirvesBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             sotaKirvesBtn.Location = new Point(44, 210);
             sotaKirvesBtn.Name = "sotaKirvesBtn";
             sotaKirvesBtn.Size = new Size(149, 23);
@@ -233,7 +233,7 @@
             lyhytJousiBtn.BackColor = SystemColors.ActiveBorder;
             lyhytJousiBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             lyhytJousiBtn.FlatAppearance.BorderColor = Color.Black;
-            lyhytJousiBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            lyhytJousiBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lyhytJousiBtn.Location = new Point(354, 239);
             lyhytJousiBtn.Name = "lyhytJousiBtn";
             lyhytJousiBtn.Size = new Size(149, 23);
@@ -247,7 +247,7 @@
             kirvesBtn.BackColor = SystemColors.ActiveBorder;
             kirvesBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             kirvesBtn.FlatAppearance.BorderColor = Color.Black;
-            kirvesBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            kirvesBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             kirvesBtn.Location = new Point(509, 239);
             kirvesBtn.Name = "kirvesBtn";
             kirvesBtn.Size = new Size(149, 23);
@@ -289,7 +289,7 @@
             nahkaHaarniskaBtn.BackColor = SystemColors.ActiveBorder;
             nahkaHaarniskaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             nahkaHaarniskaBtn.FlatAppearance.BorderColor = Color.Black;
-            nahkaHaarniskaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            nahkaHaarniskaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             nahkaHaarniskaBtn.Location = new Point(509, 123);
             nahkaHaarniskaBtn.Name = "nahkaHaarniskaBtn";
             nahkaHaarniskaBtn.Size = new Size(149, 23);
@@ -303,7 +303,7 @@
             kilpiBtn.BackColor = SystemColors.ActiveBorder;
             kilpiBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             kilpiBtn.FlatAppearance.BorderColor = Color.Black;
-            kilpiBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            kilpiBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             kilpiBtn.Location = new Point(354, 123);
             kilpiBtn.Name = "kilpiBtn";
             kilpiBtn.Size = new Size(149, 23);
@@ -317,7 +317,7 @@
             pieniKilpiBtn.BackColor = SystemColors.ActiveBorder;
             pieniKilpiBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             pieniKilpiBtn.FlatAppearance.BorderColor = Color.Black;
-            pieniKilpiBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            pieniKilpiBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             pieniKilpiBtn.Location = new Point(199, 123);
             pieniKilpiBtn.Name = "pieniKilpiBtn";
             pieniKilpiBtn.Size = new Size(149, 23);
@@ -331,7 +331,7 @@
             nuijaBtn.BackColor = SystemColors.ActiveBorder;
             nuijaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             nuijaBtn.FlatAppearance.BorderColor = Color.Black;
-            nuijaBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            nuijaBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             nuijaBtn.Location = new Point(44, 123);
             nuijaBtn.Name = "nuijaBtn";
             nuijaBtn.Size = new Size(149, 23);
@@ -345,7 +345,7 @@
             nuolibtn.BackColor = SystemColors.ActiveBorder;
             nuolibtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             nuolibtn.FlatAppearance.BorderColor = Color.Black;
-            nuolibtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            nuolibtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             nuolibtn.Location = new Point(509, 181);
             nuolibtn.Name = "nuolibtn";
             nuolibtn.Size = new Size(149, 23);
@@ -359,7 +359,7 @@
             pitkäJousiBtn.BackColor = SystemColors.ActiveBorder;
             pitkäJousiBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             pitkäJousiBtn.FlatAppearance.BorderColor = Color.Black;
-            pitkäJousiBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            pitkäJousiBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             pitkäJousiBtn.Location = new Point(354, 181);
             pitkäJousiBtn.Name = "pitkäJousiBtn";
             pitkäJousiBtn.Size = new Size(149, 23);
@@ -373,7 +373,7 @@
             heikkoLyhytJousiBtn.BackColor = SystemColors.ActiveBorder;
             heikkoLyhytJousiBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             heikkoLyhytJousiBtn.FlatAppearance.BorderColor = Color.Black;
-            heikkoLyhytJousiBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            heikkoLyhytJousiBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             heikkoLyhytJousiBtn.Location = new Point(199, 181);
             heikkoLyhytJousiBtn.Name = "heikkoLyhytJousiBtn";
             heikkoLyhytJousiBtn.Size = new Size(149, 23);
@@ -387,7 +387,7 @@
             kiviLinkoBtn.BackColor = SystemColors.ActiveBorder;
             kiviLinkoBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             kiviLinkoBtn.FlatAppearance.BorderColor = Color.Black;
-            kiviLinkoBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            kiviLinkoBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             kiviLinkoBtn.Location = new Point(44, 181);
             kiviLinkoBtn.Name = "kiviLinkoBtn";
             kiviLinkoBtn.Size = new Size(149, 23);
@@ -401,7 +401,7 @@
             sotaVasaraBtn.BackColor = SystemColors.ActiveBorder;
             sotaVasaraBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             sotaVasaraBtn.FlatAppearance.BorderColor = Color.Black;
-            sotaVasaraBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            sotaVasaraBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             sotaVasaraBtn.Location = new Point(199, 239);
             sotaVasaraBtn.Name = "sotaVasaraBtn";
             sotaVasaraBtn.Size = new Size(149, 23);
@@ -415,7 +415,7 @@
             ketjuPiikkiPalloBtn.BackColor = SystemColors.ActiveBorder;
             ketjuPiikkiPalloBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             ketjuPiikkiPalloBtn.FlatAppearance.BorderColor = Color.Black;
-            ketjuPiikkiPalloBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            ketjuPiikkiPalloBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             ketjuPiikkiPalloBtn.Location = new Point(44, 239);
             ketjuPiikkiPalloBtn.Name = "ketjuPiikkiPalloBtn";
             ketjuPiikkiPalloBtn.Size = new Size(149, 23);
@@ -429,7 +429,7 @@
             removeLastWeaponBtn.BackColor = SystemColors.ActiveBorder;
             removeLastWeaponBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             removeLastWeaponBtn.FlatAppearance.BorderColor = Color.Black;
-            removeLastWeaponBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            removeLastWeaponBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             removeLastWeaponBtn.Location = new Point(44, 49);
             removeLastWeaponBtn.Name = "removeLastWeaponBtn";
             removeLastWeaponBtn.Size = new Size(149, 23);
@@ -442,7 +442,7 @@
             choseWepLbl.AutoSize = true;
             choseWepLbl.BackColor = Color.Transparent;
             choseWepLbl.Font = new Font("Engravers MT", 10F, FontStyle.Bold);
-            choseWepLbl.Location = new Point(12, 19);
+            choseWepLbl.Location = new Point(44, 18);
             choseWepLbl.Name = "choseWepLbl";
             choseWepLbl.Size = new Size(170, 16);
             choseWepLbl.TabIndex = 29;
@@ -453,8 +453,8 @@
             exitWeaponListBtn.BackColor = SystemColors.ActiveBorder;
             exitWeaponListBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             exitWeaponListBtn.FlatAppearance.BorderColor = Color.Black;
-            exitWeaponListBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
-            exitWeaponListBtn.Location = new Point(212, 49);
+            exitWeaponListBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
+            exitWeaponListBtn.Location = new Point(214, 49);
             exitWeaponListBtn.Name = "exitWeaponListBtn";
             exitWeaponListBtn.Size = new Size(75, 23);
             exitWeaponListBtn.TabIndex = 30;
@@ -466,6 +466,7 @@
             // 
             weaponListBox.BackColor = Color.Moccasin;
             weaponListBox.BorderStyle = BorderStyle.None;
+            weaponListBox.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             weaponListBox.FormattingEnabled = true;
             weaponListBox.ItemHeight = 15;
             weaponListBox.Location = new Point(366, 273);
