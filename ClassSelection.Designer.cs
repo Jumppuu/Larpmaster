@@ -66,6 +66,7 @@
             // classZharinBtn
             // 
             classZharinBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classZharinBtn.FlatStyle = FlatStyle.Flat;
             classZharinBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classZharinBtn.Location = new Point(154, 125);
             classZharinBtn.Name = "classZharinBtn";
@@ -78,6 +79,7 @@
             // classArdakovBtn
             // 
             classArdakovBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classArdakovBtn.FlatStyle = FlatStyle.Flat;
             classArdakovBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classArdakovBtn.Location = new Point(256, 125);
             classArdakovBtn.Name = "classArdakovBtn";
@@ -90,6 +92,7 @@
             // classZadaBtn
             // 
             classZadaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classZadaBtn.FlatStyle = FlatStyle.Flat;
             classZadaBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classZadaBtn.Location = new Point(357, 125);
             classZadaBtn.Name = "classZadaBtn";
@@ -102,6 +105,7 @@
             // classDeinosanBtn
             // 
             classDeinosanBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classDeinosanBtn.FlatStyle = FlatStyle.Flat;
             classDeinosanBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classDeinosanBtn.Location = new Point(463, 125);
             classDeinosanBtn.Name = "classDeinosanBtn";
@@ -114,6 +118,7 @@
             // classRaiaBtn
             // 
             classRaiaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classRaiaBtn.FlatStyle = FlatStyle.Flat;
             classRaiaBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classRaiaBtn.Location = new Point(154, 176);
             classRaiaBtn.Name = "classRaiaBtn";
@@ -126,6 +131,7 @@
             // classBokeanBtn
             // 
             classBokeanBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classBokeanBtn.FlatStyle = FlatStyle.Flat;
             classBokeanBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classBokeanBtn.Location = new Point(256, 176);
             classBokeanBtn.Name = "classBokeanBtn";
@@ -138,6 +144,7 @@
             // classThiefBtn
             // 
             classThiefBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classThiefBtn.FlatStyle = FlatStyle.Flat;
             classThiefBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classThiefBtn.Location = new Point(357, 176);
             classThiefBtn.Name = "classThiefBtn";
@@ -150,6 +157,7 @@
             // classFighterBtn
             // 
             classFighterBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classFighterBtn.FlatStyle = FlatStyle.Flat;
             classFighterBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classFighterBtn.Location = new Point(463, 176);
             classFighterBtn.Name = "classFighterBtn";
@@ -162,6 +170,7 @@
             // classScoutBtn
             // 
             classScoutBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classScoutBtn.FlatStyle = FlatStyle.Flat;
             classScoutBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classScoutBtn.Location = new Point(154, 235);
             classScoutBtn.Name = "classScoutBtn";
@@ -174,6 +183,7 @@
             // classDerecasBtn
             // 
             classDerecasBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classDerecasBtn.FlatStyle = FlatStyle.Flat;
             classDerecasBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classDerecasBtn.Location = new Point(256, 235);
             classDerecasBtn.Name = "classDerecasBtn";
@@ -186,6 +196,7 @@
             // classHealerBtn
             // 
             classHealerBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classHealerBtn.FlatStyle = FlatStyle.Flat;
             classHealerBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classHealerBtn.Location = new Point(357, 235);
             classHealerBtn.Name = "classHealerBtn";
@@ -198,6 +209,7 @@
             // ClassSamoojaBtn
             // 
             ClassSamoojaBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            ClassSamoojaBtn.FlatStyle = FlatStyle.Flat;
             ClassSamoojaBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             ClassSamoojaBtn.Location = new Point(463, 235);
             ClassSamoojaBtn.Name = "ClassSamoojaBtn";
@@ -210,6 +222,7 @@
             // ClassBardBtn
             // 
             ClassBardBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            ClassBardBtn.FlatStyle = FlatStyle.Flat;
             ClassBardBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             ClassBardBtn.Location = new Point(154, 292);
             ClassBardBtn.Name = "ClassBardBtn";
@@ -222,6 +235,7 @@
             // classSpyBtn
             // 
             classSpyBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classSpyBtn.FlatStyle = FlatStyle.Flat;
             classSpyBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classSpyBtn.Location = new Point(256, 292);
             classSpyBtn.Name = "classSpyBtn";
@@ -234,6 +248,7 @@
             // classBaseBtn
             // 
             classBaseBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            classBaseBtn.FlatStyle = FlatStyle.Flat;
             classBaseBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             classBaseBtn.Location = new Point(357, 292);
             classBaseBtn.Name = "classBaseBtn";
@@ -268,7 +283,7 @@
             // yearsConfirmedBtn
             // 
             yearsConfirmedBtn.BackColor = Color.Transparent;
-            yearsConfirmedBtn.FlatStyle = FlatStyle.Popup;
+            yearsConfirmedBtn.FlatStyle = FlatStyle.Flat;
             yearsConfirmedBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             yearsConfirmedBtn.Location = new Point(569, 310);
             yearsConfirmedBtn.Name = "yearsConfirmedBtn";

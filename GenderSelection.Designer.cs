@@ -36,7 +36,8 @@
             // MaleButton
             // 
             MaleButton.BackColor = Color.Transparent;
-            MaleButton.FlatStyle = FlatStyle.Popup;
+            MaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            MaleButton.FlatStyle = FlatStyle.Flat;
             MaleButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             MaleButton.Location = new Point(228, 186);
             MaleButton.Margin = new Padding(2);
@@ -50,7 +51,8 @@
             // FemaleButton
             // 
             FemaleButton.BackColor = Color.Transparent;
-            FemaleButton.FlatStyle = FlatStyle.Popup;
+            FemaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            FemaleButton.FlatStyle = FlatStyle.Flat;
             FemaleButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             FemaleButton.Location = new Point(446, 186);
             FemaleButton.Margin = new Padding(2);
@@ -64,7 +66,7 @@
             // BackButton_GenderSelect
             // 
             BackButton_GenderSelect.BackColor = Color.Transparent;
-            BackButton_GenderSelect.FlatStyle = FlatStyle.Popup;
+            BackButton_GenderSelect.FlatStyle = FlatStyle.Flat;
             BackButton_GenderSelect.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             BackButton_GenderSelect.Location = new Point(661, 27);
             BackButton_GenderSelect.Name = "BackButton_GenderSelect";

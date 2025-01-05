@@ -53,8 +53,9 @@
             // editCharBtn
             // 
             editCharBtn.BackColor = Color.Transparent;
+            editCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             editCharBtn.FlatStyle = FlatStyle.Popup;
-            editCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            editCharBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             editCharBtn.Location = new Point(185, 123);
             editCharBtn.Margin = new Padding(3, 2, 3, 2);
             editCharBtn.Name = "editCharBtn";
@@ -66,8 +67,9 @@
             // editItemListBtn
             // 
             editItemListBtn.BackColor = Color.Transparent;
+            editItemListBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             editItemListBtn.FlatStyle = FlatStyle.Popup;
-            editItemListBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            editItemListBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             editItemListBtn.Location = new Point(185, 184);
             editItemListBtn.Margin = new Padding(3, 2, 3, 2);
             editItemListBtn.Name = "editItemListBtn";
@@ -79,8 +81,9 @@
             // newItemBtn
             // 
             newItemBtn.BackColor = Color.Transparent;
+            newItemBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             newItemBtn.FlatStyle = FlatStyle.Popup;
-            newItemBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            newItemBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             newItemBtn.Location = new Point(333, 123);
             newItemBtn.Margin = new Padding(3, 2, 3, 2);
             newItemBtn.Name = "newItemBtn";
@@ -92,8 +95,9 @@
             // newSpellBtn
             // 
             newSpellBtn.BackColor = Color.Transparent;
+            newSpellBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             newSpellBtn.FlatStyle = FlatStyle.Popup;
-            newSpellBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            newSpellBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             newSpellBtn.Location = new Point(485, 123);
             newSpellBtn.Margin = new Padding(3, 2, 3, 2);
             newSpellBtn.Name = "newSpellBtn";
@@ -105,8 +109,9 @@
             // newCultBtn
             // 
             newCultBtn.BackColor = Color.Transparent;
+            newCultBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             newCultBtn.FlatStyle = FlatStyle.Flat;
-            newCultBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            newCultBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             newCultBtn.Location = new Point(633, 123);
             newCultBtn.Margin = new Padding(3, 2, 3, 2);
             newCultBtn.Name = "newCultBtn";
@@ -118,8 +123,9 @@
             // addYearBtn
             // 
             addYearBtn.BackColor = Color.Transparent;
+            addYearBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             addYearBtn.FlatStyle = FlatStyle.Popup;
-            addYearBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addYearBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             addYearBtn.Location = new Point(333, 184);
             addYearBtn.Margin = new Padding(3, 2, 3, 2);
             addYearBtn.Name = "addYearBtn";
@@ -131,8 +137,9 @@
             // deleteSpellBtn
             // 
             deleteSpellBtn.BackColor = Color.Transparent;
+            deleteSpellBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             deleteSpellBtn.FlatStyle = FlatStyle.Popup;
-            deleteSpellBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            deleteSpellBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             deleteSpellBtn.Location = new Point(485, 184);
             deleteSpellBtn.Margin = new Padding(3, 2, 3, 2);
             deleteSpellBtn.Name = "deleteSpellBtn";
@@ -144,8 +151,9 @@
             // deleteCultBtn
             // 
             deleteCultBtn.BackColor = Color.Transparent;
+            deleteCultBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             deleteCultBtn.FlatStyle = FlatStyle.Popup;
-            deleteCultBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold);
+            deleteCultBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             deleteCultBtn.Location = new Point(633, 184);
             deleteCultBtn.Margin = new Padding(3, 2, 3, 2);
             deleteCultBtn.Name = "deleteCultBtn";
@@ -157,8 +165,9 @@
             // playerModeSelectionBtn
             // 
             playerModeSelectionBtn.BackColor = Color.Transparent;
+            playerModeSelectionBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             playerModeSelectionBtn.FlatStyle = FlatStyle.Popup;
-            playerModeSelectionBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            playerModeSelectionBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             playerModeSelectionBtn.Location = new Point(1037, 630);
             playerModeSelectionBtn.Name = "playerModeSelectionBtn";
             playerModeSelectionBtn.Size = new Size(137, 39);
@@ -170,8 +179,9 @@
             // newCharBtn
             // 
             newCharBtn.BackColor = Color.Transparent;
+            newCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             newCharBtn.FlatStyle = FlatStyle.Popup;
-            newCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            newCharBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             newCharBtn.Location = new Point(185, 69);
             newCharBtn.Name = "newCharBtn";
             newCharBtn.Size = new Size(137, 39);
@@ -183,8 +193,9 @@
             // testLevelBtn
             // 
             testLevelBtn.BackColor = Color.Transparent;
+            testLevelBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             testLevelBtn.FlatStyle = FlatStyle.Popup;
-            testLevelBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold);
+            testLevelBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             testLevelBtn.Location = new Point(633, 248);
             testLevelBtn.Name = "testLevelBtn";
             testLevelBtn.Size = new Size(137, 39);
@@ -195,8 +206,9 @@
             // charDetailsBtn
             // 
             charDetailsBtn.BackColor = Color.Transparent;
+            charDetailsBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             charDetailsBtn.FlatStyle = FlatStyle.Popup;
-            charDetailsBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            charDetailsBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             charDetailsBtn.Location = new Point(624, 630);
             charDetailsBtn.Name = "charDetailsBtn";
             charDetailsBtn.Size = new Size(170, 39);
@@ -207,8 +219,9 @@
             // moveToForgottenBtn
             // 
             moveToForgottenBtn.BackColor = Color.Transparent;
+            moveToForgottenBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             moveToForgottenBtn.FlatStyle = FlatStyle.Popup;
-            moveToForgottenBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold);
+            moveToForgottenBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             moveToForgottenBtn.Location = new Point(962, 363);
             moveToForgottenBtn.Name = "moveToForgottenBtn";
             moveToForgottenBtn.Size = new Size(170, 39);
@@ -219,8 +232,9 @@
             // moveToDeadBtn
             // 
             moveToDeadBtn.BackColor = Color.Transparent;
+            moveToDeadBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             moveToDeadBtn.FlatStyle = FlatStyle.Popup;
-            moveToDeadBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            moveToDeadBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             moveToDeadBtn.Location = new Point(962, 307);
             moveToDeadBtn.Name = "moveToDeadBtn";
             moveToDeadBtn.Size = new Size(170, 39);
@@ -231,8 +245,9 @@
             // deleteCharBtn
             // 
             deleteCharBtn.BackColor = Color.Transparent;
+            deleteCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             deleteCharBtn.FlatStyle = FlatStyle.Popup;
-            deleteCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            deleteCharBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             deleteCharBtn.Location = new Point(962, 422);
             deleteCharBtn.Name = "deleteCharBtn";
             deleteCharBtn.Size = new Size(170, 39);
@@ -243,8 +258,9 @@
             // editSpellListBtn
             // 
             editSpellListBtn.BackColor = Color.Transparent;
+            editSpellListBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             editSpellListBtn.FlatStyle = FlatStyle.Popup;
-            editSpellListBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            editSpellListBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             editSpellListBtn.Location = new Point(831, 630);
             editSpellListBtn.Name = "editSpellListBtn";
             editSpellListBtn.Size = new Size(170, 39);
@@ -255,8 +271,9 @@
             // loadCharBtn
             // 
             loadCharBtn.BackColor = Color.Transparent;
+            loadCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             loadCharBtn.FlatStyle = FlatStyle.Popup;
-            loadCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loadCharBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             loadCharBtn.Location = new Point(775, 307);
             loadCharBtn.Name = "loadCharBtn";
             loadCharBtn.Size = new Size(170, 39);
@@ -268,8 +285,9 @@
             // saveCharBtn
             // 
             saveCharBtn.BackColor = Color.Transparent;
+            saveCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveCharBtn.FlatStyle = FlatStyle.Popup;
-            saveCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saveCharBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             saveCharBtn.Location = new Point(775, 363);
             saveCharBtn.Name = "saveCharBtn";
             saveCharBtn.Size = new Size(170, 39);

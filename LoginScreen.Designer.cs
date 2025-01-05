@@ -36,8 +36,9 @@
             // playerBtn
             // 
             playerBtn.BackColor = Color.Transparent;
+            playerBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             playerBtn.FlatStyle = FlatStyle.Popup;
-            playerBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            playerBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             playerBtn.Location = new Point(190, 198);
             playerBtn.Name = "playerBtn";
             playerBtn.Size = new Size(142, 56);
@@ -49,8 +50,9 @@
             // gameMasterBtn
             // 
             gameMasterBtn.BackColor = Color.Transparent;
+            gameMasterBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             gameMasterBtn.FlatStyle = FlatStyle.Popup;
-            gameMasterBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            gameMasterBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic);
             gameMasterBtn.ForeColor = SystemColors.ControlText;
             gameMasterBtn.Location = new Point(448, 198);
             gameMasterBtn.Name = "gameMasterBtn";

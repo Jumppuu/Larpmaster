@@ -66,9 +66,10 @@
             // 
             newCharBtn.AutoSize = true;
             newCharBtn.BackColor = Color.Transparent;
+            newCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             newCharBtn.FlatAppearance.BorderColor = Color.SaddleBrown;
             newCharBtn.FlatStyle = FlatStyle.Popup;
-            newCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            newCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
             newCharBtn.Location = new Point(130, 316);
             newCharBtn.Name = "newCharBtn";
             newCharBtn.Size = new Size(129, 48);
@@ -81,8 +82,9 @@
             // 
             charInfoBtn.AutoSize = true;
             charInfoBtn.BackColor = Color.Transparent;
+            charInfoBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             charInfoBtn.FlatStyle = FlatStyle.Popup;
-            charInfoBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            charInfoBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
             charInfoBtn.Location = new Point(130, 398);
             charInfoBtn.Name = "charInfoBtn";
             charInfoBtn.Size = new Size(166, 48);
@@ -94,8 +96,9 @@
             // loadCharBtn
             // 
             loadCharBtn.BackColor = Color.Transparent;
+            loadCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             loadCharBtn.FlatStyle = FlatStyle.Popup;
-            loadCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loadCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
             loadCharBtn.Location = new Point(291, 316);
             loadCharBtn.Name = "loadCharBtn";
             loadCharBtn.Size = new Size(121, 48);
@@ -108,8 +111,9 @@
             // 
             saveCharBtn.AutoSize = true;
             saveCharBtn.BackColor = Color.Transparent;
+            saveCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveCharBtn.FlatStyle = FlatStyle.Popup;
-            saveCharBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saveCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
             saveCharBtn.Location = new Point(318, 398);
             saveCharBtn.Name = "saveCharBtn";
             saveCharBtn.Size = new Size(181, 48);
@@ -121,8 +125,9 @@
             // 
             gameMasterBtn.AutoSize = true;
             gameMasterBtn.BackColor = Color.Transparent;
+            gameMasterBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             gameMasterBtn.FlatStyle = FlatStyle.Popup;
-            gameMasterBtn.Font = new Font("Engravers MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            gameMasterBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
             gameMasterBtn.Location = new Point(825, 486);
             gameMasterBtn.Name = "gameMasterBtn";
             gameMasterBtn.Size = new Size(133, 46);
