@@ -109,9 +109,10 @@
             Controls.Add(vardakovBtn);
             Controls.Add(vuoriniittyBtn);
             Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "KingdomSelection";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "KingdomSelection";
+            Text = "Valtakunnan valinta";
             ResumeLayout(false);
             PerformLayout();
         }

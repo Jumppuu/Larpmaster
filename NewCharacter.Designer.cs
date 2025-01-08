@@ -124,6 +124,7 @@
             Controls.Add(RaceBtn_Human);
             Controls.Add(ChooseRaceLabel);
             Margin = new Padding(2, 3, 2, 3);
+            MaximizeBox = false;
             Name = "NewCharacter";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Uusi hahmo";

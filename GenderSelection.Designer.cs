@@ -39,10 +39,10 @@
             MaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
             MaleButton.FlatStyle = FlatStyle.Flat;
             MaleButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            MaleButton.Location = new Point(228, 186);
-            MaleButton.Margin = new Padding(2);
+            MaleButton.Location = new Point(261, 248);
+            MaleButton.Margin = new Padding(2, 3, 2, 3);
             MaleButton.Name = "MaleButton";
-            MaleButton.Size = new Size(115, 58);
+            MaleButton.Size = new Size(131, 77);
             MaleButton.TabIndex = 0;
             MaleButton.Text = "Mies";
             MaleButton.UseVisualStyleBackColor = false;
@@ -54,10 +54,10 @@
             FemaleButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
             FemaleButton.FlatStyle = FlatStyle.Flat;
             FemaleButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            FemaleButton.Location = new Point(446, 186);
-            FemaleButton.Margin = new Padding(2);
+            FemaleButton.Location = new Point(510, 248);
+            FemaleButton.Margin = new Padding(2, 3, 2, 3);
             FemaleButton.Name = "FemaleButton";
-            FemaleButton.Size = new Size(115, 58);
+            FemaleButton.Size = new Size(131, 77);
             FemaleButton.TabIndex = 1;
             FemaleButton.Text = "Nainen";
             FemaleButton.UseVisualStyleBackColor = false;
@@ -68,9 +68,10 @@
             BackButton_GenderSelect.BackColor = Color.Transparent;
             BackButton_GenderSelect.FlatStyle = FlatStyle.Flat;
             BackButton_GenderSelect.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            BackButton_GenderSelect.Location = new Point(661, 27);
+            BackButton_GenderSelect.Location = new Point(755, 36);
+            BackButton_GenderSelect.Margin = new Padding(3, 4, 3, 4);
             BackButton_GenderSelect.Name = "BackButton_GenderSelect";
-            BackButton_GenderSelect.Size = new Size(118, 23);
+            BackButton_GenderSelect.Size = new Size(135, 31);
             BackButton_GenderSelect.TabIndex = 2;
             BackButton_GenderSelect.Text = "Takaisin";
             BackButton_GenderSelect.UseVisualStyleBackColor = false;
@@ -78,14 +79,15 @@
             // 
             // GenderSelection
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(BackButton_GenderSelect);
             Controls.Add(FemaleButton);
             Controls.Add(MaleButton);
-            Margin = new Padding(2);
+            Margin = new Padding(2, 3, 2, 3);
+            MaximizeBox = false;
             Name = "GenderSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Valitse sukupuoli:";
