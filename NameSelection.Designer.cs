@@ -39,7 +39,7 @@
             // nameInputTxtBox
             // 
             nameInputTxtBox.BackColor = Color.Moccasin;
-            nameInputTxtBox.Location = new Point(62, 273);
+            nameInputTxtBox.Location = new Point(88, 273);
             nameInputTxtBox.Margin = new Padding(3, 4, 3, 4);
             nameInputTxtBox.Name = "nameInputTxtBox";
             nameInputTxtBox.Size = new Size(300, 27);
@@ -50,7 +50,7 @@
             okBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn.FlatStyle = FlatStyle.Popup;
             okBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            okBtn.Location = new Point(160, 312);
+            okBtn.Location = new Point(194, 308);
             okBtn.Margin = new Padding(3, 4, 3, 4);
             okBtn.Name = "okBtn";
             okBtn.Size = new Size(86, 31);
@@ -85,7 +85,7 @@
             // realNameTxtbox
             // 
             realNameTxtbox.BackColor = Color.Moccasin;
-            realNameTxtbox.Location = new Point(545, 273);
+            realNameTxtbox.Location = new Point(553, 273);
             realNameTxtbox.Margin = new Padding(3, 4, 3, 4);
             realNameTxtbox.Name = "realNameTxtbox";
             realNameTxtbox.Size = new Size(300, 27);
@@ -97,7 +97,7 @@
             okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn2.FlatStyle = FlatStyle.Popup;
             okBtn2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            okBtn2.Location = new Point(662, 312);
+            okBtn2.Location = new Point(666, 308);
             okBtn2.Margin = new Padding(3, 4, 3, 4);
             okBtn2.Name = "okBtn2";
             okBtn2.Size = new Size(86, 31);

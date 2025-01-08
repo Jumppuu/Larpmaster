@@ -57,10 +57,10 @@
             // 
             CharacterSummaryExplain_Label.AutoSize = true;
             CharacterSummaryExplain_Label.BackColor = Color.Transparent;
-            CharacterSummaryExplain_Label.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            CharacterSummaryExplain_Label.Location = new Point(37, 72);
+            CharacterSummaryExplain_Label.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            CharacterSummaryExplain_Label.Location = new Point(33, 72);
             CharacterSummaryExplain_Label.Name = "CharacterSummaryExplain_Label";
-            CharacterSummaryExplain_Label.Size = new Size(170, 20);
+            CharacterSummaryExplain_Label.Size = new Size(271, 31);
             CharacterSummaryExplain_Label.TabIndex = 0;
             CharacterSummaryExplain_Label.Text = "Luodun Hahmon tiedot:";
             // 
@@ -80,7 +80,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            label3.Location = new Point(126, 119);
+            label3.Location = new Point(87, 119);
             label3.Name = "label3";
             label3.Size = new Size(174, 20);
             label3.TabIndex = 2;
@@ -91,7 +91,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            label4.Location = new Point(352, 124);
+            label4.Location = new Point(298, 119);
             label4.Name = "label4";
             label4.Size = new Size(22, 20);
             label4.TabIndex = 3;
@@ -190,7 +190,7 @@
             CharSummary_Delete.BackColor = Color.Transparent;
             CharSummary_Delete.FlatStyle = FlatStyle.Popup;
             CharSummary_Delete.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            CharSummary_Delete.Location = new Point(34, 539);
+            CharSummary_Delete.Location = new Point(42, 537);
             CharSummary_Delete.Margin = new Padding(3, 4, 3, 4);
             CharSummary_Delete.Name = "CharSummary_Delete";
             CharSummary_Delete.Size = new Size(173, 31);
@@ -204,7 +204,7 @@
             CharSummary_Ok.BackColor = Color.Transparent;
             CharSummary_Ok.FlatStyle = FlatStyle.Popup;
             CharSummary_Ok.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            CharSummary_Ok.Location = new Point(256, 539);
+            CharSummary_Ok.Location = new Point(264, 537);
             CharSummary_Ok.Margin = new Padding(3, 4, 3, 4);
             CharSummary_Ok.Name = "CharSummary_Ok";
             CharSummary_Ok.Size = new Size(171, 31);
@@ -218,18 +218,18 @@
             AgeValue.AutoSize = true;
             AgeValue.BackColor = Color.Transparent;
             AgeValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            AgeValue.Location = new Point(69, 119);
+            AgeValue.Location = new Point(65, 119);
             AgeValue.Name = "AgeValue";
-            AgeValue.Size = new Size(48, 20);
+            AgeValue.Size = new Size(16, 20);
             AgeValue.TabIndex = 14;
-            AgeValue.Text = "Teksti";
+            AgeValue.Text = "5";
             // 
             // ConPercentage
             // 
             ConPercentage.AutoSize = true;
             ConPercentage.BackColor = Color.Transparent;
             ConPercentage.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            ConPercentage.Location = new Point(321, 124);
+            ConPercentage.Location = new Point(267, 119);
             ConPercentage.Name = "ConPercentage";
             ConPercentage.Size = new Size(25, 20);
             ConPercentage.TabIndex = 15;
@@ -240,7 +240,7 @@
             WisValue.AutoSize = true;
             WisValue.BackColor = Color.Transparent;
             WisValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            WisValue.Location = new Point(141, 233);
+            WisValue.Location = new Point(146, 228);
             WisValue.Name = "WisValue";
             WisValue.Size = new Size(57, 20);
             WisValue.TabIndex = 16;
@@ -251,7 +251,7 @@
             DexValue.AutoSize = true;
             DexValue.BackColor = Color.Transparent;
             DexValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            DexValue.Location = new Point(141, 317);
+            DexValue.Location = new Point(138, 312);
             DexValue.Name = "DexValue";
             DexValue.Size = new Size(85, 20);
             DexValue.TabIndex = 17;
@@ -262,7 +262,7 @@
             StrValue.AutoSize = true;
             StrValue.BackColor = Color.Transparent;
             StrValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            StrValue.Location = new Point(141, 276);
+            StrValue.Location = new Point(138, 271);
             StrValue.Name = "StrValue";
             StrValue.Size = new Size(93, 20);
             StrValue.TabIndex = 18;
@@ -273,7 +273,7 @@
             ConValue.AutoSize = true;
             ConValue.BackColor = Color.Transparent;
             ConValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            ConValue.Location = new Point(138, 360);
+            ConValue.Location = new Point(138, 353);
             ConValue.Name = "ConValue";
             ConValue.Size = new Size(69, 20);
             ConValue.TabIndex = 19;
@@ -284,7 +284,7 @@
             AgiValue.AutoSize = true;
             AgiValue.BackColor = Color.Transparent;
             AgiValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            AgiValue.Location = new Point(138, 401);
+            AgiValue.Location = new Point(138, 395);
             AgiValue.Name = "AgiValue";
             AgiValue.Size = new Size(72, 20);
             AgiValue.TabIndex = 20;
@@ -295,7 +295,7 @@
             ChaValue.AutoSize = true;
             ChaValue.BackColor = Color.Transparent;
             ChaValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            ChaValue.Location = new Point(141, 443);
+            ChaValue.Location = new Point(138, 437);
             ChaValue.Name = "ChaValue";
             ChaValue.Size = new Size(65, 20);
             ChaValue.TabIndex = 21;
@@ -306,7 +306,7 @@
             IntValue.AutoSize = true;
             IntValue.BackColor = Color.Transparent;
             IntValue.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            IntValue.Location = new Point(141, 189);
+            IntValue.Location = new Point(146, 184);
             IntValue.Name = "IntValue";
             IntValue.Size = new Size(69, 20);
             IntValue.TabIndex = 22;

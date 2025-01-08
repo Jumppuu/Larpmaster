@@ -167,12 +167,12 @@
             StatSelectionInstruction.AutoSize = true;
             StatSelectionInstruction.BackColor = Color.Transparent;
             StatSelectionInstruction.Font = new Font("Engravers MT", 8F, FontStyle.Bold);
-            StatSelectionInstruction.Location = new Point(20, 39);
+            StatSelectionInstruction.Location = new Point(11, 22);
             StatSelectionInstruction.Margin = new Padding(2, 0, 2, 0);
             StatSelectionInstruction.Name = "StatSelectionInstruction";
-            StatSelectionInstruction.Size = new Size(632, 16);
+            StatSelectionInstruction.Size = new Size(714, 32);
             StatSelectionInstruction.TabIndex = 9;
-            StatSelectionInstruction.Text = "Siirrä hiirellä vasemmalta oikealle haluamasi arvot";
+            StatSelectionInstruction.Text = "Siirrä hiirellä vasemmalta oikealle haluamasi arvot\r\nVoit myös painaa autoa joka automaattisesti sijoittaa arvot";
             // 
             // StatValue_Int
             // 
