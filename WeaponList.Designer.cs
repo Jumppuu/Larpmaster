@@ -477,8 +477,7 @@
             // 
             // exitWeaponListBtn
             // 
-            exitWeaponListBtn.BackColor = SystemColors.ActiveBorder;
-            exitWeaponListBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            exitWeaponListBtn.BackColor = Color.Transparent;
             exitWeaponListBtn.FlatAppearance.BorderColor = Color.Black;
             exitWeaponListBtn.FlatStyle = FlatStyle.Popup;
             exitWeaponListBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
