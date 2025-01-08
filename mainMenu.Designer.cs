@@ -36,6 +36,7 @@
             saveCharBtn = new Button();
             gameMasterBtn = new Button();
             LoadCharFileDialog = new OpenFileDialog();
+            loginBtn = new Button();
             SuspendLayout();
             // 
             // copyRightLbl
@@ -140,6 +141,21 @@
             // 
             LoadCharFileDialog.FileName = "openFileDialog1";
             // 
+            // loginBtn
+            // 
+            loginBtn.BackColor = Color.Transparent;
+            loginBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            loginBtn.FlatStyle = FlatStyle.Popup;
+            loginBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            loginBtn.Location = new Point(842, 11);
+            loginBtn.Margin = new Padding(3, 2, 3, 2);
+            loginBtn.Name = "loginBtn";
+            loginBtn.Size = new Size(121, 47);
+            loginBtn.TabIndex = 7;
+            loginBtn.Text = "Login";
+            loginBtn.UseVisualStyleBackColor = false;
+            loginBtn.Click += loginBtn_Click;
+            // 
             // mainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -148,6 +164,7 @@
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(974, 606);
+            Controls.Add(loginBtn);
             Controls.Add(gameMasterBtn);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
@@ -174,5 +191,6 @@
         private Button saveCharBtn;
         private Button gameMasterBtn;
         private OpenFileDialog LoadCharFileDialog;
+        private Button loginBtn;
     }
 }
