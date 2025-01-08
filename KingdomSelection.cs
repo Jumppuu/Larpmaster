@@ -40,5 +40,13 @@ namespace Larpmaster
             NameSelection nameselection = new NameSelection();
             nameselection.Show();
         }
+
+        private void noKingdomBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SelectionManager.Instance.Selections.Kingdom = "Ei kuulu mihinkään";
+            NameSelection nameselection = new NameSelection();
+            nameselection.Show();
+        }
     }
 }
