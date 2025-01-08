@@ -513,7 +513,7 @@
             exitWeaponListBtn.Name = "exitWeaponListBtn";
             exitWeaponListBtn.Size = new Size(86, 37);
             exitWeaponListBtn.TabIndex = 30;
-            exitWeaponListBtn.Text = "Poistu";
+            exitWeaponListBtn.Text = "Valmis";
             exitWeaponListBtn.UseVisualStyleBackColor = false;
             exitWeaponListBtn.Click += exitWeaponListBtn_Click;
             // 
