@@ -34,7 +34,7 @@ namespace Larpmaster
         private void loadCharBtn_Click(object sender, EventArgs e) // Event handler method when user clicks "lataa hahmo" -button.
         {
             if (LoadCharFileDialog.ShowDialog() == DialogResult.OK) // Opens browse file dialog. 
-            {                                                       
+            {
                 string filePath = LoadCharFileDialog.FileName;
                 string characterName = GetCharacterNameFromFileName(filePath);
 
@@ -89,6 +89,13 @@ namespace Larpmaster
             this.Hide();
             FinalSummaryAndSave finalSummary = new FinalSummaryAndSave(showSaveButton: false, loadedCharacterFilePath);
             finalSummary.Show();
+        }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
         }
     }
 }

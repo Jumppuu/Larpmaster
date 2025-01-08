@@ -36,6 +36,7 @@
             saveCharBtn = new Button();
             gameMasterBtn = new Button();
             LoadCharFileDialog = new OpenFileDialog();
+            loginBtn = new Button();
             SuspendLayout();
             // 
             // copyRightLbl
@@ -44,9 +45,9 @@
             copyRightLbl.BackColor = Color.Transparent;
             copyRightLbl.Font = new Font("Old English Text MT", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             copyRightLbl.ForeColor = Color.Sienna;
-            copyRightLbl.Location = new Point(692, 544);
+            copyRightLbl.Location = new Point(791, 725);
             copyRightLbl.Name = "copyRightLbl";
-            copyRightLbl.Size = new Size(266, 28);
+            copyRightLbl.Size = new Size(341, 35);
             copyRightLbl.TabIndex = 0;
             copyRightLbl.Text = "© Rajakatse Fantasia ry";
             // 
@@ -56,9 +57,9 @@
             titleLbl.BackColor = Color.Transparent;
             titleLbl.Font = new Font("Old English Text MT", 104.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titleLbl.ForeColor = Color.Sienna;
-            titleLbl.Location = new Point(130, 47);
+            titleLbl.Location = new Point(149, 63);
             titleLbl.Name = "titleLbl";
-            titleLbl.Size = new Size(735, 165);
+            titleLbl.Size = new Size(919, 208);
             titleLbl.TabIndex = 1;
             titleLbl.Text = "Larpmaster";
             // 
@@ -70,9 +71,10 @@
             newCharBtn.FlatAppearance.BorderColor = Color.SaddleBrown;
             newCharBtn.FlatStyle = FlatStyle.Popup;
             newCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            newCharBtn.Location = new Point(130, 316);
+            newCharBtn.Location = new Point(149, 421);
+            newCharBtn.Margin = new Padding(3, 4, 3, 4);
             newCharBtn.Name = "newCharBtn";
-            newCharBtn.Size = new Size(129, 48);
+            newCharBtn.Size = new Size(147, 64);
             newCharBtn.TabIndex = 2;
             newCharBtn.Text = "Uusi Hahmo";
             newCharBtn.UseVisualStyleBackColor = true;
@@ -85,9 +87,10 @@
             charInfoBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             charInfoBtn.FlatStyle = FlatStyle.Popup;
             charInfoBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            charInfoBtn.Location = new Point(130, 398);
+            charInfoBtn.Location = new Point(149, 531);
+            charInfoBtn.Margin = new Padding(3, 4, 3, 4);
             charInfoBtn.Name = "charInfoBtn";
-            charInfoBtn.Size = new Size(166, 48);
+            charInfoBtn.Size = new Size(190, 64);
             charInfoBtn.TabIndex = 3;
             charInfoBtn.Text = "Hahmon Tiedot";
             charInfoBtn.UseVisualStyleBackColor = false;
@@ -99,9 +102,10 @@
             loadCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             loadCharBtn.FlatStyle = FlatStyle.Popup;
             loadCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            loadCharBtn.Location = new Point(291, 316);
+            loadCharBtn.Location = new Point(333, 421);
+            loadCharBtn.Margin = new Padding(3, 4, 3, 4);
             loadCharBtn.Name = "loadCharBtn";
-            loadCharBtn.Size = new Size(121, 48);
+            loadCharBtn.Size = new Size(138, 64);
             loadCharBtn.TabIndex = 4;
             loadCharBtn.Text = "Lataa Hahmo";
             loadCharBtn.UseVisualStyleBackColor = false;
@@ -114,9 +118,10 @@
             saveCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveCharBtn.FlatStyle = FlatStyle.Popup;
             saveCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            saveCharBtn.Location = new Point(318, 398);
+            saveCharBtn.Location = new Point(363, 531);
+            saveCharBtn.Margin = new Padding(3, 4, 3, 4);
             saveCharBtn.Name = "saveCharBtn";
-            saveCharBtn.Size = new Size(181, 48);
+            saveCharBtn.Size = new Size(207, 64);
             saveCharBtn.TabIndex = 5;
             saveCharBtn.Text = "Tallenna Hahmo";
             saveCharBtn.UseVisualStyleBackColor = false;
@@ -128,9 +133,10 @@
             gameMasterBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             gameMasterBtn.FlatStyle = FlatStyle.Popup;
             gameMasterBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            gameMasterBtn.Location = new Point(825, 486);
+            gameMasterBtn.Location = new Point(943, 648);
+            gameMasterBtn.Margin = new Padding(3, 4, 3, 4);
             gameMasterBtn.Name = "gameMasterBtn";
-            gameMasterBtn.Size = new Size(133, 46);
+            gameMasterBtn.Size = new Size(152, 61);
             gameMasterBtn.TabIndex = 6;
             gameMasterBtn.Text = "Pelinjohto";
             gameMasterBtn.UseVisualStyleBackColor = false;
@@ -140,14 +146,29 @@
             // 
             LoadCharFileDialog.FileName = "openFileDialog1";
             // 
+            // loginBtn
+            // 
+            loginBtn.BackColor = Color.Transparent;
+            loginBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
+            loginBtn.FlatStyle = FlatStyle.Popup;
+            loginBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            loginBtn.Location = new Point(962, 15);
+            loginBtn.Name = "loginBtn";
+            loginBtn.Size = new Size(138, 63);
+            loginBtn.TabIndex = 7;
+            loginBtn.Text = "Login";
+            loginBtn.UseVisualStyleBackColor = false;
+            loginBtn.Click += loginBtn_Click;
+            // 
             // mainMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(974, 606);
+            ClientSize = new Size(1113, 808);
+            Controls.Add(loginBtn);
             Controls.Add(gameMasterBtn);
             Controls.Add(saveCharBtn);
             Controls.Add(loadCharBtn);
@@ -155,10 +176,11 @@
             Controls.Add(newCharBtn);
             Controls.Add(titleLbl);
             Controls.Add(copyRightLbl);
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "mainMenu";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Larpmaster v 0.1";
+            Text = "Larpmaster v0.1";
             Load += mainMenu_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -174,5 +196,6 @@
         private Button saveCharBtn;
         private Button gameMasterBtn;
         private OpenFileDialog LoadCharFileDialog;
+        private Button loginBtn;
     }
 }
