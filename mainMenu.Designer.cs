@@ -100,7 +100,7 @@
             loadCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             loadCharBtn.FlatStyle = FlatStyle.Popup;
             loadCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            loadCharBtn.Location = new Point(287, 330);
+            loadCharBtn.Location = new Point(246, 330);
             loadCharBtn.Name = "loadCharBtn";
             loadCharBtn.Size = new Size(140, 45);
             loadCharBtn.TabIndex = 4;
@@ -115,7 +115,7 @@
             gameMasterBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             gameMasterBtn.FlatStyle = FlatStyle.Popup;
             gameMasterBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            gameMasterBtn.Location = new Point(701, 358);
+            gameMasterBtn.Location = new Point(701, 359);
             gameMasterBtn.Name = "gameMasterBtn";
             gameMasterBtn.Size = new Size(114, 40);
             gameMasterBtn.TabIndex = 6;
