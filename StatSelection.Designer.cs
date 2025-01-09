@@ -552,7 +552,7 @@
             BackButton_StatSelect.BackColor = Color.Transparent;
             BackButton_StatSelect.FlatStyle = FlatStyle.Popup;
             BackButton_StatSelect.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            BackButton_StatSelect.Location = new Point(641, 20);
+            BackButton_StatSelect.Location = new Point(740, 18);
             BackButton_StatSelect.Name = "BackButton_StatSelect";
             BackButton_StatSelect.Size = new Size(75, 23);
             BackButton_StatSelect.TabIndex = 48;
@@ -615,7 +615,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(255, 224, 192);
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(728, 495);
+            ClientSize = new Size(827, 486);
             Controls.Add(AgeInputLabel);
             Controls.Add(acceptAgeButton);
             Controls.Add(ageInputBox);

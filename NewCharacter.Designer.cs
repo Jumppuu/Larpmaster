@@ -35,7 +35,7 @@
             ChooseRaceLabel.AutoSize = true;
             ChooseRaceLabel.BackColor = Color.Transparent;
             ChooseRaceLabel.Font = new Font("Elephant", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ChooseRaceLabel.Location = new Point(43, 172);
+            ChooseRaceLabel.Location = new Point(152, 213);
             ChooseRaceLabel.Margin = new Padding(2, 0, 2, 0);
             ChooseRaceLabel.Name = "ChooseRaceLabel";
             ChooseRaceLabel.Size = new Size(100, 21);
@@ -48,7 +48,7 @@
             RaceBtn_Human.BackgroundImage = Properties.Resources.Larpmasterbackground;
             RaceBtn_Human.FlatStyle = FlatStyle.Popup;
             RaceBtn_Human.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            RaceBtn_Human.Location = new Point(169, 164);
+            RaceBtn_Human.Location = new Point(278, 205);
             RaceBtn_Human.Margin = new Padding(2, 2, 2, 2);
             RaceBtn_Human.Name = "RaceBtn_Human";
             RaceBtn_Human.Size = new Size(121, 37);
@@ -63,7 +63,7 @@
             RaceBtn_Elf.BackgroundImage = Properties.Resources.Larpmasterbackground;
             RaceBtn_Elf.FlatStyle = FlatStyle.Popup;
             RaceBtn_Elf.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            RaceBtn_Elf.Location = new Point(419, 164);
+            RaceBtn_Elf.Location = new Point(528, 205);
             RaceBtn_Elf.Margin = new Padding(2, 2, 2, 2);
             RaceBtn_Elf.Name = "RaceBtn_Elf";
             RaceBtn_Elf.Size = new Size(121, 37);
@@ -79,7 +79,7 @@
             RaceBtn_HalfElf.FlatStyle = FlatStyle.Popup;
             RaceBtn_HalfElf.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             RaceBtn_HalfElf.ForeColor = SystemColors.ControlText;
-            RaceBtn_HalfElf.Location = new Point(294, 164);
+            RaceBtn_HalfElf.Location = new Point(403, 205);
             RaceBtn_HalfElf.Margin = new Padding(2, 2, 2, 2);
             RaceBtn_HalfElf.Name = "RaceBtn_HalfElf";
             RaceBtn_HalfElf.Size = new Size(121, 37);
@@ -104,7 +104,7 @@
             BackButton_NewChar.BackColor = Color.Transparent;
             BackButton_NewChar.FlatStyle = FlatStyle.Popup;
             BackButton_NewChar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            BackButton_NewChar.Location = new Point(573, 25);
+            BackButton_NewChar.Location = new Point(728, 23);
             BackButton_NewChar.Name = "BackButton_NewChar";
             BackButton_NewChar.Size = new Size(75, 23);
             BackButton_NewChar.TabIndex = 5;
@@ -117,7 +117,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(660, 369);
+            ClientSize = new Size(827, 454);
             Controls.Add(BackButton_NewChar);
             Controls.Add(RaceBtn_HalfElf);
             Controls.Add(RaceBtn_Elf);

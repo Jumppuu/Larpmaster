@@ -334,7 +334,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(827, 454);
             Controls.Add(label2);
             Controls.Add(yearsinCultLbl);
             Controls.Add(yearsInCultInput);

@@ -508,7 +508,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(827, 454);
             Controls.Add(weaponListBox);
             Controls.Add(exitWeaponListBtn);
             Controls.Add(choseWepLbl);
