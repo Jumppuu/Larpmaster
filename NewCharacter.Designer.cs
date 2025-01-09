@@ -35,10 +35,10 @@
             ChooseRaceLabel.AutoSize = true;
             ChooseRaceLabel.BackColor = Color.Transparent;
             ChooseRaceLabel.Font = new Font("Elephant", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ChooseRaceLabel.Location = new Point(49, 229);
+            ChooseRaceLabel.Location = new Point(43, 172);
             ChooseRaceLabel.Margin = new Padding(2, 0, 2, 0);
             ChooseRaceLabel.Name = "ChooseRaceLabel";
-            ChooseRaceLabel.Size = new Size(129, 26);
+            ChooseRaceLabel.Size = new Size(100, 21);
             ChooseRaceLabel.TabIndex = 1;
             ChooseRaceLabel.Text = "Valitse rotu";
             // 
@@ -48,10 +48,10 @@
             RaceBtn_Human.BackgroundImage = Properties.Resources.Larpmasterbackground;
             RaceBtn_Human.FlatStyle = FlatStyle.Popup;
             RaceBtn_Human.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            RaceBtn_Human.Location = new Point(193, 219);
-            RaceBtn_Human.Margin = new Padding(2, 3, 2, 3);
+            RaceBtn_Human.Location = new Point(169, 164);
+            RaceBtn_Human.Margin = new Padding(2, 2, 2, 2);
             RaceBtn_Human.Name = "RaceBtn_Human";
-            RaceBtn_Human.Size = new Size(138, 49);
+            RaceBtn_Human.Size = new Size(121, 37);
             RaceBtn_Human.TabIndex = 2;
             RaceBtn_Human.Text = "Ihminen";
             RaceBtn_Human.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@
             RaceBtn_Elf.BackgroundImage = Properties.Resources.Larpmasterbackground;
             RaceBtn_Elf.FlatStyle = FlatStyle.Popup;
             RaceBtn_Elf.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            RaceBtn_Elf.Location = new Point(479, 219);
-            RaceBtn_Elf.Margin = new Padding(2, 3, 2, 3);
+            RaceBtn_Elf.Location = new Point(419, 164);
+            RaceBtn_Elf.Margin = new Padding(2, 2, 2, 2);
             RaceBtn_Elf.Name = "RaceBtn_Elf";
-            RaceBtn_Elf.Size = new Size(138, 49);
+            RaceBtn_Elf.Size = new Size(121, 37);
             RaceBtn_Elf.TabIndex = 3;
             RaceBtn_Elf.Text = "Haltija";
             RaceBtn_Elf.UseVisualStyleBackColor = false;
@@ -79,10 +79,10 @@
             RaceBtn_HalfElf.FlatStyle = FlatStyle.Popup;
             RaceBtn_HalfElf.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             RaceBtn_HalfElf.ForeColor = SystemColors.ControlText;
-            RaceBtn_HalfElf.Location = new Point(336, 219);
-            RaceBtn_HalfElf.Margin = new Padding(2, 3, 2, 3);
+            RaceBtn_HalfElf.Location = new Point(294, 164);
+            RaceBtn_HalfElf.Margin = new Padding(2, 2, 2, 2);
             RaceBtn_HalfElf.Name = "RaceBtn_HalfElf";
-            RaceBtn_HalfElf.Size = new Size(138, 49);
+            RaceBtn_HalfElf.Size = new Size(121, 37);
             RaceBtn_HalfElf.TabIndex = 4;
             RaceBtn_HalfElf.Text = "Puolihaltija";
             RaceBtn_HalfElf.UseVisualStyleBackColor = false;
@@ -104,10 +104,9 @@
             BackButton_NewChar.BackColor = Color.Transparent;
             BackButton_NewChar.FlatStyle = FlatStyle.Popup;
             BackButton_NewChar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            BackButton_NewChar.Location = new Point(655, 33);
-            BackButton_NewChar.Margin = new Padding(3, 4, 3, 4);
+            BackButton_NewChar.Location = new Point(573, 25);
             BackButton_NewChar.Name = "BackButton_NewChar";
-            BackButton_NewChar.Size = new Size(86, 31);
+            BackButton_NewChar.Size = new Size(75, 23);
             BackButton_NewChar.TabIndex = 5;
             BackButton_NewChar.Text = "Takaisin";
             BackButton_NewChar.UseVisualStyleBackColor = false;
@@ -115,17 +114,18 @@
             // 
             // NewCharacter
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(754, 492);
+            ClientSize = new Size(660, 369);
             Controls.Add(BackButton_NewChar);
             Controls.Add(RaceBtn_HalfElf);
             Controls.Add(RaceBtn_Elf);
             Controls.Add(RaceBtn_Human);
             Controls.Add(ChooseRaceLabel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 3, 2, 3);
+            Margin = new Padding(2, 2, 2, 2);
             MaximizeBox = false;
             Name = "NewCharacter";
             StartPosition = FormStartPosition.CenterScreen;

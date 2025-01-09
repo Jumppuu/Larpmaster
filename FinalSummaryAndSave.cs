@@ -34,7 +34,6 @@ namespace Larpmaster
             double physicalCondition = CalculatePhysicalCondition(selections.Age);
 
 
-
             formattedText.AppendLine("Hahmosi tiedot:");
             formattedText.AppendLine($"Rotu: {selections.Race}");
             formattedText.AppendLine($"Sukupuoli: {selections.Gender}");
@@ -52,9 +51,9 @@ namespace Larpmaster
             formattedText.AppendLine($"Kultti: {selections.Class}");
             formattedText.AppendLine($"Vuosia kultissa: {selections.YearsInCult}");
             formattedText.AppendLine($"Kuningaskunta: {selections.Kingdom}");
+            formattedText.AppendLine($"Aseet: {string.Join(", ", selections.Weapons)}");
             formattedText.AppendLine($"Hahmon nimi: {selections.CharacterName}");
             formattedText.AppendLine($"Oikea nimi: {selections.RealName}");
-            formattedText.AppendLine($"Aseet: {string.Join(", ", selections.Weapons)}");
             formattedText.AppendLine($"Tehtävät: {selections.Tasks}");
             formattedText.AppendLine($"Muuta: {selections.OtherInfo}");
 
@@ -85,9 +84,9 @@ namespace Larpmaster
             txt.AppendLine("Kultti: " + selections.Class);
             txt.AppendLine("Vuosia kultissa: " + selections.YearsInCult);
             txt.AppendLine("Kuningaskunta: " + selections.Kingdom);
+            txt.AppendLine("Aseet: " + string.Join(", ", selections.Weapons));
             txt.AppendLine("Hahmon nimi: " + selections.CharacterName);
             txt.AppendLine("Oikea nimi: " + selections.RealName);
-            txt.AppendLine("Aseet: " + string.Join(", ", selections.Weapons));
             txt.AppendLine("Tehtävät: " + selections.Tasks);
             txt.AppendLine("Muuta: " + selections.OtherInfo);
 
