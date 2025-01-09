@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WeaponList));
             tikariBtn = new Button();
             lyhytMiekkaBtn = new Button();
             pitkäMiekkaBtn = new Button();
@@ -566,11 +567,12 @@
             Controls.Add(pitkäMiekkaBtn);
             Controls.Add(lyhytMiekkaBtn);
             Controls.Add(tikariBtn);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "WeaponList";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Ase Lista";
+            Text = "Ase lista";
             ResumeLayout(false);
             PerformLayout();
         }

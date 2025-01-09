@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginScreen));
             playerBtn = new Button();
             gameMasterBtn = new Button();
             label1 = new Label();
@@ -85,6 +86,7 @@
             Controls.Add(label1);
             Controls.Add(gameMasterBtn);
             Controls.Add(playerBtn);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximizeBox = false;
             Name = "LoginScreen";

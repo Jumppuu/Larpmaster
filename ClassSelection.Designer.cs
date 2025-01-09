@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassSelection));
             label1 = new Label();
             classZharinBtn = new Button();
             classArdakovBtn = new Button();
@@ -373,6 +374,7 @@
             Controls.Add(classArdakovBtn);
             Controls.Add(classZharinBtn);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "ClassSelection";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatSelection));
             StatValue1 = new TextBox();
             StatValue2 = new TextBox();
             StatValue3 = new TextBox();
@@ -704,6 +705,7 @@
             Controls.Add(StatValue3);
             Controls.Add(StatValue2);
             Controls.Add(StatValue1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
             MaximizeBox = false;
             Name = "StatSelection";

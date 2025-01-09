@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pelinjohto));
             editCharBtn = new Button();
             editItemListBtn = new Button();
             newItemBtn = new Button();
@@ -347,6 +348,7 @@
             Controls.Add(newItemBtn);
             Controls.Add(editItemListBtn);
             Controls.Add(editCharBtn);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Pelinjohto";
             StartPosition = FormStartPosition.CenterScreen;

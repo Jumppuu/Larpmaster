@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YourTasks));
             missionLbl = new Label();
             tehtävätTextBox = new TextBox();
             muutaLbl = new Label();
@@ -124,6 +125,7 @@
             Controls.Add(tehtävätTextBox);
             Controls.Add(missionLbl);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "YourTasks";

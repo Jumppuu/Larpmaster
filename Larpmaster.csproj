@@ -10,6 +10,13 @@
 
   <ItemGroup>
     <None Remove="Properties\Resources\Larpmasterbackground.jpg" />
+    <None Remove="Properties\Resources\larpmasterTaskbarIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Properties\Resources\LarpmasterTaskbarIcon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

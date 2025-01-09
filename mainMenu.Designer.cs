@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainMenu));
             copyRightLbl = new Label();
             titleLbl = new Label();
             newCharBtn = new Button();
@@ -71,10 +72,10 @@
             newCharBtn.FlatAppearance.BorderColor = Color.SaddleBrown;
             newCharBtn.FlatStyle = FlatStyle.Popup;
             newCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            newCharBtn.Location = new Point(149, 421);
+            newCharBtn.Location = new Point(139, 421);
             newCharBtn.Margin = new Padding(3, 4, 3, 4);
             newCharBtn.Name = "newCharBtn";
-            newCharBtn.Size = new Size(147, 64);
+            newCharBtn.Size = new Size(207, 64);
             newCharBtn.TabIndex = 2;
             newCharBtn.Text = "Uusi Hahmo";
             newCharBtn.UseVisualStyleBackColor = true;
@@ -87,10 +88,10 @@
             charInfoBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             charInfoBtn.FlatStyle = FlatStyle.Popup;
             charInfoBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            charInfoBtn.Location = new Point(149, 531);
+            charInfoBtn.Location = new Point(139, 531);
             charInfoBtn.Margin = new Padding(3, 4, 3, 4);
             charInfoBtn.Name = "charInfoBtn";
-            charInfoBtn.Size = new Size(190, 64);
+            charInfoBtn.Size = new Size(207, 64);
             charInfoBtn.TabIndex = 3;
             charInfoBtn.Text = "Hahmon Tiedot";
             charInfoBtn.UseVisualStyleBackColor = false;
@@ -102,10 +103,10 @@
             loadCharBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             loadCharBtn.FlatStyle = FlatStyle.Popup;
             loadCharBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic);
-            loadCharBtn.Location = new Point(333, 421);
+            loadCharBtn.Location = new Point(363, 421);
             loadCharBtn.Margin = new Padding(3, 4, 3, 4);
             loadCharBtn.Name = "loadCharBtn";
-            loadCharBtn.Size = new Size(138, 64);
+            loadCharBtn.Size = new Size(207, 64);
             loadCharBtn.TabIndex = 4;
             loadCharBtn.Text = "Lataa Hahmo";
             loadCharBtn.UseVisualStyleBackColor = false;
@@ -152,9 +153,9 @@
             loginBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             loginBtn.FlatStyle = FlatStyle.Popup;
             loginBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            loginBtn.Location = new Point(962, 15);
+            loginBtn.Location = new Point(979, 30);
             loginBtn.Name = "loginBtn";
-            loginBtn.Size = new Size(138, 63);
+            loginBtn.Size = new Size(116, 42);
             loginBtn.TabIndex = 7;
             loginBtn.Text = "Login";
             loginBtn.UseVisualStyleBackColor = false;
@@ -176,6 +177,7 @@
             Controls.Add(newCharBtn);
             Controls.Add(titleLbl);
             Controls.Add(copyRightLbl);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "mainMenu";

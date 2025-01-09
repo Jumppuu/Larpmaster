@@ -21,6 +21,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewCharacter));
             ChooseRaceLabel = new Label();
             RaceBtn_Human = new Button();
             RaceBtn_Elf = new Button();
@@ -123,6 +124,7 @@
             Controls.Add(RaceBtn_Elf);
             Controls.Add(RaceBtn_Human);
             Controls.Add(ChooseRaceLabel);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2, 3, 2, 3);
             MaximizeBox = false;
             Name = "NewCharacter";

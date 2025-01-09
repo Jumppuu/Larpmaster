@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NameSelection));
             nameInputTxtBox = new TextBox();
             okBtn = new Button();
             charNameLbl = new Label();
@@ -119,6 +120,7 @@
             Controls.Add(charNameLbl);
             Controls.Add(okBtn);
             Controls.Add(nameInputTxtBox);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "NameSelection";

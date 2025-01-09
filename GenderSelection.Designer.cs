@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GenderSelection));
             MaleButton = new Button();
             FemaleButton = new Button();
             BackButton_GenderSelect = new Button();
@@ -86,6 +87,7 @@
             Controls.Add(BackButton_GenderSelect);
             Controls.Add(FemaleButton);
             Controls.Add(MaleButton);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2, 3, 2, 3);
             MaximizeBox = false;
             Name = "GenderSelection";

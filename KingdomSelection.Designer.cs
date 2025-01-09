@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KingdomSelection));
             vuoriniittyBtn = new Button();
             vardakovBtn = new Button();
             metsäläisetBtn = new Button();
@@ -39,9 +40,10 @@
             // 
             vuoriniittyBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             vuoriniittyBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            vuoriniittyBtn.Location = new Point(224, 201);
+            vuoriniittyBtn.Location = new Point(256, 268);
+            vuoriniittyBtn.Margin = new Padding(3, 4, 3, 4);
             vuoriniittyBtn.Name = "vuoriniittyBtn";
-            vuoriniittyBtn.Size = new Size(164, 52);
+            vuoriniittyBtn.Size = new Size(187, 69);
             vuoriniittyBtn.TabIndex = 0;
             vuoriniittyBtn.Text = "Vuoriniitty";
             vuoriniittyBtn.UseVisualStyleBackColor = true;
@@ -51,9 +53,10 @@
             // 
             vardakovBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             vardakovBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            vardakovBtn.Location = new Point(393, 201);
+            vardakovBtn.Location = new Point(449, 268);
+            vardakovBtn.Margin = new Padding(3, 4, 3, 4);
             vardakovBtn.Name = "vardakovBtn";
-            vardakovBtn.Size = new Size(164, 52);
+            vardakovBtn.Size = new Size(187, 69);
             vardakovBtn.TabIndex = 1;
             vardakovBtn.Text = "Vardakov";
             vardakovBtn.UseVisualStyleBackColor = true;
@@ -63,9 +66,10 @@
             // 
             metsäläisetBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             metsäläisetBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            metsäläisetBtn.Location = new Point(224, 260);
+            metsäläisetBtn.Location = new Point(256, 347);
+            metsäläisetBtn.Margin = new Padding(3, 4, 3, 4);
             metsäläisetBtn.Name = "metsäläisetBtn";
-            metsäläisetBtn.Size = new Size(164, 52);
+            metsäläisetBtn.Size = new Size(187, 69);
             metsäläisetBtn.TabIndex = 2;
             metsäläisetBtn.Text = "Metsäläiset";
             metsäläisetBtn.UseVisualStyleBackColor = true;
@@ -75,9 +79,10 @@
             // 
             noKingdomBtn.BackgroundImage = Properties.Resources.Larpmasterbackground;
             noKingdomBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            noKingdomBtn.Location = new Point(393, 260);
+            noKingdomBtn.Location = new Point(449, 347);
+            noKingdomBtn.Margin = new Padding(3, 4, 3, 4);
             noKingdomBtn.Name = "noKingdomBtn";
-            noKingdomBtn.Size = new Size(164, 52);
+            noKingdomBtn.Size = new Size(187, 69);
             noKingdomBtn.TabIndex = 3;
             noKingdomBtn.Text = "Ei kuulu mihinkään";
             noKingdomBtn.UseVisualStyleBackColor = true;
@@ -88,23 +93,25 @@
             choseKingdomLbl.AutoSize = true;
             choseKingdomLbl.BackColor = Color.Transparent;
             choseKingdomLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            choseKingdomLbl.Location = new Point(245, 160);
+            choseKingdomLbl.Location = new Point(280, 213);
             choseKingdomLbl.Name = "choseKingdomLbl";
-            choseKingdomLbl.Size = new Size(265, 19);
+            choseKingdomLbl.Size = new Size(331, 24);
             choseKingdomLbl.TabIndex = 4;
             choseKingdomLbl.Text = "Valitse valtakunta";
             // 
             // KingdomSelection
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Larpmasterbackground;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(choseKingdomLbl);
             Controls.Add(noKingdomBtn);
             Controls.Add(metsäläisetBtn);
             Controls.Add(vardakovBtn);
             Controls.Add(vuoriniittyBtn);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "KingdomSelection";
             StartPosition = FormStartPosition.CenterScreen;
