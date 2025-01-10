@@ -20,6 +20,8 @@ https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 4. Aja Sovellus:
    - Siirry purettuun kansioon ja siirry kansioon Larpmaster Executable ja kaksoisnapsauta `Larpmaster` -tiedostoa ajaaksesi sovelluksen.
 
+5. Windows saattaa ilmoittaa että sovellus on tuntematon ja ei ole turvallinen. Paina "Lisätietoja" ja "Suorita silti".
+
 Käyttö
 
 Uuden Hahmon Luominen
