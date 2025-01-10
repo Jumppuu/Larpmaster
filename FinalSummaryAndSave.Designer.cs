@@ -39,9 +39,9 @@
             saveButton.BackgroundImage = Properties.Resources.Larpmasterbackground;
             saveButton.FlatStyle = FlatStyle.Popup;
             saveButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            saveButton.Location = new Point(439, 317);
+            saveButton.Location = new Point(430, 330);
             saveButton.Name = "saveButton";
-            saveButton.Size = new Size(184, 55);
+            saveButton.Size = new Size(142, 42);
             saveButton.TabIndex = 0;
             saveButton.Text = "Tallenna Hahmo";
             saveButton.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@
             mainMenuBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
             mainMenuBtn.Location = new Point(682, 22);
             mainMenuBtn.Name = "mainMenuBtn";
-            mainMenuBtn.Size = new Size(106, 55);
+            mainMenuBtn.Size = new Size(106, 39);
             mainMenuBtn.TabIndex = 2;
             mainMenuBtn.Text = "Päävalikko";
             mainMenuBtn.UseVisualStyleBackColor = true;

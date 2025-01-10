@@ -62,7 +62,7 @@
             muutaLbl.AutoSize = true;
             muutaLbl.BackColor = Color.Transparent;
             muutaLbl.Font = new Font("Engravers MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            muutaLbl.Location = new Point(545, 169);
+            muutaLbl.Location = new Point(543, 169);
             muutaLbl.Name = "muutaLbl";
             muutaLbl.Size = new Size(92, 19);
             muutaLbl.TabIndex = 2;
@@ -85,7 +85,7 @@
             okBtn1.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn1.FlatStyle = FlatStyle.Popup;
             okBtn1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            okBtn1.Location = new Point(191, 236);
+            okBtn1.Location = new Point(189, 236);
             okBtn1.Name = "okBtn1";
             okBtn1.Size = new Size(75, 23);
             okBtn1.TabIndex = 4;
@@ -99,7 +99,7 @@
             okBtn2.BackgroundImage = Properties.Resources.Larpmasterbackground;
             okBtn2.FlatStyle = FlatStyle.Popup;
             okBtn2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            okBtn2.Location = new Point(559, 236);
+            okBtn2.Location = new Point(557, 236);
             okBtn2.Name = "okBtn2";
             okBtn2.Size = new Size(78, 23);
             okBtn2.TabIndex = 5;

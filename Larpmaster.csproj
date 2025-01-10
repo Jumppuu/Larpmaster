@@ -6,11 +6,30 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Properties\Resources\LarpmasterTaskbarIcon.ico</ApplicationIcon>
+    <Authors>Junior Turunen, Lassi Janhonen</Authors>
+    <PackageIcon>LarpmasterIcon.JPG</PackageIcon>
+    <RepositoryUrl>https://github.com/Jumppuu/Larpmaster</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>Larpmaster on Rajakatse Fantasia ry:n  sovellus, jota käytetään yhdistyksen Rajakatse- fantasialarpeissa pelihahmojen numeeristen arvojen määrittämiseen. Prototyypin on luonut Junior Turunen ja Lassi Janhonen</Description>
+    <Company />
+    <Copyright>© 2025 Rajakatse Fantasia ry</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Properties\Resources\Larpmasterbackground.jpg" />
-    <None Remove="Properties\Resources\larpmasterTaskbarIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\Resources\LarpmasterTaskbarIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\LarpmasterIcon.JPG" Link="Properties\Resources\LarpmasterIcon.JPG">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -38,5 +57,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Resources\larpmasterTaskbarIcon.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>

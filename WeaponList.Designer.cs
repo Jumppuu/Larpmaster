@@ -482,7 +482,7 @@
             exitWeaponListBtn.FlatAppearance.BorderColor = Color.Black;
             exitWeaponListBtn.FlatStyle = FlatStyle.Popup;
             exitWeaponListBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic);
-            exitWeaponListBtn.Location = new Point(713, 25);
+            exitWeaponListBtn.Location = new Point(711, 25);
             exitWeaponListBtn.Name = "exitWeaponListBtn";
             exitWeaponListBtn.Size = new Size(75, 28);
             exitWeaponListBtn.TabIndex = 30;
