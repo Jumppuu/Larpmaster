@@ -1,36 +1,36 @@
-# Larpmaster
+Larpmaster
 
 Larpmaster on Rajakatse Fantasia ry:n sovellus, jota käytetään yhdistyksen Rajakatse-fantasialarpeissa pelihahmojen numeeristen arvojen määrittämiseen. Modernisoidun version prototyypin on luonut Junior Turunen ja Lassi Janhonen.
 
-## Asennus
+Asennus
 
-### Vaiheet
+Vaiheet
 
-1. **Lataa Sovellus**:
+1. Lataa Sovellus:
    - Lataa uusin julkaisu [Releases](https://github.com/jumppuu/larpmaster/releases) -sivulta.
 
-2. **Pura Tiedostot**:
+2. Pura Tiedostot:
    - Pura ladattu zip-tiedosto haluamaasi sijaintiin tietokoneellasi.
 
-3. **Aja Sovellus**:
+3. Aja Sovellus:
    - Siirry purettuun kansioon ja kaksoisnapsauta `Larpmaster.exe` -tiedostoa ajaaksesi sovelluksen.
 
-## Käyttö
+Käyttö
 
-### Uuden Hahmon Luominen
+Uuden Hahmon Luominen
 
-1. **Avaa Sovellus**:
+1. Avaa Sovellus:
    - Aja `Larpmaster.exe`.
 
-2. **Valitse Hahmon Luonti**:
+2. Valitse Hahmon Luonti:
    - Valitse hahmosi rotu ja sukupuoli.
 
-3. **Luo Hahmon Ominaisuudet**:
+3. Luo Hahmon Ominaisuudet:
    - Käytä tilastojen luontiominaisuutta heittääksesi ja määrittääksesi tilastot hahmollesi.
 
-4. **Tallenna Hahmo**:
+4. Tallenna Hahmo:
    - Tallenna hahmoprofiili tulevaa käyttöä varten.
 
-## Yhteystiedot
+Yhteystiedot
 
 Jos sinulla on kysyttävää tai palautetta, ota yhteyttä [junior.turunen@gmail.com](mailto:junior.turunen@gmail.com).

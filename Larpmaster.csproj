@@ -14,7 +14,7 @@
 		<Description>Larpmaster on Rajakatse Fantasia ry:n  sovellus, jota käytetään yhdistyksen Rajakatse- fantasialarpeissa pelihahmojen numeeristen arvojen määrittämiseen. Prototyypin on luonut Junior Turunen ja Lassi Janhonen</Description>
 		<Company />
 		<Copyright>© 2025 Rajakatse Fantasia ry</Copyright>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReadmeFile>README.txt</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -64,7 +64,7 @@
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-		<None Update="README.md">
+		<None Update="README.txt">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
