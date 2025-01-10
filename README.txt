@@ -12,7 +12,12 @@ Vaiheet
 2. Pura Tiedostot:
    - Pura ladattu zip-tiedosto haluamaasi sijaintiin tietokoneellasi.
 
-3. Aja Sovellus:
+3. Asenna .NET Runtime jos sinulla sitä ei ole
+
+Mene kyseiseen linkkiin ja valitse .NET Desktop Runtime 8.0.11 ja asenna se.
+https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+
+4. Aja Sovellus:
    - Siirry purettuun kansioon ja kaksoisnapsauta `Larpmaster.exe` -tiedostoa ajaaksesi sovelluksen.
 
 Käyttö
