@@ -40,4 +40,4 @@ Uuden Hahmon Luominen
 
 Yhteystiedot
 
-Jos sinulla on kysyttävää tai palautetta, ota yhteyttä [junior.turunen@gmail.com](mailto:junior.turunen@gmail.com).
+Jos sinulla on kysyttävää tai palautetta, ota yhteyttä junior.turunen@gmail.com
