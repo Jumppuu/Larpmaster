@@ -18,7 +18,7 @@ Mene kyseiseen linkkiin ja valitse .NET Desktop Runtime 8.0.11 ja asenna se.
 https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 
 4. Aja Sovellus:
-   - Siirry purettuun kansioon ja kaksoisnapsauta `Larpmaster.exe` -tiedostoa ajaaksesi sovelluksen.
+   - Siirry purettuun kansioon ja siirry kansioon Larpmaster Executable ja kaksoisnapsauta `Larpmaster` -tiedostoa ajaaksesi sovelluksen.
 
 Käyttö
 
