@@ -7,7 +7,7 @@ Asennus
 Vaiheet
 
 1. Lataa Sovellus:
-   - Lataa uusin julkaisu [Releases](https://github.com/jumppuu/larpmaster/releases) -sivulta.
+   - Lataa uusin julkaisu (Larpmaster.Executable) [Releases](https://github.com/jumppuu/larpmaster/releases) -sivulta.
 
 2. Pura Tiedostot:
    - Pura ladattu zip-tiedosto haluamaasi sijaintiin tietokoneellasi.
@@ -18,7 +18,7 @@ Mene kyseiseen linkkiin ja valitse .NET Desktop Runtime 8.0.11 ja asenna se.
 https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 
 4. Aja Sovellus:
-   - Siirry purettuun kansioon ja siirry kansioon Larpmaster Executable ja kaksoisnapsauta `Larpmaster` -tiedostoa ajaaksesi sovelluksen.
+   - Avaa purettu kansio ja kaksoisnapsauta `Larpmaster` -tiedostoa ajaaksesi sovelluksen.
 
 5. Windows saattaa ilmoittaa että sovellus on tuntematon ja ei ole turvallinen. Paina "Lisätietoja" ja "Suorita silti".
 
