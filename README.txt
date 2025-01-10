@@ -7,7 +7,7 @@ Asennus
 Vaiheet
 
 1. Lataa Sovellus:
-   - Lataa uusin julkaisu (Larpmaster.Executable) [Releases](https://github.com/jumppuu/larpmaster/releases) -sivulta.
+   - Lataa uusin julkaisu (Larpmaster) [Releases](https://github.com/jumppuu/larpmaster/releases) -sivulta.
 
 2. Pura Tiedostot:
    - Pura ladattu zip-tiedosto haluamaasi sijaintiin tietokoneellasi.
